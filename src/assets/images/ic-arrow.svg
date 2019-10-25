@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>ic-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Quem-somos" transform="translate(-1014.000000, -1685.000000)" fill="#293750">
+            <g id="ic-arrow" transform="translate(1014.000000, 1684.000000)">
+                <rect id="Rectangle" x="0" y="7" width="16" height="2" rx="1"></rect>
+                <rect id="Rectangle-Copy-2" transform="translate(12.000000, 5.000000) rotate(45.000000) translate(-12.000000, -5.000000) " x="7" y="4" width="10" height="2" rx="1"></rect>
+                <rect id="Rectangle-Copy-3" transform="translate(12.000000, 11.000000) rotate(-45.000000) translate(-12.000000, -11.000000) " x="7" y="10" width="10" height="2" rx="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
