@@ -1,6 +1,5 @@
 <template>
   <Layout>
-
       <div class="row">
         <div class="col-lg-7 col-xl-6">
           <h1 class="title">Inscreva-se!</h1>
