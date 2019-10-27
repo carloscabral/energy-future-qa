@@ -1,7 +1,7 @@
 <template>
   <Layout>
 
-      <h1>Página de Dúvidas</h1>
+      <h1 class="title">Página de Dúvidas</h1>
 
   </Layout>
 </template>
