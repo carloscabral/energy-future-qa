@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="17px" viewBox="0 0 28 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>ic-long-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Page_v4" transform="translate(-1076.000000, -4739.000000)">
+            <g id="5---Destaque" transform="translate(0.000000, 4619.000000)">
+                <g id="Group-13" transform="translate(907.000000, 114.000000)">
+                    <g id="ic-long-arrow" transform="translate(169.000000, 6.000000)">
+                        <polyline id="Path" stroke-opacity="0.87" stroke="#000000" transform="translate(19.500000, 8.500000) rotate(45.000000) translate(-19.500000, -8.500000) " points="14 3 25 3 25 14"></polyline>
+                        <rect id="Rectangle" fill-opacity="0.87" fill="#000000" x="0" y="8" width="27" height="1"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

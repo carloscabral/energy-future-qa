@@ -4,7 +4,7 @@
       <h1 class="title">Perguntas frequentes</h1>
 
       <div v-for="(faq, index) in faqList" :key="index">
-        <h3 class="faq-title" :class="'faq-title__' + faq.id">{{faq.section}}</h3>
+        <h3 class="faq-title" :class="'faq-title__' + faq.id">{{ faq.section }}</h3>
         <div v-for="(item, index) in faq.items" :key="index">
           <Collapse :title="item.title" :text="item.text" />
         </div>        
@@ -80,23 +80,23 @@ export default {
   user-select: none;
 
   &__1 {
-    @include colored-headline($accent-color-2);  
+    @include faq-headline($accent-color-2);  
   }
 
   &__2 {
-    @include colored-headline($secondary-color);
+    @include faq-headline($secondary-color);
   }
 
   &__3 {
-    @include colored-headline($accent-color-1);
+    @include faq-headline($accent-color-1);
   }  
 
   &__4 {
-    @include colored-headline($accent-color-2);
+    @include faq-headline($accent-color-2);
   }  
 
   &__5 {
-    @include colored-headline($secondary-color);
+    @include faq-headline($secondary-color);
   } 
 }
 

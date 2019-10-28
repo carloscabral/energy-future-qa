@@ -11,6 +11,8 @@
           </transition>
         <Footer />
       </div>
+      <!-- <g-image class="bottom-image" src="~/assets/images/img-graphism-bg.svg" /> -->
+      <!-- <img class="bottom-image" src="~/assets/images/img-form-subscribe.svg" alt=""> -->
     </div>
   </div>
 </template>
@@ -65,6 +67,7 @@ query {
 }
 
 .tint {
+  overflow: hidden;
   position: relative;
   background: linear-gradient(
     310deg,
@@ -87,16 +90,29 @@ query {
   }
 
   &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 6rem;
-    background-color: #f1f4f7;
-    z-index: -999;
+    @media (min-width: 768px) {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 6rem;
+      background-color: #f1f4f7;
+      z-index: -999;
+    }
   }
 }
+
+// .bottom-image {
+//   position: absolute;
+//   bottom: 0;
+//   width: 160%;
+//   left: -40rem;
+//   z-index: -999;
+//   opacity: .3;
+//   transform: rotate(45deg);
+//   transform-origin: center;
+// }
 
 .scroll-top {
   display: none;

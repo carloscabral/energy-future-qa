@@ -28,7 +28,7 @@
                 <div class="footer-newsletter">
                     <label class="footer-newsletter__label" for="newsletter">Receba nossa newsletter:</label>
                     <div class="footer-newsletter__input-container">
-                        <input type="email" placeholder="Seu e-mail" id="newsletter" name="newsletter">
+                        <input class="d-flex justify-content-md-end" type="email" placeholder="Seu e-mail" id="newsletter" name="newsletter">
                     </div>
                 </div>
             </div>
@@ -55,13 +55,14 @@
 
     @media (max-width: 575px) {
         
-        text-align: center;
+        //text-align: center;
         display: block;
         margin: 1rem 0 -1rem 0;
 
         &__link {
             display: block;
             text-align: center;
+            font-size: 1rem;
             margin: 0;
             padding-bottom: 2rem;
         }        
@@ -74,7 +75,7 @@
 
 .footer {
   
-    margin-top: 6rem;
+    margin-top: 5rem;
     position: relative;
     padding: 1.5rem 0;
 
@@ -120,16 +121,18 @@
 
     margin-top: 0 !important;
 
-    @media (max-width: 991px) {
-        margin-top: 1rem;  
-    }
-
     @media (max-width: 767px) {
         text-align: center;
     }    
 
     &__input-container {
-        min-width: 16rem;
+
+        width: 100%;
+
+        @media (min-width: 992px) {
+            max-width: 16rem;
+        }
+
         position: relative;
         border-radius: 1px;
         border: 2px solid $primary-color;
@@ -156,13 +159,9 @@
             padding-right: 2.75rem;
 
             &::-webkit-input-placeholder {
-            color: #A7B2C0;
+                color: #A7B2C0;
             }
-        }
-
-        @media (max-width: 767px) {
-            width: 100%;
-        }          
+        }       
     }   
 }
 
@@ -180,6 +179,7 @@
         display: block;
         margin-top: 0;
         margin-top: 1.5rem;
+        min-width: 245px;
 
         @media (min-width: 768px) {
             margin-top: 0;
@@ -189,16 +189,18 @@
 
     &__button {
         @include colored-button($accent-color-2);
-
-        @media (max-width: 767px) {
-            width: 100%;
-        }        
+        width: 100%;      
     }
 
 }
 
 .footer-contact {
-    margin-top: 3rem;  
+    margin-top: 3rem;
+    text-align: center;
+
+    @media(min-width: 768px) {
+        text-align: left;
+    }
 }
 
 </style>

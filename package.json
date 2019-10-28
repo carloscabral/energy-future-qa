@@ -7,6 +7,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@gridsome/plugin-google-analytics": "^0.1.0",
     "bootstrap-scss": "^4.3.1",
     "gridsome": "^0.7.0",
     "typeface-montserrat": "0.0.75"

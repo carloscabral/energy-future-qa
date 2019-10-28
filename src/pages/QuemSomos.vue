@@ -3,7 +3,9 @@
       <h1 class="title">Somos o Energy Future</h1>  
       <figure class="featured-image"></figure>
       <div class="row content">
-        <div class="col-12 mb-5 mb-lg-0 col-lg-1"><a class="share">Compartilhe:</a></div>
+        <div class="col-12 mb-5 mb-lg-0 col-lg-1 share">
+            <SocialShare :hasRotation="true" />
+        </div>
         <div class="col-12 col-lg-9 offset-lg-1">
           <p>O Energy Future é o hub virtual de inovação do setor de energia elétrica. A maior chamada de projetos de Pesquisa e Desenvolvimento (P&D) do setor elétrico brasileiro. Conectamos soluções inovadoras a oportunidades.<br><br>
 
@@ -23,10 +25,13 @@ Queremos promover a cultura da inovação e estimular o empreendedorismo brasile
 </template>
 
 <script>
+
+import SocialShare from '~/components/SocialShare.vue'
 export default {
   metaInfo: {
     title: 'Quem Somos'
-  }
+  },
+  components: { SocialShare }
 }
 </script>
 

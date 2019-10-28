@@ -12,7 +12,14 @@ function addStyleResource (rule) {
 
 module.exports = {
   siteName: 'Energy Future',
-  plugins: [],
+  plugins: [
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-150844840-1'
+      }
+    }    
+  ],
 
   chainWebpack (config) {
     // Load variables for all vue-files

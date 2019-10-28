@@ -142,26 +142,5 @@ export default {
     @include colored-button($accent-color-1);
 }
 
-// .option-one {
-//   &__button {
-//     @include colored-button($secondary-color);
-//     width: 100%;
-//   }
-// }
-
-// .option-two {
-//   &__button {
-//     @include colored-button($primary-color);
-//     width: 100%;
-//   }
-// }
-
-// .option-three {
-//   &__button {
-//     @include colored-button($accent-color-1);
-//     width: 100%;
-//   }
-// }
-
 
 </style>

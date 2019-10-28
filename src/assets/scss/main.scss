@@ -109,24 +109,6 @@ small {
     font-weight: 500;
 }
 
-.share {
-    display: block;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: .7px;
-    font-size: .77rem;
-    color: #BAC2CC !important;
-
-    @media (min-width: 992px) {
-        transform-origin: 0%;
-        transform: rotate(-90deg) translateX(-400%);
-    }
-    @media (min-width: 1200px) {
-        transform-origin: 0%;
-        transform: rotate(-90deg) translateX(-300%);
-    }    
-}
-
 label {
     text-transform: uppercase;
     color: $primary-color;
@@ -148,6 +130,10 @@ label {
     transition: all .2s ease;
 }
 
+ul {
+    list-style: none;
+}
+
 
 // MIXINS
 @mixin colored-button($color) {
@@ -160,7 +146,7 @@ label {
     }
 }
 
-@mixin colored-headline($color) {
+@mixin faq-headline($color) {
     @extend h3;
     font-weight: 700;
     position: relative;
@@ -173,6 +159,23 @@ label {
         left: 0;
         width: 100%;
         height: .22rem;
+        background-color: $color;
+    }
+}
+
+@mixin news-headline($color) {
+    @extend h3;
+    font-weight: 700;
+    position: relative;
+    color: $accent-color-2;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: -.5rem;
+        left: 0;
+        width: 100%;
+        height: .11rem;
         background-color: $color;
     }
 }

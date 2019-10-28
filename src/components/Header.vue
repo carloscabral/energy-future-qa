@@ -1,5 +1,5 @@
 <template>
-    <header class="header header-normal">
+    <header class="header">
         <g-link to="/"><img src="@/assets/images/img-logo.svg"></g-link>
         
         <nav class="desktop-navigation__nav">
