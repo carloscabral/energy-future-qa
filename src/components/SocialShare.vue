@@ -40,7 +40,15 @@ export default {
     }
     @media (min-width: 1200px) {
         transform: rotate(-90deg) translateX(-415%);
-    } 
+    }
+    
+    .facebook,
+    .twitter,
+    .linkedin {
+        @media (min-width: 992px) {
+            transform: rotate(90deg);
+        }
+    }
 }
 
 .social-share {

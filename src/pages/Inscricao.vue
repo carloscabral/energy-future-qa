@@ -10,7 +10,7 @@
         </div>
       </div>
 
-      <section class="subscribe-section">
+      <section id="subscribe" class="subscribe-section">
         <div class="row align-items-center">
           <div class="col-lg-8 col-xl-7 d-none d-lg-block"><h3>Se já leu os regulamentos, clique aqui e se inscreva!</h3></div>
           <div class="col-lg-4 col-xl-5">
@@ -19,8 +19,8 @@
         </div>  
       </section>
 
-      <section class="options-section">
-        <div class="row ">
+      <section id="options" class="options-section">
+        <div class="row">
           <div class="col-lg-4">
             <h4 class="option__label">Clique aqui para acessar o regulamento do Energy Future:</h4>
             <div class="options-section__btn-container">
@@ -46,10 +46,21 @@
         </div>
       </section>
 
+      <section id="social-media">
+        <div class="row" style="margin-top: 4.5rem">
+          <div class="col">
+            <SocialShare />
+          </div>
+        </div>
+      </section>      
+
   </Layout>
 </template>
 
 <script>
+
+import SocialShare from '~/components/SocialShare.vue'
+
 export default {
   metaInfo: {
     title: 'Inscrição',
@@ -59,7 +70,8 @@ export default {
       { name: "description", content: "Entenda as regras, preencha o formulário e aplique o seu projeto para concorrer ao prêmio Energy Future!" },
       { name: "keywords", content: "Startups, Inovação, Setor elétrico, Concessionárias de energia" },
     ]
-  }
+  },
+  components: { SocialShare }
 }
 </script>
 

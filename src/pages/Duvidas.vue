@@ -10,18 +10,27 @@
         </div>        
       </div>
 
+      <section id="social-media">
+        <div class="row" style="margin-top: 4.5rem">
+          <div class="col">
+            <SocialShare />
+          </div>
+        </div>
+      </section>       
+
   </Layout>
 </template>
 
 <script>
 import Collapse from '~/components/Collapse.vue'
+import SocialShare from '~/components/SocialShare.vue'
 
 export default {
   metaInfo: {
     title: 'Dúvidas'
   },
   components: {
-    Collapse
+    Collapse, SocialShare
   },
   data: () => ({
       faqList : [{
