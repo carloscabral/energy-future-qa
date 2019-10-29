@@ -1,6 +1,6 @@
 <template>
   <div class="tint">
-    <div class='scroll-top' :class="{ 'is-visible': scroll >= 200 }"  @click="scrollTop"></div>    
+    <!-- <div class='scroll-top' :class="{ 'is-visible': scroll >= 200 }"  @click="scrollTop"></div>     -->
     <div class="container">
       <div class="layout">
         <Header />            
@@ -11,8 +11,6 @@
           </transition>
         <Footer />
       </div>
-      <!-- <g-image class="bottom-image" src="~/assets/images/img-graphism-bg.svg" /> -->
-      <!-- <img class="bottom-image" src="~/assets/images/img-form-subscribe.svg" alt=""> -->
     </div>
   </div>
 </template>
@@ -23,28 +21,28 @@ import Footer from "~/components/Footer.vue";
 
 export default {
   components: { Header, Footer },
-  data: () => ({
-    scroll: 0
-  }),
-  created(){
-    window.addEventListener('scroll', this.getScrollEvent);
-  },
-  destroyed(){
-    window.removeEventListener('scroll', this.getScrollEvent);
-  },
-  methods:{
-    getScrollEvent () {
-      this.scroll = window.pageYOffset;
-    },
-    scrollTop() {
-      if(window.scrollY!=0) {
-        setTimeout(() => {
-          window.scrollTo(0,window.scrollY-30);
-          this.scrollTop();
-        }, 5);
-      }
-    }
-  }
+  // data: () => ({
+  //   scroll: 0
+  // }),
+  // created(){
+  //   window.addEventListener('scroll', this.getScrollEvent);
+  // },
+  // destroyed(){
+  //   window.removeEventListener('scroll', this.getScrollEvent);
+  // },
+  // methods:{
+  //   getScrollEvent () {
+  //     this.scroll = window.pageYOffset;
+  //   },
+  //   scrollTop() {
+  //     if(window.scrollY!=0) {
+  //       setTimeout(() => {
+  //         window.scrollTo(0,window.scrollY-30);
+  //         this.scrollTop();
+  //       }, 5);
+  //     }
+  //   }
+  // }
 };
 </script>
 
