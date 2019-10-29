@@ -1,10 +1,10 @@
 <template>
   <Layout>
 
-    <!-- <g-image alt="Example image" src="~/favicon.png" width="135" /> -->
-
-    <h1 class="title">Seja bem-vindo!</h1>
-
+    <div class="in-construction">
+      <h1 class="title">Seja bem-vindo!</h1>
+      <p>Essa página ainda está em construção. Retorne novamente mais tarde para ver se tivemos novidades.</p>
+    </div>
 
   </Layout>
 </template>
@@ -17,8 +17,7 @@ export default {
 }
 </script>
 
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
+<style lang="scss">
+
+
 </style>
