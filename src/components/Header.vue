@@ -4,7 +4,7 @@
         
         <nav class="desktop-navigation__nav">
             <g-link class="desktop-navigation__nav__link" to="/inscricao/">Inscrição</g-link>
-            <g-link class="desktop-navigation__nav__link" to="/quem-somos/">Quem Somos</g-link>
+            <g-link class="desktop-navigation__nav__link" to="/quemsomos/">Quem Somos</g-link>
             <g-link class="desktop-navigation__nav__link" to="/noticias/">Notícias</g-link>
             <g-link class="desktop-navigation__nav__link" to="/duvidas/">Dúvidas</g-link>
         </nav>
@@ -21,7 +21,7 @@
                 <ul class="mobile-navigation__list">
                     <li class="mobile-navigation__item"><g-link class="mobile-navigation__link" to="/">Home</g-link></li>
                     <li class="mobile-navigation__item"><g-link class="mobile-navigation__link" to="/inscricao/">Inscrição</g-link></li>
-                    <li class="mobile-navigation__item"><g-link class="mobile-navigation__link" to="/quem-somos/">Quem Somos</g-link></li>
+                    <li class="mobile-navigation__item"><g-link class="mobile-navigation__link" to="/quemsomos/">Quem Somos</g-link></li>
                     <li class="mobile-navigation__item"><g-link class="mobile-navigation__link" to="/noticias/">Notícias</g-link></li>
                     <li class="mobile-navigation__item"><g-link class="mobile-navigation__link" to="/duvidas/">Dúvidas</g-link></li>
                 </ul>
