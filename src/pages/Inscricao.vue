@@ -20,7 +20,7 @@
       </section>
 
       <section id="options" class="options-section">
-        <div class="row">
+        <div class="row align-items-end">
           <div class="col-lg-4">
             <h4 class="option__label">Clique aqui para acessar o regulamento do Energy Future:</h4>
             <div class="options-section__btn-container">
