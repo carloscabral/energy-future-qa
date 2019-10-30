@@ -132,6 +132,10 @@ label {
     font-weight: 600;
     border-style: none;
     transition: all .2s ease;
+    
+    &:focus {
+        outline: 0 !important;
+    }
 }
 
 ul {
