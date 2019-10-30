@@ -18,9 +18,9 @@
                     <g-image src="~/assets/images/img-test-3.jpg" width="900" />
                 </div>
 
-                <h2 class="latest-news__title">Lorem ipsum dolor sit amet excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</h2>
+                <h2 class="latest-news__title">Entenda como funciona o Setor Elétrico Brasileiro.</h2>
                 <div class="latest-news__credits">
-                  <p class="latest-news__author">por: tetetete</p>
+                  <p class="latest-news__author">por: energy future</p>
                   <p class="latest-news__date"><font-awesome class="latest-news__icon" :icon="['fas', 'clock']"/>&nbsp;&nbsp;22/10/2019</p>
                 </div>
 
@@ -32,10 +32,10 @@
               <div class="related-news">
                 <div class="row related-news__container">
                   <div class="col-xl-5">
-                    <g-image class="related-news__image d-none d-xl-block" src="~/assets/images/img-test-2.jpg" width="900" />
+                    <g-image class="related-news__image d-none d-xl-block" src="~/assets/images/img-test-3.jpg" width="900" />
                   </div>
                   <div class="col-xl-7 px-xl-0 related-news__texts">
-                    <p class="related-news__title">Lorem ipsum dolor sit amet excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+                    <p class="related-news__title">Entenda como funciona o Setor Elétrico Brasileiro.</p>
                     <span class="related-news__date">
                       <font-awesome :icon="['fas', 'clock']"/>&nbsp;&nbsp;22/10/2019
                     </span>
@@ -43,10 +43,10 @@
                 </div>
                 <div class="row related-news__container">
                   <div class="col-xl-5">
-                    <g-image class="related-news__image d-none d-xl-block" src="~/assets/images/img-test-8.jpg" width="900" />
+                    <g-image class="related-news__image d-none d-xl-block" src="~/assets/images/img-materia-2.png" width="900" />
                   </div>
                   <div class="col-xl-7 px-xl-0 related-news__texts">
-                    <p class="related-news__title">Lorem ipsum dolor sit amet excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+                    <p class="related-news__title">Conheça formas de financiamento para startups.</p>
                     <span class="related-news__date">
                       <font-awesome :icon="['fas', 'clock']"/>&nbsp;&nbsp;22/10/2019
                     </span>
@@ -54,10 +54,10 @@
                 </div>
                 <div class="row related-news__container">
                   <div class="col-xl-5">
-                    <g-image class="related-news__image d-none d-xl-block" src="~/assets/images/img-test-7.jpg" width="900" />
+                    <g-image class="related-news__image d-none d-xl-block" src="~/assets/images/img-materia-3.png" width="900" />
                   </div>
                   <div class="col-xl-7 px-xl-0 related-news__texts">
-                    <p class="related-news__title">Lorem ipsum dolor sit amet excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+                    <p class="related-news__title">Os caminhos da modernização do setor elétrico brasileiro.</p>
                     <span class="related-news__date">
                       <font-awesome :icon="['fas', 'clock']"/>&nbsp;&nbsp;22/10/2019
                     </span>
@@ -73,8 +73,8 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="featured-news">
-              <g-image class="featured-news__image" src="~/assets/images/img-test-4.jpg" width="900" />
-              <p class="featured-news__title">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat.</p>
+              <g-image class="featured-news__image" src="~/assets/images/img-materia-2.png" width="900" />
+              <p class="featured-news__title">Conheça formas de financiamento para startups</p>
               <span class="featured-news__date">
                 <font-awesome :icon="['fas', 'clock']"/>&nbsp;&nbsp;22/10/2019
               </span>
@@ -82,8 +82,8 @@
           </div>
           <div class="col-lg-4">
             <div class="featured-news">
-              <g-image class="featured-news__image" src="~/assets/images/img-test-5.jpg" width="900" />
-              <p class="featured-news__title">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat.</p>
+              <g-image class="featured-news__image" src="~/assets/images/img-materia-3.png" width="900" />
+              <p class="featured-news__title">Os caminhos da modernização do setor elétrico brasileiro.</p>
               <span class="featured-news__date">
                 <font-awesome :icon="['fas', 'clock']"/>&nbsp;&nbsp;22/10/2019
               </span>
@@ -92,7 +92,7 @@
           <div class="col-lg-4">
             <div class="featured-news">
               <g-image class="featured-news__image" src="~/assets/images/img-test-6.jpg" width="900" />
-              <p class="featured-news__title">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat.</p>
+              <p class="featured-news__title">Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
               <span class="featured-news__date">
                 <font-awesome :icon="['fas', 'clock']"/>&nbsp;&nbsp;22/10/2019
               </span>

@@ -134,7 +134,7 @@
                         C221.814,36.458,223.334,38.417,225.198,39.089z"></path>
                         <text transform="matrix(1 0 0 1 245.9023 52.6099)" fill="#FFFFFF">AP</text>
                     </a>
-                    <a xlink:href="#para" :class="{ para : countryList.includes('para') }">
+                    <a xlink:href="#pará" :class="{ para : countryList.includes('pará') }">
                         <path stroke="#FFFFFF" stroke-width="1.0404" stroke-linecap="round" stroke-linejoin="round" d="M173.378,50.619
                         c2.259,2.63,5.629-4.478,7.901-3.82c3.19,0.918,1.478-1.108,5.026-1.752c1.931,0.806,3.096,0.273,3.519-1.631
                         c0.535-1.26,1.453-1.726,2.725-1.384c1.768-1.684,13.558,3.603,14.68,0.384c0.629-1.821-4.287-5.709-0.302-6.997
@@ -377,13 +377,13 @@ export default {
   watch: {
     activeLogo () {
       if (this.activeLogo === 'aes') {
-        this.countryList = "rio-de-janeiro tocantins"
+        this.countryList = "sao-paulo bahia"
       } else if (this.activeLogo === 'energisa') {
-        this.countryList = "pernambuco sergipe mato-grosso rio-de-janeiro minas-gerais mato-grosso-do-sul tocantins parana sao-paulo rondonia acre"
+        this.countryList = "paraiba sergipe mato-grosso rio-de-janeiro minas-gerais mato-grosso-do-sul tocantins parana sao-paulo rondonia acre"
       } else if (this.activeLogo === 'light') {
         this.countryList = "rio-de-janeiro sao-paulo"
       } else if (this.activeLogo === 'equatorial') {
-        this.countryList = "para maranhao piaui alagoas distrito-federal"
+        this.countryList = "pará maranhao piaui alagoas distrito-federal"
       } else if (this.activeLogo === 'enel') {
         this.countryList = "sao-paulo rio-de-janeiro ceara goias"
       } else if (this.activeLogo === 'antonio') {

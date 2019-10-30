@@ -3,7 +3,7 @@
       <div class="row">
         <div class="col-lg-7 col-xl-6">
           <h1 class="title">Inscreva-se!</h1>
-          <h2 class="subtitle">Os projetos inscritos no Energy Future devem estar de acordo com os regulamentos da Aneel e com as diretrizes próprias da chamada. É importante que você conheça e veja se está dentro do perfil.</h2>
+          <h2 class="subtitle">Os projetos inscritos devem estar de acordo com os regulamentos da Aneel e com as diretrizes da chamada Energy Future. É importante que você conheça e veja se está dentro do perfil.<br><br>Inscreva seu projeto a partir do dia 25 de novembro.</h2>
         </div>
         <div class="col-lg-5 col-xl-5 offset-xl-1">
           <g-image class="form-image" src="~/assets/images/img-form-subscribe.svg" />
@@ -11,33 +11,33 @@
       </div>
 
       <section id="subscribe" class="subscribe-section">
-        <div class="row align-items-center">
-          <div class="col-lg-8 col-xl-7 d-none d-lg-block"><h3>Se já leu os regulamentos, clique aqui e se inscreva!</h3></div>
+        <div class="row align-items-end">
+          <div class="col-lg-8 col-xl-7 d-none d-lg-block"><h3>Leia o regulamento e veja se o seu projeto tem o perfil.</h3></div>
           <div class="col-lg-4 col-xl-5">
-            <button class="subscribe-button">Inscreva seu projeto!</button>
+            <button class="subscribe-button">Inscrições 25 de novembro</button>
           </div>
         </div>  
       </section>
 
       <section id="options" class="options-section">
         <div class="row align-items-end">
-          <div class="col-lg-4">
+          <!-- <div class="col-lg-4">
             <h4 class="option__label">Clique aqui para acessar o regulamento do Energy Future:</h4>
             <div class="options-section__btn-container">
                 <button class="options-section__button one d-none d-xl-block">Regulamento Energy Future</button>
                 <button class="options-section__button one d-xl-none">Regulamento E.F.</button>
                 <font-awesome class="options-section__icon" :icon="['fas', 'arrow-right']"/>
             </div>
-          </div>
-          <div class="col-lg-4">
+          </div> -->
+          <div class="col-lg-6">
             <h4 class="option__label">Clique aqui para acessar o regulamento do Aneel:</h4>
             <div class="options-section__btn-container">
                 <button class="options-section__button two">Regulamento Aneel</button>
                 <font-awesome class="options-section__icon" :icon="['fas', 'arrow-right']"/>
             </div>  
           </div>
-          <div class="col-lg-4">
-            <h4 class="option__label">Dúvidas? Veja nossas perguntas e respostas mais frequentes:</h4>
+          <div class="col-lg-6">
+            <h4 class="option__label">Dúvidas? Acesse o nosso FAQ:</h4>
             <div class="options-section__btn-container">
                 <button class="options-section__button three">Acesse nosso Faq</button>
                 <font-awesome class="options-section__icon" :icon="['fas', 'arrow-right']"/>

@@ -82,20 +82,20 @@ a {
 
 .subtitle {
 
-    position: relative;
+    // position: relative;
 
-    @media (min-width: 992px) {
+    // @media (min-width: 992px) {
 
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: -4.5rem;
-            left: 0;
-            width: 5.55rem;
-            height: .22rem;
-            background-color: $accent-color-1;
-        }
-    }    
+    //     &::after {
+    //         content: "";
+    //         position: absolute;
+    //         bottom: -4.5rem;
+    //         left: 0;
+    //         width: 5.55rem;
+    //         height: .22rem;
+    //         background-color: $accent-color-1;
+    //     }
+    // }    
 }
 
 .content {

@@ -33,17 +33,16 @@
                 </div>
             </div>
             <div class="col-xl-6 col-lg-4 mt-3 center">
-                <div class="footer-subscribe">
+                <!-- <div class="footer-subscribe">
                     <label class="footer-subscribe__label d-md-block d-lg-none d-xl-block">Aproveite a oportunidade:</label>
-                    <button class="footer-subscribe__button">Inscreva seu projeto!</button>
-                </div>
+                    <g-link to="/inscricao/" style="width: 100%;"><button class="footer-subscribe__button">Inscreva seu projeto!</button></g-link>
+                </div> -->
             </div>
         </div>
         <div class="footer-contact">
-            <div class="row">
-                <div class="col-lg-3 col-md-6"><small>Rua do Energy Future, 23 <br>Rio de Janeiro, RJ.</small></div>
-                <div class="col-lg-3 col-md-6"><small>+55 21 888 888 888 <br>contato@energyfuture.com.br</small></div>
-            </div>
+            <div class="footer-contact__address"><small>Rua São José, 40 - 4º andar<br>Centro - Rio de Janeiro, RJ.</small></div>
+            <div class="footer-contact__email"><small>contato@energyfuture.com.br</small></div>
+            <a href="http://makeab.com/" target="_blank" alt="Site MakeAB"><g-image class="footer-contact__image" src="~/assets/images/img-logo-makeab.svg" width="100" /></a>
         </div>              
     </footer>
 </template>
@@ -195,11 +194,33 @@
 }
 
 .footer-contact {
+
     margin-top: 3rem;
     text-align: center;
 
     @media(min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
         text-align: left;
+    }
+
+    &__image {
+        margin-top: 1.5rem;
+        height: auto;
+
+        @media(min-width: 768px) {
+            margin-top: 0;
+        }
+    }
+
+    &__email {
+        @media (min-width: 992px) {
+            transform: translateX(-62%);
+        }
+        @media (min-width: 1200px) {
+            transform: translateX(-98%);
+        }        
     }
 }
 
