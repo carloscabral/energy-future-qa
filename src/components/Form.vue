@@ -16,10 +16,10 @@
         <div class="sender-info">
             
             <label class="subscription-form__label" for="name">Nome</label>
-            <input class="subscription-form__input" type="text" name="nome" placeholder="Digite seu primeiro nome" v-model="formData.name" required="true" />
+            <input class="subscription-form__input" type="text" name="nome" placeholder="Digite seu primeiro nome" v-model="formData.nome" required="true" />
             
             <label class="subscription-form__label" for="lastName">Sobrenome</label>
-            <input class="subscription-form__input" type="text" name="sobrenome" placeholder="Digite seu sobrenome" v-model="formData.lastName" required="true" />
+            <input class="subscription-form__input" type="text" name="sobrenome" placeholder="Digite seu sobrenome" v-model="formData.sobrenome" required="true" />
             
             <label class="subscription-form__label" for="email">E-mail</label>
             <input class="subscription-form__input" type="email" name="email" placeholder="Digite seu melhor e-mail" v-model="formData.email" required="true"/>
