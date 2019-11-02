@@ -2,7 +2,7 @@
   <Layout>
 
       <div class="row title align-items-center">
-        <div class="col-md-8"><h1 class="m-0">Notícias e atualizações</h1></div>
+        <div class="col-md-8"><h1 class="m-0">Panoramas da inovação elétrica no Brasil</h1></div>
         <div class="col-md-4 d-flex mt-2 justify-content-md-end">
           <g-link to="/">Ver todas as notícias&nbsp;&nbsp;<g-image src="~/assets/images/ic-long-arrow.svg" width="20" /></g-link>
         </div>

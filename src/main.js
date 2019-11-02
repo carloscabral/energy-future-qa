@@ -2,11 +2,11 @@
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
 import { faInstagram, faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faArrowRight, faChevronUp, faClock } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faChevronUp, faClock, faInfoCircle, faCheck } from '@fortawesome/free-solid-svg-icons'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 
 config.autoAddCss = false;
-library.add(faInstagram, faFacebook, faLinkedin, faTwitter, faArrowRight, faChevronUp, faClock)
+library.add(faInstagram, faFacebook, faLinkedin, faTwitter, faArrowRight, faChevronUp, faClock, faInfoCircle, faCheck)
 // --- FontAwesome SVG ---
 
 import DefaultLayout from '~/layouts/Default.vue'

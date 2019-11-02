@@ -1,23 +1,23 @@
 <template>
   <Layout>
-      <div class="row">
+      <div class="row align-items-start">
         <div class="col-lg-7 col-xl-6">
           <h1 class="title">Inscreva-se!</h1>
           <h2 class="subtitle">Os projetos inscritos devem estar de acordo com os regulamentos da Aneel e com as diretrizes da chamada Energy Future. É importante que você conheça e veja se está dentro do perfil.<br><br>Inscreva seu projeto a partir do dia 25 de novembro.</h2>
         </div>
         <div class="col-lg-5 col-xl-5 offset-xl-1">
-          <g-image class="form-image" src="~/assets/images/img-form-subscribe.svg" />
+          <Form />
         </div>
       </div>
 
-      <section id="subscribe" class="subscribe-section">
+      <!-- <section id="subscribe" class="subscribe-section">
         <div class="row align-items-end">
           <div class="col-lg-8 col-xl-7 d-none d-lg-block"><h3>Leia o regulamento e veja se o seu projeto tem o perfil.</h3></div>
           <div class="col-lg-4 col-xl-5">
             <button class="subscribe-button">Inscrições 25 de novembro</button>
           </div>
         </div>  
-      </section>
+      </section> -->
 
       <section id="options" class="options-section">
         <div class="row align-items-end">
@@ -60,6 +60,7 @@
 <script>
 
 import SocialShare from '~/components/SocialShare.vue'
+import Form from '~/components/Form.vue'
 
 export default {
   metaInfo: {
@@ -71,7 +72,7 @@ export default {
       { name: "keywords", content: "Startups, Inovação, Setor elétrico, Concessionárias de energia" },
     ]
   },
-  components: { SocialShare }
+  components: { SocialShare, Form }
 }
 </script>
 

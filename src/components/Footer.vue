@@ -42,7 +42,7 @@
         <div class="footer-contact">
             <div class="footer-contact__address"><small>Rua São José, 40 - 4º andar<br>Centro - Rio de Janeiro, RJ.</small></div>
             <div class="footer-contact__email"><small>contato@energyfuture.com.br</small></div>
-            <a href="http://makeab.com/" target="_blank" alt="Site MakeAB"><g-image class="footer-contact__image" src="~/assets/images/img-logo-makeab.svg" width="100" /></a>
+            <a href="http://makeab.com/" target="_blank" alt="Site MakeAB"><g-image class="footer-contact__image" src="~/assets/images/img-logo-makeab.svg" width="150" alt="Logo MakeAB" /></a>
         </div>              
     </footer>
 </template>
@@ -208,18 +208,25 @@
     &__image {
         margin-top: 1.5rem;
         height: auto;
+        opacity: .3;
 
         @media(min-width: 768px) {
             margin-top: 0;
         }
     }
 
+    &__address, &__email {
+        * {
+            color: $text-color;
+        }
+    }
+
     &__email {
         @media (min-width: 992px) {
-            transform: translateX(-62%);
+            //transform: translateX(-62%);
         }
         @media (min-width: 1200px) {
-            transform: translateX(-98%);
+            //transform: translateX(-98%);
         }        
     }
 }

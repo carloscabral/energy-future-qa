@@ -13,11 +13,11 @@ Queremos promover a cultura da inovação e estimular o empreendedorismo brasile
 
 <br><br>Mais que a prospecção de projetos, o Energy Future dá o suporte para que os participantes se desenvolvam em um ambiente de transparência e disrupção, que garanta a integração das propostas às demandas do setor elétrico.
 
-<br><br>Dessa forma, as principais concessionárias do país estão aqui reunidas para avaliar projetos que contribuam para o fornecimento da energia elétrica, de acordo com uma qualificada metodologia elaborada pelo Energy Future, bem como, com critérios estabelecidos pelo Programa de P&D da Aneel. E, assim, garantimos um portfólio estratégico de inovação.
+<br><br>Dessa forma, grandes concessionárias do país estão aqui reunidas para avaliar projetos que contribuam para o fornecimento da energia elétrica, de acordo com uma qualificada metodologia elaborada pelo Energy Future, bem como, com critérios estabelecidos pelo Programa de P&D da ANEEL. E, assim, garantimos um portfólio estratégico de inovação.
 
-<br><br>No hub do Energy Future, você tem a oportunidade não somente de inscrever seu projeto, mas também de acompanhar todas as etapas de seleção. Além de ter informações exclusivas das concessionárias participantes e receber notícias sobre inovação e o setor de energia.
+<br><br>No hub do Energy Future, você tem a oportunidade não somente de inscrever seu projeto, mas também ter informações exclusivas das concessionárias participantes e receber notícias sobre inovação e o setor de energia.
 
-<br><br>O Energy Future é uma iniciativa desenvolvida e executada pela <a href="#" target="_blank">Make a Business</a>, empresa de inovação e de gestão corporativa com ampla experiência na aceleração de negócios. </p>
+<br><br>Com a chancela de seis grandes concessionárias, o Energy Future é uma iniciativa elaborada, desenvolvida e executada pela <a href="#" target="_blank">Make a Business</a>, empresa de inovação e de gestão corporativa com ampla experiência na aceleração de negócios. </p>
         </div>
       </div>
 
