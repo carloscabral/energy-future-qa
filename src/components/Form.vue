@@ -16,17 +16,17 @@
         <div class="sender-info">
             
             <label class="subscription-form__label" for="name">Nome</label>
-            <input class="subscription-form__input" type="text" name="name" placeholder="Digite seu primeiro nome" v-model="formData.name" required="true" />
+            <input class="subscription-form__input" type="text" name="nome" placeholder="Digite seu primeiro nome" v-model="formData.name" required="true" />
             
             <label class="subscription-form__label" for="lastName">Sobrenome</label>
-            <input class="subscription-form__input" type="text" name="lastName" placeholder="Digite seu sobrenome" v-model="formData.lastName" required="true" />
+            <input class="subscription-form__input" type="text" name="sobrenome" placeholder="Digite seu sobrenome" v-model="formData.lastName" required="true" />
             
             <label class="subscription-form__label" for="email">E-mail</label>
             <input class="subscription-form__input" type="email" name="email" placeholder="Digite seu melhor e-mail" v-model="formData.email" required="true"/>
 
             <div class="subscription-form__checkbox">
                 <label>
-                    <input type="checkbox" id="checkbox" name="newsletter" v-model="formData.newsletter" required="true" />
+                    <input type="checkbox" id="checkbox" name="checkbox" v-model="formData.checkbox" required="true" />
                     <span></span>
                     &nbsp;Eu concordo em receber e-mails com atualizações sobre o Energy Future.
                 </label>
