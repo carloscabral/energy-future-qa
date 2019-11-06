@@ -12,13 +12,37 @@ function addStyleResource (rule) {
 
 module.exports = {
   siteName: 'Energy Future',
+  
+  templates: {
+    Post: '/noticias/:title',
+    Tag: '/tag/:id',
+    Author: '/author/:id',
+  },
+
   plugins: [
     {
       use: '@gridsome/plugin-google-analytics',
       options: {
         id: 'UA-150844840-1'
       }
-    }    
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Post',
+        path: './content/posts/**/*.md',
+        refs: {
+          tags: {
+            typeName: 'Tag',
+            create: true
+          },
+          author:{
+            typeName: 'Author',
+            create: true
+          }          
+        }        
+      }
+    }        
   ],
 
   chainWebpack (config) {

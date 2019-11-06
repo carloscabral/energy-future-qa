@@ -20,7 +20,7 @@
                     </li>
                     <li class="dealership-map__list">
                         <a href="#" class="dealership-map__link" @mouseover="activeLogo = 'enel'" @mouseleave="activeLogo = ''">
-                            <g-image src="../assets/images/img-logo-enel.png" width="250" alt="Logo Enel" />
+                            <g-image src="../assets/images/img-logo-enel.svg" width="250" alt="Logo Enel" />
                         </a>
                     </li>
                     <li class="dealership-map__list">
@@ -385,7 +385,7 @@ export default {
       } else if (this.activeLogo === 'equatorial') {
         this.countryList = "pará maranhao piaui alagoas distrito-federal"
       } else if (this.activeLogo === 'enel') {
-        this.countryList = "sao-paulo rio-de-janeiro ceara goias"
+        this.countryList = "acre alagoas amazonas bahia ceara distrito-federal espirito-santo goias maranhao mato-grosso mato-grosso-do-sul minas-gerais pará paraiba parana pernambuco piaui rio-de-janeiro rio-grande-do-norte rio-grande-do-sul santa-catarina sao-paulo sergipe tocantins"
       } else if (this.activeLogo === 'antonio') {
         this.countryList = "amazonas rondonia"                                
       } else if (this.activeLogo === '') {
@@ -399,7 +399,7 @@ export default {
 <style lang="scss">
 
 #dealership {
-  margin-top: 4.5rem;
+  margin-top: 9rem;
 }
 
 .dealership-map {
@@ -429,11 +429,11 @@ export default {
     display: block;
     margin: 1.5rem 0;
     transform-origin: 0%;
-    transform: scale(.8);
+    transform: scale(.75);
 
     &:hover {
       
-      transform: scale(.9);
+      transform: scale(.88);
       
       img {
         filter: none;

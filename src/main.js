@@ -1,3 +1,5 @@
+// --- Vue Disqus ---
+import VueDisqus from 'vue-disqus'
 // --- FontAwesome SVG ---
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
@@ -21,6 +23,8 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('font-awesome', FontAwesomeIcon)
   // Self hosted Montserrat typeface
   require('typeface-montserrat')
+  // Disqus plugin
+  Vue.use(VueDisqus)
 }
 
 

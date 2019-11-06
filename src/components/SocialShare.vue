@@ -66,7 +66,8 @@ export default {
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: .7px;
-        font-size: .77rem;        
+        font-size: .77rem;
+        hyphens: manual !important;      
     }
 
     &__list {

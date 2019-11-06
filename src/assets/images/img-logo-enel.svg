@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="284px" height="103px" viewBox="0 0 284 103" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Enel_Logo_Primary_CMYK</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="30.169531%" y1="18.8415609%" x2="67.504095%" y2="96.8265162%" id="linearGradient-1">
+            <stop stop-color="#E41F13" offset="0%"></stop>
+            <stop stop-color="#E30613" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="2.82054016%" y1="36.1934995%" x2="85.826226%" y2="61.2666537%" id="linearGradient-2">
+            <stop stop-color="#E42313" offset="0%"></stop>
+            <stop stop-color="#E41F13" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="98.2205567%" y1="35.0364972%" x2="15.2619557%" y2="62.3026858%" id="linearGradient-3">
+            <stop stop-color="#E42313" offset="0%"></stop>
+            <stop stop-color="#E52D12" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="61.1274176%" y1="13.8271693%" x2="36.8403602%" y2="95.2866287%" id="linearGradient-4">
+            <stop stop-color="#E52D12" offset="0%"></stop>
+            <stop stop-color="#E74018" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="35.9389519%" y1="2.2869379%" x2="61.7703189%" y2="88.4668094%" id="linearGradient-5">
+            <stop stop-color="#E74018" offset="0%"></stop>
+            <stop stop-color="#E84617" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="13.1198435%" y1="39.5290176%" x2="96.5857041%" y2="62.6980412%" id="linearGradient-6">
+            <stop stop-color="#E84617" offset="0%"></stop>
+            <stop stop-color="#EA561F" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="4.54685494%" y1="78.2869349%" x2="73.0786264%" y2="28.4321593%" id="linearGradient-7">
+            <stop stop-color="#EA561F" offset="27%"></stop>
+            <stop stop-color="#E9531E" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="63.6660506%" y1="84.2708039%" x2="32.0554666%" y2="24.8251058%" id="linearGradient-8">
+            <stop stop-color="#006FB9" offset="0%"></stop>
+            <stop stop-color="#0078C0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="79.1609808%" y1="58.6591475%" x2="9.99182658%" y2="38.5705644%" id="linearGradient-9">
+            <stop stop-color="#0078C0" offset="0%"></stop>
+            <stop stop-color="#0085CA" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="20.047823%" y1="59.4271924%" x2="90.0603141%" y2="38.1816078%" id="linearGradient-10">
+            <stop stop-color="#0091D0" offset="0%"></stop>
+            <stop stop-color="#0085CA" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="38.7768156%" y1="89.0775249%" x2="58.9245112%" y2="20.4043385%" id="linearGradient-11">
+            <stop stop-color="#009DD7" offset="0%"></stop>
+            <stop stop-color="#0091D0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="38.2078065%" y1="10.2216274%" x2="59.4533911%" y2="79.6870093%" id="linearGradient-12">
+            <stop stop-color="#009DD7" offset="0%"></stop>
+            <stop stop-color="#00A9DD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="14.3445946%" y1="39.621916%" x2="88.7457326%" y2="61.0531627%" id="linearGradient-13">
+            <stop stop-color="#00A9DD" offset="0.5517885%"></stop>
+            <stop stop-color="#70C5E9" offset="94.22%"></stop>
+        </linearGradient>
+        <linearGradient x1="-0.0763799743%" y1="84.7742963%" x2="74.0054557%" y2="25.8228473%" id="linearGradient-14">
+            <stop stop-color="#70C5E9" offset="31.85%"></stop>
+            <stop stop-color="#70C5E9" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.0110922%" y1="0.739277652%" x2="50.0110922%" y2="99.9562641%" id="linearGradient-15">
+            <stop stop-color="#009767" offset="0%"></stop>
+            <stop stop-color="#73BA64" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="46.8688385%" y1="39.9492232%" x2="81.4886683%" y2="73.4903372%" id="linearGradient-16">
+            <stop stop-color="#73BA64" offset="0%"></stop>
+            <stop stop-color="#73BA64" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-0.0155728587%" y1="49.9831933%" x2="99.9892473%" y2="49.9831933%" id="linearGradient-17">
+            <stop stop-color="#E60064" offset="0.4702241%"></stop>
+            <stop stop-color="#E54C88" offset="99.57%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9894541%" y1="39.0173458%" x2="49.9894541%" y2="96.1489537%" id="linearGradient-18">
+            <stop stop-color="#E54C88" offset="2.1%"></stop>
+            <stop stop-color="#E54C88" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="45.0306905%" y1="45.688513%" x2="50.1193521%" y2="50.1082905%" id="linearGradient-19">
+            <stop stop-color="#EA4A87" offset="0%"></stop>
+            <stop stop-color="#EA4A87" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Enel_Logo_Primary_CMYK" fill-rule="nonzero">
+            <path d="M66.35,56.82 L78.33,56.82 C76.89,48.56 72.86,41.18 67.11,35.55 L58.89,43.91 C62.46,47.4 65.09,51.84 66.35,56.82 Z" id="Path" fill="url(#linearGradient-1)"></path>
+            <path d="M39.55,36.04 C47.15,36.04 54.05,39.11 59.06,44.09 L67.35,35.8 C60.22,28.71 50.39,24.32 39.55,24.32 C39.44,24.32 39.32,24.32 39.21,24.32 L39.31,36.04 C39.39,36.04 39.47,36.04 39.55,36.04 Z" id="Path" fill="url(#linearGradient-2)"></path>
+            <path d="M39.55,36.04 L39.55,24.31 C28.58,24.31 18.66,28.81 11.53,36.06 L19.89,44.28 C24.9,39.19 31.85,36.04 39.55,36.04 Z" id="Path" fill="url(#linearGradient-3)"></path>
+            <path d="M11.99,63.59 C11.99,55.98 15.07,49.09 20.06,44.1 L11.77,35.81 C4.67,42.93 0.27,52.75 0.27,63.59 C0.27,63.7 0.27,63.82 0.27,63.93 L11.99,63.83 C11.99,63.75 11.99,63.67 11.99,63.59 Z" id="Path" fill="url(#linearGradient-4)"></path>
+            <path d="M11.99,63.59 L0.27,63.59 C0.27,74.56 4.77,84.48 12.02,91.61 L20.24,83.25 C15.15,78.25 11.99,71.29 11.99,63.59 Z" id="Path" fill="url(#linearGradient-5)"></path>
+            <path d="M39.55,91.15 C31.94,91.15 25.05,88.07 20.06,83.08 L11.77,91.37 C18.88,98.48 28.7,102.88 39.55,102.88 C39.66,102.88 39.78,102.88 39.89,102.88 L39.79,91.16 C39.71,91.15 39.63,91.15 39.55,91.15 Z" id="Path" fill="url(#linearGradient-6)"></path>
+            <path d="M61.41,80.37 C56.37,86.93 48.45,91.15 39.55,91.15 L39.55,102.87 C52.25,102.87 63.53,96.85 70.71,87.5 L61.41,80.37 Z" id="Path" fill="url(#linearGradient-7)"></path>
+            <path d="M237.57,56.82 L249.55,56.82 C248.11,48.56 244.08,41.18 238.33,35.55 L230.11,43.91 C233.68,47.4 236.31,51.84 237.57,56.82 Z" id="Path" fill="url(#linearGradient-8)"></path>
+            <path d="M210.77,36.04 C218.37,36.04 225.27,39.11 230.28,44.09 L238.57,35.8 C231.44,28.71 221.61,24.32 210.77,24.32 C210.66,24.32 210.54,24.32 210.43,24.32 L210.53,36.04 C210.61,36.04 210.69,36.04 210.77,36.04 Z" id="Path" fill="url(#linearGradient-9)"></path>
+            <path d="M210.77,36.04 L210.77,24.31 C199.8,24.31 189.88,28.81 182.75,36.06 L191.11,44.28 C196.11,39.19 203.07,36.04 210.77,36.04 Z" id="Path" fill="url(#linearGradient-10)"></path>
+            <path d="M183.21,63.59 C183.21,55.98 186.29,49.09 191.28,44.1 L182.99,35.81 C175.88,42.92 171.48,52.74 171.48,63.59 C171.48,63.7 171.48,63.82 171.48,63.93 L183.2,63.83 C183.21,63.75 183.21,63.67 183.21,63.59 Z" id="Path" fill="url(#linearGradient-11)"></path>
+            <path d="M183.21,63.59 L171.49,63.59 C171.49,74.56 175.99,84.48 183.24,91.61 L191.46,83.25 C186.37,78.25 183.21,71.29 183.21,63.59 Z" id="Path" fill="url(#linearGradient-12)"></path>
+            <path d="M210.77,91.15 C203.16,91.15 196.27,88.07 191.28,83.08 L182.99,91.37 C190.1,98.48 199.92,102.88 210.77,102.88 C210.88,102.88 211,102.88 211.11,102.88 L211.01,91.16 C210.93,91.15 210.85,91.15 210.77,91.15 Z" id="Path" fill="url(#linearGradient-13)"></path>
+            <path d="M232.63,80.37 C227.59,86.93 219.67,91.15 210.77,91.15 L210.77,102.87 C223.47,102.87 234.75,96.85 241.93,87.5 L232.63,80.37 Z" id="Path" fill="url(#linearGradient-14)"></path>
+            <rect id="Rectangle" fill="url(#linearGradient-15)" x="261.27" y="41.17" width="11.72" height="35.44"></rect>
+            <path d="M272.99,76.43 C272.99,84.89 276.89,88.54 283.73,93.21 L277.04,102.82 C267.04,96.25 261.27,88.8 261.27,76.43 L272.99,76.43 Z" id="Path" fill="url(#linearGradient-16)"></path>
+            <path d="M127.88,24.33 C117.67,24.33 108.49,28.41 101.78,35.03 L101.78,58.84 C103.55,49.43 111.89,36.06 127.87,36.06 C128.16,36.06 128.46,36.07 128.75,36.08 L128.75,24.34 C128.46,24.33 128.17,24.33 127.88,24.33 Z" id="Path" fill="url(#linearGradient-17)"></path>
+            <path d="M160.46,60.65 L148.74,60.65 L148.74,56.79 C148.74,45.21 139.52,36.23 128.22,36.05 L128.22,24.33 C146,24.51 160.46,38.78 160.46,56.8 L160.46,60.65 Z" id="Path" fill="url(#linearGradient-18)"></path>
+            <line x1="160.46" y1="60.65" x2="148.73" y2="60.65" id="Path" fill="url(#linearGradient-19)"></line>
+            <rect id="Rectangle" fill="#BCBCB6" x="90.05" y="27.51" width="11.72" height="41.03"></rect>
+            <rect id="Rectangle" fill="#BCBCB6" x="261.27" y="0.14" width="11.72" height="41.03"></rect>
+            <rect id="Rectangle" fill="#BCBCB6" x="148.73" y="60.65" width="11.72" height="41.03"></rect>
+            <rect id="Rectangle" fill="#BCBCB6" x="37.3" y="56.82" width="41.03" height="11.72"></rect>
+            <rect id="Rectangle" fill="#BCBCB6" x="208.52" y="56.82" width="41.03" height="11.72"></rect>
+        </g>
+    </g>
+</svg>
