@@ -109,7 +109,7 @@
                   <div class="news-carousel-box__next-btn" @click="goNext"></div>
                 </div>
               </div>
-            </div>
+            </div> 
           </div>
         </div>
       </section>
@@ -226,7 +226,7 @@ export default {
     myData: null,
     activeNewsId: 0
   }),
-  mounted() {
+  created() {
     this.myData = this.$static.allPost.edges
   },
   methods: {
