@@ -12,13 +12,16 @@ library.add(faInstagram, faFacebook, faLinkedin, faTwitter, faArrowRight, faChev
 // --- FontAwesome SVG ---
 
 import DefaultLayout from '~/layouts/Default.vue'
+import LandingLayout from '~/layouts/Landing.vue'
+
 import '~/assets/scss/main.scss'
 
 export default function (Vue, { router, head, isClient }) {
 
   head.htmlAttrs = { lang: "pt-br" }
-  // Set default layout as a global component
+  // Set both layouts as a global component
   Vue.component('Layout', DefaultLayout)
+  Vue.component('Landing', LandingLayout)
   // Set default fontawesome usage
   Vue.component('font-awesome', FontAwesomeIcon)
   // Self hosted Montserrat typeface

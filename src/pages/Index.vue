@@ -1,22 +1,18 @@
 <template>
-  <Layout>
+  <Landing>
 
-    <div class="in-construction">
-      <!-- <h1 class="title">Seja bem-vindo!</h1>
-      <p>Essa página ainda está em construção. Retorne novamente mais tarde para verificar se tivemos atualização.</p> -->
-
-      <div class="row hero align-items-center title">
+      <div class="row hero align-items-start title">
         <div class="col-lg-6">
-          <h1 class="hero__title">Maior chamada de projetos de P&D do setor elétrico brasileiro</h1>
-          <p class="hero__text">O Energy Future, hub virtual de inovação do setor elétrico, conecta projetos de P&D a grandes concessionárias do país. Procuramos soluções inovadoras que ajudem a melhorar a geração, transmissão e distribuição da energia elétrica no Brasil.</p>
+          <h1 class="hero__title">Maior chamada de projetos do setor elétrico brasileiro</h1>
+          <p class="hero__text">O Energy Future, hub virtual de inovação do setor elétrico, conecta projetos a grandes concessionárias do país. Procuramos soluções inovadoras que ajudem a melhorar a geração, transmissão e distribuição da energia elétrica no Brasil.</p>
           <button class="hero__button mt-3">Inscrições: 25 de novembro</button>
         </div>
         <div class="col-lg-6">
-          <g-image class="hero__image" src="~/assets/images/img-top-lp.png" width="800" />
+          <g-image class="hero__image" src="~/assets/images/img-top-lp.png" width="900" />
         </div>
       </div>
 
-      <Map />
+      <Map style="margin-top: 20rem;" />
 
       <!-- <section id="rules">
         <div class="rules">
@@ -125,14 +121,14 @@
         </div>
         <div class="row">
           <div class="col-md-7">
-            <p class="faq__text">Preparamos um FAQ rico e completo para que você não tenha dúvidas em como participar do maior evento de Open Innovation do Brasil!</p>
+            <p class="faq__text">Não queremos que você tenha dúvida em como participar do maior evento de Open Innovation do Brasil. Conheça todas as informações que podem te ajudar a inscrever seu projeto.</p>
           </div>
         </div>
         <div class="row faq__list">
           <div class="col-lg-4 col-md-6">
             <g-link to="/duvidas/#faq1">
               <div class="faq__item faq__item--blue">
-                <g-image src="../assets/images/icon-faq-inscricao.svg" width="100" />
+                <g-image src="../assets/images/icon-faq-inscricao.svg" width="75" />
                 <h3>Inscrição</h3>
                 <p>É fácil. Esclareça como inscrever o seu projeto.</p>
               </div>
@@ -141,7 +137,7 @@
           <div class="col-lg-4 col-md-6">
             <g-link to="/duvidas/#faq2">
               <div class="faq__item faq__item--purple">
-                <g-image src="../assets/images/icon-faq-selecao.svg" width="100" />
+                <g-image src="../assets/images/icon-faq-selecao.svg" width="75" />
                 <h3>Seleção</h3>
                 <p>Tire suas dúvidas sobre o processo de seleção.</p>              
               </div>
@@ -150,7 +146,7 @@
           <div class="col-lg-4 col-md-6">
             <g-link to="/duvidas/#faq3">
               <div class="faq__item faq__item--green">
-                <g-image src="../assets/images/icon-faq-resultados.svg" width="100" />
+                <g-image class="mt-4" src="../assets/images/icon-faq-resultados.svg" width="75" />
                 <h3>Resultados</h3>
                 <p>Saiba como comunicaremos com transparência todos os resultados.</p>              
               </div>
@@ -159,7 +155,7 @@
           <div class="col-lg-4 col-md-6">
             <g-link to="/duvidas/#faq4">
               <div class="faq__item faq__item--blue">
-                <g-image src="../assets/images/icon-faq-contato.svg" width="100" />
+                <g-image src="../assets/images/icon-faq-contato.svg" width="75" />
                 <h3>Contato</h3>
                 <p>Não encontrou sua resposta no portal? Nós te ajudamos!</p>              
               </div>
@@ -168,7 +164,7 @@
           <div class="col-lg-4 col-md-6">
             <g-link to="/duvidas/#faq5">
               <div class="faq__item faq__item--purple">
-                <g-image src="../assets/images/icon-faq-concessionarias.svg" width="100" />
+                <g-image class="mt-4" src="../assets/images/icon-faq-concessionarias.svg" width="75" />
                 <h3>Concessionárias</h3>
                 <p>Compreenda mais sobre a participação das concessionárias.</p>              
               </div>
@@ -181,18 +177,16 @@
         <div class="row">
           <div class="col supporters title">
             <h1 class="supporters__title">Nossos Apoiadores</h1>
-            <p class="supporters__text">Texts cache. It's a possible the rationale might thing copy over a with it to on harmonics. Impenetrable slowly a the how avoided lay morals, usual.</p>
+            <p class="supporters__text">Temos grandes parceiros. Empresas que são expert em suas áreas de atuação e trazem para o Energy Future todo o seu conhecimento.</p>
             <div class="supporters__logos">
               <g-image class="supporters__items" src="~/assets/images/img-logo-apoio-cesar.png" width="100" />
               <g-image class="supporters__items" src="~/assets/images/img-logo-apoio-abacomm.svg" width="100" />
             </div>
           </div>
         </div>
-      </section>      
+      </section>
 
-    </div>
-
-  </Layout>
+  </Landing>
 </template>
 
 <static-query>
@@ -244,16 +238,28 @@ export default {
 <style lang="scss">
 
 .hero {
+
+  * {
+    color: #fff;
+  }
+
   &__image {
     width: 100%;
+    position: relative;
+    margin-top: 1.5rem;
     @media(min-width: 992px) {
+      z-index: -999;
+      opacity: .3;
+      transform: translate(-10%, -10%);
       width: auto;
+      margin-top: 0;
     }
   }
 
   &__button {
     @include colored-button($accent-color-1);
     margin-bottom: 1.5rem;
+    width: 18rem;
     @media(min-width: 992px) {
       margin-bottom: 0;
     }    
@@ -326,9 +332,10 @@ export default {
 
 .supporters {
   
-  margin-top: 3rem;
+  margin: 3rem 0 10rem 0;
   
   &__logos {
+    margin-top: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -504,7 +511,7 @@ export default {
 
   &__item {
     margin: 1.5rem 0;
-    width: 100%;
+    width: 95%;
     height: 14rem;
     padding: 3rem;
     text-align: center;
@@ -557,6 +564,10 @@ export default {
       }
     }
     
+    // img {
+    //   width: 50px;
+    // }
+
     h3 {
       font-weight: 700;
       margin-bottom: 1rem;

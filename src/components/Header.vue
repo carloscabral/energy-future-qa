@@ -1,8 +1,12 @@
 <template>
-    <header class="header">
-        <g-link to="/"><img src="@/assets/images/img-logo.svg"></g-link>
+    <header class="header light-mode">
+
+        <g-link v-if="!darkMode" to="/"><img src="@/assets/images/img-logo-ef.svg"></g-link>
+        <g-link v-if="darkMode" to="/"><img src="@/assets/images/img-logo-ef-light.svg"></g-link>
+
+        <div v-if="!darkMode" class="line-break"></div>
         
-        <nav class="desktop-navigation__nav">
+        <nav class="desktop-navigation__nav" :class="{ 'dark-mode' : darkMode }">
             <g-link class="desktop-navigation__nav__link" to="/inscricao/">Inscrição</g-link>
             <g-link class="desktop-navigation__nav__link" to="/quem-somos/">Quem Somos</g-link>
             <g-link class="desktop-navigation__nav__link" to="/noticias/">Notícias</g-link>
@@ -30,6 +34,14 @@
     </header>    
 </template>
 
+<script>
+export default {
+  props: {
+      darkMode: { type: Boolean, required: false }
+  }
+}
+</script>
+
 <style lang="scss">
 
 // General header style
@@ -41,15 +53,25 @@
     padding: 1.5rem 0 1.5rem 0;
     transition: padding 0.2s ease;
 
-  &::after {
-    content: "";
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 1px;
+    //   background-color: $light-grey;
+    //   left: 0;
+    //   bottom: 0;
+    // }
+
+}
+
+.line-break {
     position: absolute;
     width: 100%;
     height: 1px;
     background-color: $light-grey;
-    left: 0;
     bottom: 0;
-  }
+    left: 0;
 }
 
 // Mobile version
@@ -212,5 +234,12 @@
     margin-right: 0;
   }
 }
+
+.dark-mode {
+  a {
+    color: #fff;
+  }
+}
+
 </style>
 

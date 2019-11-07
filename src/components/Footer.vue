@@ -73,7 +73,7 @@
 }
 
 .footer {
-  
+
     margin-top: 5rem;
     position: relative;
     padding: 1.5rem 0;
