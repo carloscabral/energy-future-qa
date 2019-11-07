@@ -2,17 +2,17 @@
   <Landing>
 
       <div class="row hero align-items-start title">
-        <div class="col-lg-6">
-          <h1 class="hero__title">Maior chamada de projetos do setor elétrico brasileiro</h1>
-          <p class="hero__text">O Energy Future, hub virtual de inovação do setor elétrico, conecta projetos a grandes concessionárias do país. Procuramos soluções inovadoras que ajudem a melhorar a geração, transmissão e distribuição da energia elétrica no Brasil.</p>
-          <button class="hero__button mt-3">Inscrições: 25 de novembro</button>
+        <div class="col-lg-7 col-xl-6">
+          <h1 class="hero__title" data-aos-once="true" data-aos="fade-right" data-aos-duration="500" data-aos-delay="100">Maior chamada de projetos do setor elétrico brasileiro</h1>
+          <p class="hero__text" data-aos-once="true" data-aos="fade-left" data-aos-duration="500" data-aos-delay="100">O Energy Future, hub virtual de inovação do setor elétrico, conecta projetos a grandes concessionárias do país. Procuramos soluções inovadoras que ajudem a melhorar a geração, transmissão e distribuição da energia elétrica no Brasil.</p>
+          <button class="hero__button mt-3" data-aos-once="true" data-aos="fade-right" data-aos-duration="500" data-aos-delay="100">Inscrições: 25 de novembro</button>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-5 col-xl-6">
           <g-image class="hero__image" src="~/assets/images/img-top-lp.png" width="900" />
         </div>
       </div>
 
-      <Map style="margin-top: 20rem;" />
+      <Map />
 
       <!-- <section id="rules">
         <div class="rules">
@@ -26,12 +26,15 @@
 
       <section id="steps">
         <div class="row">
-          <div class="col-md-8 steps title">
+          <div class="col-md-8 steps title" data-aos-once="true" data-aos="fade-left" data-aos-duration="500" data-aos-delay="75">
             <h1 class="steps__title">Conheça as etapas de seleção</h1>
             <p class="steps__text">O funil de seleção do Energy Future foi criado com o objetivo de gerar aos participantes melhorias e aprendizados constantes, assim como filtrar e qualificar os projetos que serão avaliados pelas concessionárias parceiras.</p>
           </div>
         </div>
-        <div class="row steps__line">
+        <div class="row steps__line" data-aos-once="true" data-aos="fade-right" data-aos-duration="500" data-aos-delay="75">
+          
+          <div class="steps__new-line" data-aos-once="true" data-aos="scale-down" data-aos-delay="50" data-aos-offset="100" />
+
           <div class="col-lg-6 steps-list odd">
             <h1 class="steps-list__number">01</h1>
             <h2 class="steps-list__title">Inscrição de Projetos</h2>
@@ -65,7 +68,7 @@
         </div>
         <div class="row">
           <div class="col-md-6 offset-md-3">
-            <button class="steps__button">Assine nossa newsletter!</button>
+            <button class="steps__button" data-aos-once="true" data-aos="fade-in" data-aos-duration="500" data-aos-delay="75">Assine nossa newsletter!</button>
           </div>
         </div>
       </section>
@@ -74,7 +77,7 @@
         <div class="d-none d-sm-block">
           <div class="row align-items-center news__container">
             <div class="col-md-8">
-              <h1 class="news__title">Notícias recentes</h1>
+              <h1 class="news__title" data-aos-once="true" data-aos="fade-left" data-aos-duration="500" data-aos-delay="75">Notícias recentes</h1>
             </div>
             <div class="col-md-4 d-flex mt-2">
               <g-link to="/noticias/">Leia todas&nbsp;&nbsp;<g-image src="~/assets/images/ic-long-arrow.svg" width="20" /></g-link>
@@ -82,15 +85,15 @@
           </div>
           <div class="row">
             <div class="col-md-7">
-              <p class="news__text">Mantenha-se informado sobre o setor elétrico. Acesse nossa página de notícias com curadoria especial do Energy Future e das Concessionárias de energia.</p>
+              <p class="news__text" data-aos-once="true" data-aos="fade-right" data-aos-duration="500" data-aos-delay="75">Mantenha-se informado sobre o setor elétrico. Acesse nossa página de notícias com curadoria especial do Energy Future e das Concessionárias de energia.</p>
             </div>
           </div>
           <div class="news-carousel">
             <div class="news-carousel__image">
-              <g-image :src="myData[activeNewsId].node.featured_image" width="900" fit="cover" />
+              <g-image :src="myData[activeNewsId].node.featured_image" width="900" fit="cover" data-aos-once="true" data-aos="fade-left" data-aos-duration="500" data-aos-delay="75" />
             </div>
             <div class="news-carousel__slide">
-              <div class="news-carousel-box">
+              <div class="news-carousel-box" data-aos-once="true" data-aos="fade-right" data-aos-duration="500" data-aos-delay="75">
                 <small class="news-carousel-box__category">Notícias</small>
                 <h2 class="news-carousel-box__title"><g-link :to="myData[activeNewsId].node.path">{{ myData[activeNewsId].node.title }}</g-link></h2>
                 <small class="news-carousel-box__credits">Por <g-link :to="myData[activeNewsId].node.author.path">{{ myData[activeNewsId].node.author.id }}</g-link> em {{ myData[activeNewsId].node.date }}</small>
@@ -113,7 +116,7 @@
       <section id="faq">
         <div class="row align-items-center faq__container">
           <div class="col-md-8">
-            <h1 class="faq__title">Ainda com dúvidas?</h1>
+            <h1 class="faq__title" data-aos-once="true" data-aos="fade-left" data-aos-duration="500" data-aos-delay="75">Ainda com dúvidas?</h1>
           </div>
           <div class="col-md-4 d-flex mt-2">
             <g-link to="/duvidas/">Acesso o FAQ&nbsp;&nbsp;<g-image src="~/assets/images/ic-long-arrow.svg" width="20" /></g-link>
@@ -121,10 +124,10 @@
         </div>
         <div class="row">
           <div class="col-md-7">
-            <p class="faq__text">Não queremos que você tenha dúvida em como participar do maior evento de Open Innovation do Brasil. Conheça todas as informações que podem te ajudar a inscrever seu projeto.</p>
+            <p class="faq__text" data-aos-once="true" data-aos="fade-right" data-aos-duration="500" data-aos-delay="75">Não queremos que você tenha dúvida em como participar do maior evento de Open Innovation do Brasil. Conheça todas as informações que podem te ajudar a inscrever seu projeto.</p>
           </div>
         </div>
-        <div class="row faq__list">
+        <div class="row faq__list" data-aos-once="true" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
           <div class="col-lg-4 col-md-6">
             <g-link to="/duvidas/#faq1">
               <div class="faq__item faq__item--blue">
@@ -146,7 +149,7 @@
           <div class="col-lg-4 col-md-6">
             <g-link to="/duvidas/#faq3">
               <div class="faq__item faq__item--green">
-                <g-image class="mt-4" src="../assets/images/icon-faq-resultados.svg" width="75" />
+                <g-image src="../assets/images/icon-faq-resultados.svg" width="75" />
                 <h3>Resultados</h3>
                 <p>Saiba como comunicaremos com transparência todos os resultados.</p>              
               </div>
@@ -164,7 +167,7 @@
           <div class="col-lg-4 col-md-6">
             <g-link to="/duvidas/#faq5">
               <div class="faq__item faq__item--purple">
-                <g-image class="mt-4" src="../assets/images/icon-faq-concessionarias.svg" width="75" />
+                <g-image src="../assets/images/icon-faq-concessionarias.svg" width="75" />
                 <h3>Concessionárias</h3>
                 <p>Compreenda mais sobre a participação das concessionárias.</p>              
               </div>
@@ -176,9 +179,9 @@
       <section id="supporters">
         <div class="row">
           <div class="col supporters title">
-            <h1 class="supporters__title">Nossos Apoiadores</h1>
-            <p class="supporters__text">Temos grandes parceiros. Empresas que são expert em suas áreas de atuação e trazem para o Energy Future todo o seu conhecimento.</p>
-            <div class="supporters__logos">
+            <h1 class="supporters__title" data-aos-once="true" data-aos="fade-left" data-aos-duration="500" data-aos-delay="75">Nossos Apoiadores</h1>
+            <p class="supporters__text" data-aos-once="true" data-aos="fade-right" data-aos-duration="500" data-aos-delay="75">Temos grandes parceiros. Empresas que são expert em suas áreas de atuação e trazem para o Energy Future todo o seu conhecimento.</p>
+            <div class="supporters__logos" data-aos-once="true" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
               <g-image class="supporters__items" src="~/assets/images/img-logo-apoio-cesar.png" width="100" />
               <g-image class="supporters__items" src="~/assets/images/img-logo-apoio-abacomm.svg" width="100" />
             </div>
@@ -247,6 +250,8 @@ export default {
     width: 100%;
     position: relative;
     margin-top: 1.5rem;
+    box-shadow: 0 2rem 4rem rgba($primary-color, .3);
+
     @media(min-width: 992px) {
       z-index: -999;
       opacity: .3;
@@ -288,8 +293,8 @@ export default {
         position: absolute;
         width: 3rem;
         height: .22rem;
-        background-color: $primary-color;
         top: -2.7rem;
+        background-color: $primary-color;
 
         @media(min-width: 576px) {
           left: 50%;
@@ -396,7 +401,7 @@ export default {
 
   &__text {
     max-width: 27rem;
-    margin: 0 auto;
+    // margin: 0 auto;
     @media(min-width: 992px) {
       max-width: 100%;
     }    
@@ -404,13 +409,33 @@ export default {
 }
 
 .steps__line {
-  margin-top: 5rem;
+  margin-top: 3rem;
+  @media(min-width: 992px) {
+    margin-top: 5rem;
+  }
   position: relative;
   //animation: hue 1.5s linear 1s infinite;
 
+  // @media(min-width: 992px) {
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //     height: 106%;
+  //     width: 4px;
+  //     top: 1rem;
+  //     left: 50.45%;
+  //     z-index: -999;
+  //     transform: translateX(-50%);
+  //     //background: linear-gradient(to bottom, $accent-color-1, $accent-color-2);
+  //     background: linear-gradient(to bottom, $accent-color-1, $accent-color-2, $secondary-color);
+  //     animation: hue 3s linear 1s infinite;
+  //   }
+  // }
+}
+
+.steps__new-line {
+
   @media(min-width: 992px) {
-    &::after {
-      content: "";
       position: absolute;
       height: 106%;
       width: 4px;
@@ -418,11 +443,11 @@ export default {
       left: 50.45%;
       z-index: -999;
       transform: translateX(-50%);
-      //background: linear-gradient(to bottom, $accent-color-1, $accent-color-2);
-      background: linear-gradient(to bottom, $accent-color-1, $accent-color-2, $secondary-color);
-      animation: hue 3s linear 1s infinite;
-    }
-  }
+      transform-origin: top;
+      transition: all 1s cubic-bezier(0.4, 0.25, 0, 1) !important;
+      background: linear-gradient(to bottom, $accent-color-1, $accent-color-2);
+     
+  }  
 }
 
 @keyframes hue {
@@ -432,7 +457,7 @@ export default {
 }
 
 .odd {
-  text-align: center;
+  text-align: left;
   position: relative;
 
   @media(min-width: 992px) {
@@ -449,7 +474,7 @@ export default {
       border-radius: 50%;
       border: 3px solid #fff;
       background: linear-gradient(to bottom, $accent-color-1, $accent-color-2);
-      animation: hue 3s linear 1s infinite;
+      // animation: hue 3s linear 1s infinite;
       // background: linear-gradient(to bottom, $accent-color-1, $accent-color-2);
     }
   }
@@ -462,7 +487,7 @@ export default {
 }
 
 .even {
-  text-align: center;
+  text-align: left;
   position: relative;
 
   @media(min-width: 992px) {
@@ -510,22 +535,22 @@ export default {
   }
 
   &__item {
-    margin: 1.5rem 0;
+    margin: 1.5rem 0 .5rem;
     width: 95%;
-    height: 14rem;
-    padding: 3rem;
+    height: 12.5rem;
+    padding: 1.5rem;
     text-align: center;
     background-color: #fff;
-    border: 1px solid rgba($primary-color, .12);
+    box-shadow: 0 2rem 2rem rgba($primary-color, 0.12);
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     transition: all .2s ease;
 
     &:hover {
-      box-shadow: 0 3rem 6rem rgba($primary-color, 0.12);
+      box-shadow: 0 3rem 5rem rgba($primary-color, 0.3);
       border-style: none;
     }
 
@@ -563,15 +588,21 @@ export default {
         background-color: $secondary-color;
       }
     }
-    
-    // img {
-    //   width: 50px;
-    // }
 
     h3 {
       font-weight: 700;
-      margin-bottom: 1rem;
+      margin: 1rem 0 .25rem;
       color: $primary-color;
+      @media (min-width: 768px) {
+        font-size: .88rem;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+      @media(min-width: 768px) {
+        font-size: .88rem;
+      }
     }
   }
 }

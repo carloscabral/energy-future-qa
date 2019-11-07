@@ -11,20 +11,22 @@
               <slot />
             </main>
           </transition>
-        <LandingFooter />
+        <Footer :isCustom="true" />
       </div>
     </div>
 
+    <div class="middle-svg-1"></div>
+    <div class="middle-svg-2"></div>
     <div class="bottom-svg"></div>
   </div>    
 </template>
 
 <script>
 import Header from "~/components/Header.vue";
-import LandingFooter from "~/components/LandingFooter.vue";
+import Footer from "~/components/Footer.vue";
 
 export default {
-    components: { Header, LandingFooter }
+    components: { Header, Footer }
 }
 </script>
 
@@ -32,44 +34,102 @@ export default {
 <style lang="scss">
 
 .top-bottom {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 
-    background: linear-gradient(
-        310deg,
-        rgba(0, 95, 197, 0) 0%,
-        rgba(17, 84, 192, 0) 17%,
-        rgba(52, 63, 184, 0) 29%,
-        rgba(0, 113, 206, 0.08) 53%,
-        rgba(82, 45, 178, 0.03) 84%,
-        rgba(82, 45, 178, 0) 100%
-    );
+  background: linear-gradient(
+      310deg,
+      rgba(0, 95, 197, 0) 0%,
+      rgba(17, 84, 192, 0) 17%,
+      rgba(52, 63, 184, 0) 29%,
+      rgba(0, 113, 206, 0.08) 53%,
+      rgba(82, 45, 178, 0.03) 84%,
+      rgba(82, 45, 178, 0) 100%
+  );
 }
 
 .bottom-svg {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50rem;
+  clip-path: polygon(0 46%, 100% 0, 100% 100%, 0% 100%);
+  background-color: #F2F5FA;
+  z-index: -999;
+
+  @media(min-width: 992px) {
     height: 100%;
     background: url("../assets/images/img-footer-bg.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
-    z-index: -999;
+  }
 }
 
-.hero-svg {
+.middle-svg-1 {
+
+  @media(min-width: 992px) {
     position: absolute;
-    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 27%;
+    height: 100%;
+    background: url("../assets/images/img-graphism-lp.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    opacity: .7;
+    z-index: -999;   
+  }
+}
+
+.middle-svg-2 {
+
+  @media(min-width: 992px) {
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("../assets/images/img-hero-bg.svg");
+    background: url("../assets/images/img-graphism-bg.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: top;
-    z-index: -999;
+    background-position-y: 75%;
+    opacity: .9;
+    z-index: -999;   
+  }
+}
+
+.hero-svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 330%;
+  height: 100%;
+  background: url("../assets/images/img-hero-bg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: -999; 
+
+  @media(min-width: 480px) {
+    width: 240%;
+  }
+
+  @media(min-width: 768px) {
+    width: 200%;
+  }
+
+  @media(min-width: 992px) {
+    width: 130%;
+  }
+
+  @media(min-width: 1200px) {
+    width: 100%;
+  }
+
 }
 
 </style>

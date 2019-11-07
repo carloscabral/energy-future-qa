@@ -33,7 +33,7 @@
           <div class="col-lg-6">
             <h4 class="option__label">Clique aqui para acessar o regulamento do Aneel:</h4>
             <div class="options-section__btn-container">
-                <button class="options-section__button two">Regulamento Aneel</button>
+                <button class="options-section__button two" @click="commingSoon">Regulamento Aneel</button>
                 <font-awesome class="options-section__icon" :icon="['fas', 'arrow-right']"/>
             </div>  
           </div>
@@ -72,6 +72,11 @@ export default {
       { name: "description", content: "Entenda as regras, preencha o formulário e aplique o seu projeto para concorrer ao prêmio Energy Future!" },
       { name: "keywords", content: "Startups, Inovação, Setor elétrico, Concessionárias de energia" },
     ]
+  },
+  methods: {
+    commingSoon () {
+      alert("Em breve o regulamento estará disponível.")
+    }
   },
   components: { SocialShare, Form }
 }

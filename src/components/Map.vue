@@ -1,7 +1,7 @@
 <template>
     <section id="dealership">
-        <div class="row align-items-start">
-            <div class="col-lg-6 dealership-map">
+        <div class="row align-items-start dealership-container">
+            <div class="col-lg-6 dealership-map" data-aos-once="true" data-aos="fade-right" data-aos-duration="500" data-aos-delay="100">
                 <ul class="dealership-map__companies">
                     <li class="dealership-map__list">
                         <a href="#" class="dealership-map__link" @mouseover="activeLogo = 'aes'" @mouseleave="activeLogo = ''">
@@ -352,7 +352,7 @@
 
             </div>
 
-            <div class="col-lg-6 dealership-resume">
+            <div class="col-lg-6 dealership-resume" data-aos-once="true" data-aos="fade-left" data-aos-duration="500" data-aos-delay="100">
                 <h1 class="dealership-resume__title">Conectando soluções inovadoras a oportunidades</h1>
                 <p class="dealership-resume__text">A energia movimenta 210 milhões de brasileiros. Todos os dias, empresas têm o desafio de gerar, transmitir e distribuir energia elétrica para todos. Os novos tempos exigem crescimento e evolução, mas de forma sustentável.
                     Por isso, o setor elétrico destina mais de 500 milhões de reais em projetos de Pesquisa e Desenvolvimento todos os anos. Investimento para que projetos empreendedores tornem o caminho da energia mais seguro e eficiente e, ao mesmo tempo, minimizem impactos.
@@ -399,7 +399,24 @@ export default {
 <style lang="scss">
 
 #dealership {
-  margin-top: 9rem;
+  //margin-top: 6rem;
+}
+
+.dealership-container {
+    margin-top: 3rem;
+
+    @media(min-width: 576px) {
+        margin-top: 10rem;
+    }
+    @media(min-width: 768px) {
+        margin-top: 8.5rem;
+    }
+    @media(min-width: 992px) {
+        margin-top: 15rem;
+    }
+    @media(min-width: 1400px) {
+        margin-top: 20rem;
+    }            
 }
 
 .dealership-map {

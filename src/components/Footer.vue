@@ -1,54 +1,180 @@
 <template>
-    <footer class="footer">
-        <div class="row justify-content-between align-items-center">
-        <div class="col-md-9">
-            <nav class="footer-nav">
-            <g-link class="footer-nav__link" to="/inscricao/">Inscrição</g-link>
-            <g-link class="footer-nav__link" to="/quem-somos/">Quem&nbsp;Somos</g-link>
-            <g-link class="footer-nav__link" to="/noticias/">Notícias</g-link>
-            <g-link class="footer-nav__link" to="/duvidas/">Dúvidas</g-link>
-            </nav>                  
-        </div>
-        <div class="col-md-3 mt-3 mt-md-0">
-            <div class="footer-social d-flex justify-content-md-end">
-                <a href="https://www.instagram.com/energyfuturebr/" class="footer-social__link" target="_blank" alt="Instagram">
-                    <font-awesome :icon="['fab', 'instagram']"/>
-                </a>                    
-                <a href="https://www.linkedin.com/company/energy-future-br/" class="footer-social__link" target="_blank" alt="Linkedin">
-                    <font-awesome :icon="['fab', 'linkedin']"/>
-                </a>
-                <a href="https://www.facebook.com/energyfuturebr/" class="footer-social__link" target="_blank" alt="Facebook">
-                    <font-awesome :icon="['fab', 'facebook']"/>
-                </a>
-            </div>
-        </div>
-        </div>
-        <div class="row justify-content-between mt-4">
-            <div class="col-xl-6 col-lg-8 mt-3">
-                <div class="footer-newsletter">
-                    <label class="footer-newsletter__label" for="newsletter">Receba nossa newsletter:</label>
-                    <div class="footer-newsletter__input-container">
-                        <input class="d-flex justify-content-md-end" type="email" placeholder="Seu e-mail" id="newsletter" name="newsletter">
+    <div>
+        <footer v-if="isCustom" class="landing-footer">
+            <div class="row cta" data-aos-once="true" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                <div class="col-md-12" >
+                    <div class="cta__item cta__item--blue">
+                        <h3>Não perca esta oportunidade!</h3>
+                        <p>Seu projeto pode ser selecionado para ajudar a melhorar o fornecimento de energia de <strong>milhões</strong> de brasileiros.</p>
+                        <g-link to="/inscricao/"><button>Inscrições: 25 de novembro</button></g-link>
+                    </div>
+                </div>
+            </div> 
+            <div class="row mt-5 align-items-end">
+                <div class="col-xl-3 col-lg-4 col-sm-6" data-aos-once="true" data-aos="fade-up" data-aos-duration="500" data-aos-delay="75">
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">Menu</li>
+                        <li class="footer-menu__item"><g-link to="/inscricao/">Inscrição</g-link></li>
+                        <li class="footer-menu__item"><g-link to="/quem-somos/">Quem Somos</g-link></li>
+                        <li class="footer-menu__item"><g-link to="/noticias/">Notícias</g-link></li>
+                        <li class="footer-menu__item"><g-link to="/duvidas/">Dúvidas</g-link></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6" data-aos-once="true" data-aos="fade-down" data-aos-duration="500" data-aos-delay="75">
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">Outros</li>
+                        <li class="footer-menu__item" @click="commingSoon"><g-link to="/">Regulamento Aneel</g-link></li>
+                        <li class="footer-menu__item" @click="commingSoon"><g-link to="/">Critérios de Seleção</g-link></li>                    
+                        <li class="footer-menu__item" @click="commingSoon"><g-link to="/">Política de Privacidade</g-link></li>
+                        <li class="footer-menu__item" @click="commingSoon"><g-link to="/">Termos & Condições</g-link></li>
+                    </ul>                
+                </div>
+                <div class="col-xl-4 offset-xl-2 col-lg-4 col-md-6" data-aos-once="true" data-aos="fade-left" data-aos-duration="500" data-aos-delay="75">
+                    <div class="footer-box mx-auto mx-sm-0">
+                        <p class="footer-box__title">Energy Future é uma realização:</p>
+                        <g-image class="footer-box__logo" src="../assets/images/img-logo-makeab-light.svg" width="230" />
+                        <p class="footer-box__contact">Entre em contato:<span>contato@makeab.com</span></p>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-6 col-lg-4 mt-3 center">
-                <!-- <div class="footer-subscribe">
-                    <label class="footer-subscribe__label d-md-block d-lg-none d-xl-block">Aproveite a oportunidade:</label>
-                    <g-link to="/inscricao/" style="width: 100%;"><button class="footer-subscribe__button">Inscreva seu projeto!</button></g-link>
-                </div> -->
+
+            <div class="row justify-content-between social align-items-end" data-aos-once="true" data-aos="fade-in" data-aos-duration="500" data-aos-delay="75">
+                <div class="col-md-6">
+                    <p class="text-center text-sm-left">Siga-nos:</p>
+                    <div class="social-list text-center text-sm-left mb-5 mb-md-0">
+                        <a href="https://www.instagram.com/energyfuturebr/" class="social-list__link" target="_blank" alt="Instagram">
+                            <font-awesome :icon="['fab', 'instagram']"/>
+                        </a>                    
+                        <a href="https://www.linkedin.com/company/energy-future-br/" class="social-list__link" target="_blank" alt="Linkedin">
+                            <font-awesome :icon="['fab', 'linkedin']"/>
+                        </a>
+                        <a href="https://www.facebook.com/energyfuturebr/" class="social-list__link" target="_blank" alt="Facebook">
+                            <font-awesome :icon="['fab', 'facebook']"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 social-newsletter">
+                    <p><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba a nossa <g-link to="/inscricao/">newsletter.</g-link></p>
+                </div>
             </div>
-        </div>
-        <div class="footer-contact">
-            <div class="footer-contact__address"><small>Rua São José, 40 - 4º andar<br>Centro - Rio de Janeiro, RJ.</small></div>
-            <div class="footer-contact__email"><small>contato@energyfuture.com.br</small></div>
-            <a href="http://makeab.com/" target="_blank" alt="Site MakeAB"><g-image class="footer-contact__image" src="~/assets/images/img-logo-makeab.svg" width="150" alt="Logo MakeAB" /></a>
-        </div>              
-    </footer>
+
+            <div class="row footer-copyright align-items-end" data-aos-once="true" data-aos="fade-in" data-aos-duration="500" data-aos-delay="75">
+                <div class="col-md-4 footer-copyright__logo">
+                    <g-image class="d-none d-sm-none d-md-none d-lg-block" src="../assets/images/img-logo-ef-light.svg" />
+                    <g-image class="d-none d-sm-none d-md-block d-lg-none" src="../assets/images/img-logo-ef.svg" />
+                </div>
+                <small class="col-md-8 footer-copyright__text">
+                    Rua São José, 40 - 4º andar, Centro - Rio de Janeiro, RJ.<br>
+                    <span class="d-none d-sm-block">Para assessoria de imprensa: imprensa@energyfuture.com.br<br></span>
+                    © Copyright 2019. Energy Future. Todos os direitos reservados.<br>
+                </small>
+            </div>
+
+        </footer>
+
+        <footer v-else class="footer">
+            <div class="row justify-content-between align-items-center">
+            <div class="col-md-9">
+                <nav class="footer-nav">
+                <g-link class="footer-nav__link" to="/inscricao/">Inscrição</g-link>
+                <g-link class="footer-nav__link" to="/quem-somos/">Quem&nbsp;Somos</g-link>
+                <g-link class="footer-nav__link" to="/noticias/">Notícias</g-link>
+                <g-link class="footer-nav__link" to="/duvidas/">Dúvidas</g-link>
+                </nav>                  
+            </div>
+            <div class="col-md-3 mt-3 mt-md-0">
+                <div class="footer-social d-flex justify-content-md-end">
+                    <a href="https://www.instagram.com/energyfuturebr/" class="footer-social__link" target="_blank" alt="Instagram">
+                        <font-awesome :icon="['fab', 'instagram']"/>
+                    </a>                    
+                    <a href="https://www.linkedin.com/company/energy-future-br/" class="footer-social__link" target="_blank" alt="Linkedin">
+                        <font-awesome :icon="['fab', 'linkedin']"/>
+                    </a>
+                    <a href="https://www.facebook.com/energyfuturebr/" class="footer-social__link" target="_blank" alt="Facebook">
+                        <font-awesome :icon="['fab', 'facebook']"/>
+                    </a>
+                </div>
+            </div>
+
+            </div>
+            <div class="row mt-4 align-items-center">
+                <!-- <div class="col-md-8">
+                    <h4>Inscreva-se e faça parte dessa linda comunidade de gente bonita, formosa e empreeendedora! Esperamos você por aqui. Beijooooooo!</h4>
+                </div> -->
+                <div class="col-12 typeform">
+                    <h4 class="text-center text-md-left mt-3 mb-2"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Inscreva-se em nossa newsletter:</h4>
+                    <div id="my-embedded-typeform" style="width: 100%; height: 300px;" />
+                </div>
+            </div>
+            <!-- <div class="row justify-content-between mt-4">
+                <div class="col-xl-6 col-lg-8 mt-3">
+                    <div class="footer-newsletter">
+                        <label class="footer-newsletter__label" for="newsletter">Receba nossa newsletter:</label>
+                        <div class="footer-newsletter__input-container">
+                            <input class="d-flex justify-content-md-end" type="email" placeholder="Seu e-mail" id="newsletter" name="newsletter">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-4 mt-3 center">
+                    <div class="footer-subscribe">
+                        <label class="footer-subscribe__label d-md-block d-lg-none d-xl-block">Aproveite a oportunidade:</label>
+                        <g-link to="/inscricao/" style="width: 100%;"><button class="footer-subscribe__button">Inscreva seu projeto!</button></g-link>
+                    </div>
+                </div>
+            </div> -->
+            <div class="footer-contact">
+                <div class="footer-contact__address"><small>Rua São José, 40 - 4º andar<br>Centro - Rio de Janeiro, RJ.</small></div>
+                <div class="footer-contact__email"><small>contato@energyfuture.com.br<br>imprensa@energyfuture.com.br</small></div>
+                <a href="http://makeab.com/" target="_blank" alt="Site MakeAB"><g-image class="footer-contact__image" src="~/assets/images/img-logo-makeab.svg" width="150" alt="Logo MakeAB" /></a>
+            </div>              
+        </footer>
+    </div>
 </template>
+
+<script>
+export default {
+  props: {
+      isCustom: { type: Boolean, required: false }
+  },
+  methods: {
+    commingSoon () {
+      alert("Em breve estará disponível!")
+    }
+  },
+  mounted (){
+    if (process.isClient) {
+        
+        let el = document.getElementById("my-embedded-typeform")
+
+        if (el) {
+            window.typeformEmbed.makeWidget(el, "https://admin.typeform.com/to/cVa5IG", {
+                hideFooter: true,
+                hideHeaders: true,
+                opacity: 0
+            });
+        }
+    }
+  }
+}
+</script>
+
 
 <style lang="scss">
 
+
+// TYPEFORM ----
+.typeform {
+
+}
+
+#my-embedded-typeform {
+    // border: 1px solid $light-grey;
+    // border-radius: .22rem;    
+    box-shadow: 0 2rem 4rem 2rem rgba($light-grey, .3);
+}
+
+
+// DEFAULT FOOTER
 .footer-nav {
     display: flex;
 
@@ -228,6 +354,287 @@
         @media (min-width: 1200px) {
             //transform: translateX(-98%);
         }        
+    }
+}
+
+
+// LANDING PAGE FOOTER
+.cta {
+
+    h3 {
+        color: $primary-color !important;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 300;
+        color: $text-color !important;
+        margin-bottom: 3rem;
+        @media(min-width: 992px) {
+            font-size: 1.5rem;
+        }        
+
+        strong {
+            color: $primary-color !important;
+            font-size: 1rem;
+            font-weight: 700;
+            @media(min-width: 992px) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    button {
+        @include colored-button($accent-color-1);
+        width: 100%;
+        text-align: center;
+        @media(min-width: 768px) {
+            width: 20rem;
+        }
+
+    }
+
+    &__item {
+
+        margin: 1.5rem 0;
+        width: 95%;
+        padding: 3rem;
+        text-align: center;
+        background-color: #fff;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all .2s ease;
+        box-shadow: 0 80px 80px rgba(#000, .18);
+        border-radius: 3px;
+        overflow: hidden;
+        opacity: .95;
+
+        * {
+            color: $text-color;
+            font-weight: normal;
+        }
+
+        &--blue {
+            &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: .22rem;
+            top: 0;
+            left: 0;
+            background-color: $accent-color-2;
+            }
+        }
+
+        &--green {
+            &::before {
+            @extend .cta__item--blue::before;
+            background-color: $accent-color-1;
+            }
+        }
+
+        &--purple {
+            &::before {
+            @extend .cta__item--blue::before;
+            background-color: $secondary-color;
+            }
+        }
+
+        h3 {
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: $primary-color;
+        }
+    }
+}
+
+.footer-copyright {
+
+    height: 9rem;
+    padding-bottom: 2rem;
+
+    &__logo {
+
+        transform: translateY(-15%);
+    }
+
+    &__text, &__text * {
+
+        text-align: center;
+        font-size: .77rem;
+        line-height: 1.7;
+        color: $text-color;
+
+        @media(min-width: 576px) {
+            margin-bottom: 0;
+            text-align: left;
+        }
+
+        @media(min-width: 768px) {
+            text-align: right;
+        }
+
+        @media(min-width: 992px) {
+            font-weight: 300;
+        }
+    }
+}
+
+.social {
+    margin-top: 3rem;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: rgba($primary-color, .2);
+
+        @media(min-width: 992px) {
+            background-color: rgba(#fff, .2);
+        }
+        bottom: -.5rem;
+        left: 0;
+    }
+
+    p {
+        font-size: .88rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    &__button {
+        @include colored-button($accent-color-1);
+        width: 100%;
+    }
+}
+
+.social-newsletter {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    @media (min-width: 576px) {
+        justify-content: flex-start;
+    }    
+
+    @media (min-width: 768px) {
+        justify-content: flex-end;
+    }
+
+    p {        
+        font-size: .77rem !important;
+        letter-spacing: .7px;
+        margin-bottom: 0;
+
+        @media (min-width: 768px) {
+            margin-left: auto;
+        }        
+    }
+
+    a {
+        font-size: .77rem;
+        color: $accent-color-1 !important;
+
+        &:hover {
+            color: lighten($accent-color-1, 15%) !important;
+        }
+    }
+}
+
+.social-list {
+
+    &__link svg {
+        font-size: 1.5rem;
+        transform: scale(.85);
+        line-height: 1;
+        transition: all .2s ease;
+
+        &:hover {
+            transform: scale(1);
+        }           
+    }
+
+    &__link:not(:last-child) {
+        margin-right: 2rem;     
+    }
+}
+
+@media (min-width: 992px) {
+
+    .landing-footer, .landing-footer * {
+        color: #fff !important;
+    }
+}
+
+
+.footer-box {
+
+    background-color: #212D3D;
+    padding: 1.5rem;
+    box-shadow: 0 25px 80px rgba(0,0,0,.3);
+
+    * {
+        color: #fff;
+    }
+
+    max-width: 18.6rem;
+
+    &__title {
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: .77rem;
+    }
+
+    &__logo {
+
+    }
+
+    &__contact {
+        margin: 3rem 0 0;
+
+        * {
+            display: block;
+        }
+
+        span:last-child() {
+            color: $accent-color-1 !important;
+        }
+    }
+}
+
+.footer-menu {
+
+    &__list {
+        padding-left: 0;
+        margin-bottom: 3rem;
+        text-align: center;
+
+        @media(min-width: 480px) {
+            text-align: left;
+        }
+
+        @media(min-width: 992px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item, &__item * {
+        line-height: 2.5;
+        font-size: .88rem;
+        font-weight: 400;
+    }
+
+    &__item:first-child() {
+        font-weight: 700;
+        text-transform: uppercase;
+
     }
 }
 

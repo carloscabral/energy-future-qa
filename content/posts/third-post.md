@@ -10,7 +10,7 @@ featured_image: "./images/img-materia03-1.png"
 
 As transformações sociais e tecnológicas no Brasil e no mundo impactam diretamente a indústria elétrica. A preocupação ambiental, o protagonismo do consumidor e a convergência digital estão rompendo paradigmas. As novas mudanças trazem desafios, mas, sobretudo, oportunidades de desenvolvimento do setor elétrico.
 
-Substituição das fontes fósseis por renováveis
+## Substituição das fontes fósseis por renováveis
 
 A preocupação ambiental leva à incorporação cada vez maior de fontes renováveis na matriz energética global. Na maior parte do mundo, o modelo de geração, largamente baseado em fontes fósseis, tem se esgotado.  
 

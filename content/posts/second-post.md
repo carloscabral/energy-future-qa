@@ -3,7 +3,7 @@ title: Conheça formas de financiamento para startups
 excerpt: "Financiamento é o combustível de qualquer empresa. Veja algumas formas de tirar o seu projeto do papel."
 date: 2019-11-04
 tags: ['empreendedorismo', 'startup', 'investimentos', 'P&D']
-author: Enel
+author: Energy Future
 isHighlight: true
 featured_image: "./images/img-materia02-1.png"
 ---

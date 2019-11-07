@@ -4,21 +4,38 @@ import VueDisqus from 'vue-disqus'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
 import { faInstagram, faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faArrowRight, faChevronUp, faClock, faInfoCircle, faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faChevronUp, faClock, faInfoCircle, faCheck, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 
 config.autoAddCss = false;
-library.add(faInstagram, faFacebook, faLinkedin, faTwitter, faArrowRight, faChevronUp, faClock, faInfoCircle, faCheck)
+library.add(
+  faInstagram, 
+  faFacebook, 
+  faLinkedin, 
+  faTwitter, 
+  faArrowRight, 
+  faChevronUp, 
+  faClock, 
+  faInfoCircle, 
+  faCheck, 
+  faEnvelope)
 // --- FontAwesome SVG ---
 
 import DefaultLayout from '~/layouts/Default.vue'
 import LandingLayout from '~/layouts/Landing.vue'
-
 import '~/assets/scss/main.scss'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 export default function (Vue, { router, head, isClient }) {
 
   head.htmlAttrs = { lang: "pt-br" }
+  // Set Typeform widget
+  head.script.push({
+    src: 'https://embed.typeform.com/embed.js',
+    body: true
+  })  
   // Set both layouts as a global component
   Vue.component('Layout', DefaultLayout)
   Vue.component('Landing', LandingLayout)
@@ -28,10 +45,5 @@ export default function (Vue, { router, head, isClient }) {
   require('typeface-montserrat')
   // Disqus plugin
   Vue.use(VueDisqus)
+  Vue.use(AOS.init());
 }
-
-
-// <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-// <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-// <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-// <link rel="manifest" href="/site.webmanifest">
