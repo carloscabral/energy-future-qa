@@ -103,7 +103,9 @@
                 </div> -->
                 <div class="col-12 typeform">
                     <h4 class="text-center text-md-left mt-3 mb-2"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Inscreva-se em nossa newsletter:</h4>
-                    <div id="my-embedded-typeform" style="width: 100%; height: 300px;" />
+                    <ClientOnly>
+                        <div id="my-embedded-typeform" style="width: 100%; height: 300px;" />
+                    </ClientOnly>
                 </div>
             </div>
             <!-- <div class="row justify-content-between mt-4">

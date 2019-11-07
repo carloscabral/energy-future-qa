@@ -52,17 +52,6 @@ export default {
     align-items: flex-end;
     padding: 1.5rem 0 1.5rem 0;
     transition: padding 0.2s ease;
-
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   width: 100%;
-    //   height: 1px;
-    //   background-color: $light-grey;
-    //   left: 0;
-    //   bottom: 0;
-    // }
-
 }
 
 .line-break {
