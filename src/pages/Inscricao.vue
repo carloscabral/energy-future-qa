@@ -40,7 +40,7 @@
           <div class="col-lg-6">
             <h4 class="option__label">Dúvidas? Acesse o nosso FAQ:</h4>
             <div class="options-section__btn-container">
-                <button class="options-section__button three">Acesse nosso Faq</button>
+                <g-link to="/duvidas/"><button class="options-section__button three">Acesse nosso Faq</button></g-link>
                 <font-awesome class="options-section__icon" :icon="['fas', 'arrow-right']"/>
             </div>
           </div>

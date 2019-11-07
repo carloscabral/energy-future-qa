@@ -103,9 +103,7 @@
                 </div> -->
                 <div class="col-12 typeform">
                     <h4 class="text-center text-md-left mt-3 mb-2"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Inscreva-se em nossa newsletter:</h4>
-                    <ClientOnly>
-                        <div id="my-embedded-typeform" style="width: 100%; height: 300px;" />
-                    </ClientOnly>
+                    <div id="my-embedded-typeform" ref="typeform" style="width: 100%; height: 300px;" />
                 </div>
             </div>
             <!-- <div class="row justify-content-between mt-4">
@@ -146,7 +144,8 @@ export default {
   mounted (){
     if (process.isClient) {
         
-        let el = document.getElementById("my-embedded-typeform")
+        //let el = document.getElementById("my-embedded-typeform")
+        let el = this.$refs.typeform
 
         if (el) {
             window.typeformEmbed.makeWidget(el, "https://admin.typeform.com/to/cVa5IG", {
