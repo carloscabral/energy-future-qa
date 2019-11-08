@@ -4,7 +4,7 @@
       <div class="row main-title align-items-center">
         <div class="col-md-8"><h1 class="m-0">Panoramas da inovação elétrica</h1></div>
         <div class="col-md-4 d-flex mt-2 justify-content-md-end">
-          <!-- <g-link to="/">Ver todas as notícias&nbsp;&nbsp;<g-image src="~/assets/images/ic-long-arrow.svg" width="20" /></g-link> -->
+          <g-link to="/author/Energy Future">Ver todas as notícias&nbsp;&nbsp;<g-image src="~/assets/images/ic-long-arrow.svg" width="20" /></g-link>
         </div>
       </div>
 
@@ -31,9 +31,9 @@
 
             <div class="col-xl-5 col-lg-4">
               <h3 class="news-title">Mais recentes</h3>
-              
+
               <div class="related-news">
-                <article class="row related-news__container" v-for="edge in $static.allPost.edges" :key="edge.node.id">
+                <article class="row related-news__container" v-for="edge in getLatestPosts" :key="edge.node.id">
                   <div class="col-xl-5" style="overflow: hidden">
                     <g-link :to="edge.node.path"><g-image class="related-news__image d-none d-xl-block" :src="edge.node.featured_image" /></g-link>
                   </div>
@@ -44,7 +44,7 @@
                     </span>
                   </div>              
                 </article>
-              </div>
+              </div>              
 
             </div>
 
@@ -76,13 +76,14 @@
           </div>
         </div>
       </section>
+      <!-- // allPost (perPage: 3) { -->
 
   </Layout>
 </template>
 
 <static-query>
 {
-	allPost (perPage: 3) {
+	allPost {
     edges{
       node {
         title
@@ -121,7 +122,10 @@ export default {
       return this.$static.allPost.edges.filter((e) => {
         return e.node.isHighlight === true
       })
-    }
+    },
+    getLatestPosts() {
+      return this.$static.allPost.edges.slice(0, 3)
+    },     
   },
   components: { SocialShare }
 }

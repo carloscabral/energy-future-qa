@@ -4,7 +4,7 @@ excerpt: "Veja quais são as grandes mudanças tecnológicas que estão impulsio
 date: 2019-11-06
 tags: ['sustentabilidade', 'setor elétrico', 'inovação', 'modernização', 'fontes renováveis', 'tecnologias', 'aneel']
 author: Energy Future
-isHighlight: true
+isHighlight: false
 featured_image: "./images/img-materia04-1.png"
 ---
 

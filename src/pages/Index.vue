@@ -90,10 +90,11 @@
           </div>
           <div class="news-carousel">
             <div class="news-carousel__image">
-              <g-image :src="myData[activeNewsId].node.featured_image" width="900" fit="cover" />
+              <g-image :src="getFirstPosts[activeNewsId].node.featured_image" width="900" fit="cover" />
             </div>
             <div class="news-carousel__slide">
-              <div class="news-carousel-box">
+              
+              <!-- <div class="news-carousel-box">
                 <small class="news-carousel-box__category">Notícias</small>
                 <h2 class="news-carousel-box__title"><g-link :to="myData[activeNewsId].node.path">{{ myData[activeNewsId].node.title }}</g-link></h2>
                 <small class="news-carousel-box__credits">Por <g-link :to="myData[activeNewsId].node.author.path">{{ myData[activeNewsId].node.author.id }}</g-link> em {{ myData[activeNewsId].node.date }}</small>
@@ -107,7 +108,24 @@
                   </div>
                   <div class="news-carousel-box__next-btn" @click="goNext"></div>
                 </div>
-              </div>
+              </div> -->
+
+              <div class="news-carousel-box">
+                <small class="news-carousel-box__category">Notícias</small>
+                <h2 class="news-carousel-box__title"><g-link :to="getFirstPosts[activeNewsId].node.path">{{ getFirstPosts[activeNewsId].node.title }}</g-link></h2>
+                <small class="news-carousel-box__credits">Por <g-link :to="getFirstPosts[activeNewsId].node.author.path">{{ getFirstPosts[activeNewsId].node.author.id }}</g-link> em {{ getFirstPosts[activeNewsId].node.date }}</small>
+                <p class="news-carousel-box__excerpt">{{ getFirstPosts[activeNewsId].node.excerpt }}</p>
+                <div class="news-carousel-box__bottom">
+                  <div class="news-carousel-box__previuos-btn" @click="goPrev"></div>
+                  <div class="news-carousel-box__dots">
+                    <div class="news-carousel-box__dot" :class="{ active: activeNewsId === 0 }"></div>
+                    <div class="news-carousel-box__dot" :class="{ active: activeNewsId === 1 }"></div>
+                    <div class="news-carousel-box__dot" :class="{ active: activeNewsId === 2 }"></div>
+                  </div>
+                  <div class="news-carousel-box__next-btn" @click="goNext"></div>
+                </div>
+              </div>              
+
             </div> 
           </div>
         </div>
@@ -194,7 +212,7 @@
 
 <static-query>
 {
-	allPost (perPage: 3) {
+	allPost (sortBy: "date", order: DESC) {
     edges{
       node {
         title
@@ -224,14 +242,22 @@ export default {
     activeNewsId: 0
   }),
   created() {
-    this.myData = this.$static.allPost.edges
+    //this.myData = this.$static.allPost.edges
+    //this.myData = this.getFirstPosts
   },
+  computed: {
+    getFirstPosts() {
+      return this.$static.allPost.edges.slice(Math.max(this.$static.allPost.edges.length - 3, 0))
+      console.log(this.getFirstPosts)
+    },     
+  },  
   methods: {
     goPrev() {
         (this.activeNewsId <= 0) ? this.activeNewsId = 0 : this.activeNewsId --
     },
     goNext() {
-        (this.activeNewsId >= this.myData.length - 1) ? this.activeNewsId = this.myData.length -1 : this.activeNewsId ++
+        // (this.activeNewsId >= this.myData.length - 1) ? this.activeNewsId = this.myData.length -1 : this.activeNewsId ++
+        (this.activeNewsId >= this.getFirstPosts.length - 1) ? this.activeNewsId = this.getFirstPosts.length -1 : this.activeNewsId ++
     }    
   },
   components: { Map } 

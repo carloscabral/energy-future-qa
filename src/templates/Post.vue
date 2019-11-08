@@ -1,17 +1,23 @@
 <template>
     <Layout>
         <article class="single-post">
-            <h1 class="single-post__title">{{ $page.post.title }}</h1>
-            <small class="single-post__credits">Por: <g-link :to="$page.post.author.path">{{ $page.post.author.id }}</g-link>&nbsp;&nbsp;|&nbsp;&nbsp;<font-awesome class="single-post__icon" :icon="['fas', 'clock']"/>&nbsp;&nbsp;{{ $page.post.date }}</small>
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <h1 class="single-post__title">{{ $page.post.title }}</h1>
+                    <small class="single-post__credits">Por: <g-link :to="$page.post.author.path">{{ $page.post.author.id }}</g-link>&nbsp;&nbsp;|&nbsp;&nbsp;<font-awesome class="single-post__icon" :icon="['fas', 'clock']"/>&nbsp;&nbsp;{{ $page.post.date }}</small>
+                </div>
+            </div>
             <div class="row mt-4">
-                <div class="col-md-8"><g-image class="single-post__image" :src="$page.post.featured_image" /></div>
-                <p class="col-md-4 single-post__excerpt" v-html="$page.post.excerpt"></p>
+                <div class="col-md-10 offset-md-1"><g-image class="single-post__image" :src="$page.post.featured_image" /></div>
+            </div>
+            <div class="row mt-3">
+                <p class="col-md-10 offset-md-1 single-post__excerpt" v-html="$page.post.excerpt"></p>
             </div>
             <div class="row single-post__content">
-                <div class="col-12 mb-5 mb-lg-0 col-lg-1 share">
-                    <SocialShare :hasRotation="true" />
+                <div class="col-md-10 offset-md-1 mb-5 share">
+                    <SocialShare :hasRotation="false" />
                 </div>
-                <div class="col-12 col-lg-9 offset-lg-1">
+                <div class="col-md-10 offset-md-1 col-md-10 offset-md-1">
                     <p align="justify" v-html="$page.post.content"></p>
                     <p class="single-post__tag-title">tags:</p>
                     <div class="single-post__tag-list">
@@ -77,7 +83,7 @@ export default {
     &__title {
         @extend .main-title;
         margin-bottom: 1.5rem;
-        max-width: 42rem;
+        //max-width: 42rem;
     }
 
     &__credits {
@@ -122,9 +128,9 @@ export default {
 
     &__content {
         margin-top: 3rem;
-        @media(min-width: 992px) {
-            margin-top: 6rem;
-        }
+        // @media(min-width: 992px) {
+        //     margin-top: 5rem;
+        // }
 
         img {
             width: 100%;

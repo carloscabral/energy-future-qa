@@ -4,7 +4,7 @@ excerpt: "O ciclo de vida de uma startup e os principais aspectos de cada uma da
 date: 2019-11-07
 tags: ['empreendedorismo', 'startup', 'investimentos', 'escalabilidade', 'inovação']
 author: Energy Future
-isHighlight: true
+isHighlight: false
 featured_image: "./images/img-materia05-1.png"
 ---
 
@@ -29,7 +29,7 @@ Com a ideia da startup bem consolidada, é hora de ir para o mercado, buscar cli
 
 O que fazer nesse momento?
 
-Essa é fase de criação de um protótipo, do desenvolvimento de processos e da formação de uma equipe. Também é importante a busca por financiamentos. Clique aqui para saber formas de financiamento para startups (Tornar clicável para a matéria 02 – Conheça Forma de Financiamento para startups). Programas de aceleração e incubadoras podem ser fundamentais para o seu negócio. E indicadores ajudam no desempenho da empresa. 
+Essa é fase de criação de um protótipo, do desenvolvimento de processos e da formação de uma equipe. Também é importante a busca por financiamentos. [Clique aqui](/noticias/conheca-formas-de-financiamento-para-startups/ "Formas de financiamento para Startups") para saber formas de financiamento para startups. Programas de aceleração e incubadoras podem ser fundamentais para o seu negócio. E indicadores ajudam no desempenho da empresa. 
 
 ## 3 - Tração
 
