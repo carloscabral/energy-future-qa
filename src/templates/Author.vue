@@ -10,7 +10,7 @@
             <h3>Notícias</h3>
         </div>
         <div class="row">
-          <article class="col-lg-4" v-for="edge in $page.author.belongsTo.edges" :key="edge.node.id">
+          <article class="col-lg-4 col-md-6" v-for="edge in $page.author.belongsTo.edges" :key="edge.node.id">
             <div class="tag">
               <g-link :to="edge.node.path"><g-image class="tag__image" :src="edge.node.featured_image" /></g-link>
               <g-link :to="edge.node.path"><p class="tag__title">{{ edge.node.title }}</p></g-link>
