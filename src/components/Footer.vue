@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 social-newsletter">
-                    <p><a href="https://energyfuture.typeform.com/to/w0QlAs" target="_blank"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba nossa newsletter&nbsp;&nbsp;<font-awesome :icon="['fas', 'arrow-right']"/></a></p>
+                    <p><g-link to="/inscricao/#sign-in"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba nossa newsletter&nbsp;&nbsp;<font-awesome :icon="['fas', 'arrow-right']"/></g-link></p>
                 </div>
             </div>
 
@@ -97,7 +97,7 @@
             </div>
 
             </div>
-            <div class="row mt-4 align-items-center">
+            <div class="row mt-4 align-items-center" id="sign-in">
                 <!-- <div class="col-md-8">
                     <h4>Inscreva-se e faça parte dessa linda comunidade de gente bonita, formosa e empreeendedora! Esperamos você por aqui. Beijooooooo!</h4>
                 </div> -->
