@@ -28,6 +28,8 @@ import '~/assets/scss/main.scss'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
+// import * as typeformEmbed from '@typeform/embed'
+
 export default function (Vue, { router, head, isClient }) {
 
   head.htmlAttrs = { lang: "pt-br" }
@@ -45,5 +47,6 @@ export default function (Vue, { router, head, isClient }) {
   require('typeface-montserrat')
   // Disqus plugin
   Vue.use(VueDisqus)
-  Vue.use(AOS.init());
+  Vue.use(AOS.init())
+  // Vue.use(typeformEmbed)
 }

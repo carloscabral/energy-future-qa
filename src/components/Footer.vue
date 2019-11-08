@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 social-newsletter">
-                    <p><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba a nossa <g-link to="/inscricao/">newsletter.</g-link></p>
+                    <p><a href="https://energyfuture.typeform.com/to/w0QlAs" target="_blank"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba nossa newsletter&nbsp;&nbsp;<font-awesome :icon="['fas', 'arrow-right']"/></a></p>
                 </div>
             </div>
 
@@ -102,8 +102,9 @@
                     <h4>Inscreva-se e faça parte dessa linda comunidade de gente bonita, formosa e empreeendedora! Esperamos você por aqui. Beijooooooo!</h4>
                 </div> -->
                 <div class="col-12 typeform">
-                    <h4 class="text-center text-md-left mt-3 mb-2"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Inscreva-se em nossa newsletter:</h4>
-                    <div id="my-embedded-typeform" ref="typeform" style="width: 100%; height: 300px;" />
+                    <!-- <button>Clique aqui</button> -->
+                    <p class="text-center text-md-left mt-3 mb-2"><a href="https://energyfuture.typeform.com/to/w0QlAs" target="_blank"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba nossa newsletter&nbsp;&nbsp;<font-awesome :icon="['fas', 'arrow-right']"/></a></p>
+                    <!-- <div id="my-embedded-typeform" ref="typeform" style="width: 100%; height: 300px;" /> -->
                 </div>
             </div>
             <!-- <div class="row justify-content-between mt-4">
@@ -144,11 +145,12 @@ export default {
   mounted (){
     if (process.isClient) {
         
-        //let el = document.getElementById("my-embedded-typeform")
+        // let el = document.getElementById("my-embedded-typeform")
         let el = this.$refs.typeform
+        console.log(el)
 
         if (el) {
-            window.typeformEmbed.makeWidget(el, "https://admin.typeform.com/to/cVa5IG", {
+            window.typeformEmbed.makeWidget(el, "https://energyfuture.typeform.com/to/w0QlAs", {
                 hideFooter: true,
                 hideHeaders: true,
                 opacity: 0
