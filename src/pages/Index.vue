@@ -1,7 +1,7 @@
 <template>
   <Landing>
 
-      <div class="row hero align-items-start title">
+      <div class="row hero align-items-start main-title">
         <div class="col-lg-7 col-xl-6">
           <h1 class="hero__title">Maior chamada de projetos do setor elétrico brasileiro</h1>
           <p class="hero__text">O Energy Future, hub virtual de inovação do setor elétrico, conecta projetos a grandes concessionárias do país. Procuramos soluções inovadoras que ajudem a melhorar a geração, transmissão e distribuição da energia elétrica no Brasil.</p>
@@ -26,7 +26,7 @@
 
       <section id="steps">
         <div class="row">
-          <div class="col-md-8 steps title">
+          <div class="col-md-8 steps main-title">
             <h1 class="steps__title">Conheça as etapas de seleção</h1>
             <p class="steps__text">O funil de seleção do Energy Future foi criado com o objetivo de gerar aos participantes melhorias e aprendizados constantes, assim como filtrar e qualificar os projetos que serão avaliados pelas concessionárias parceiras.</p>
           </div>
@@ -178,7 +178,7 @@
 
       <section id="supporters">
         <div class="row">
-          <div class="col supporters title">
+          <div class="col supporters main-title">
             <h1 class="supporters__title">Nossos Apoiadores</h1>
             <p class="supporters__text" >Temos grandes parceiros. Empresas que são expert em suas áreas de atuação e trazem para o Energy Future todo o seu conhecimento.</p>
             <div class="supporters__logos">

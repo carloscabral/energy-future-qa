@@ -1,7 +1,7 @@
 <template>
   <Layout>
 
-      <h1 class="title">Perguntas Frequentes</h1>
+      <h1 class="main-title">Perguntas Frequentes</h1>
 
       <div v-for="(faq, index) in faqList" :key="index">
         <h3 :id="'faq' + faq.id" class="faq-title" :class="'faq-title__' + faq.id">{{ faq.section }}</h3>

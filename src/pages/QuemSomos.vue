@@ -1,6 +1,6 @@
 <template>
   <Layout>
-      <h1 class="title">Somos o Energy Future</h1>  
+      <h1 class="main-title">Somos o Energy Future</h1>  
       <figure class="featured-image"></figure>
       <div class="row content">
         <div class="col-12 mb-5 mb-lg-0 col-lg-1 share">

@@ -75,7 +75,7 @@ export default {
     }
 
     &__title {
-        @extend .title;
+        @extend .main-title;
         margin-bottom: 1.5rem;
         max-width: 42rem;
     }
