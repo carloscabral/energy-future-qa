@@ -1,6 +1,5 @@
 <template>
   <Layout>
-        <!-- <g-image :src="'~/assets/images/'+ getAuthorLogo" width="150" /><h1 class="title">Assunto: {{ $page.author.title }}</h1> -->
         <div class="top-title">
             <g-image v-if="$page.author.title === 'Energy Future'" src="@/assets/images/img-logo-ef.svg" width="150" />
             <g-image v-if="$page.author.title === 'Enel'" src="@/assets/images/img-logo-enel.svg" width="150" />

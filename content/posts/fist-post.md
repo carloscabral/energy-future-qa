@@ -1,7 +1,7 @@
 ---
 title: Entenda como funciona o Setor Elétrico Brasileiro
 excerpt: "Apesar de fundamental para o desenvolvimento socioeconômico do país, o sistema elétrico brasileiro ainda é desconhecido para boa parte da população."
-date: 2019-08-20
+date: 2019-11-03
 tags: ['setor elétrico', 'inovação', 'sustentabilidade', 'fontes renováveis', 'tecnologias', 'aneel']
 author: Energy Future
 isHighlight: true

@@ -5,7 +5,7 @@
         <div class="col-lg-7 col-xl-6">
           <h1 class="hero__title">Maior chamada de projetos do setor elétrico brasileiro</h1>
           <p class="hero__text">O Energy Future, hub virtual de inovação do setor elétrico, conecta projetos a grandes concessionárias do país. Procuramos soluções inovadoras que ajudem a melhorar a geração, transmissão e distribuição da energia elétrica no Brasil.</p>
-          <button class="hero__button mt-3">Inscrições: 25 de novembro</button>
+          <g-link to="/inscricao/#sign-in"><button class="hero__button mt-3"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba nossa newsletter</button></g-link>
         </div>
         <div class="col-lg-5 col-xl-6">
           <g-image class="hero__image" src="~/assets/images/img-top-lp.png" width="900" />
@@ -68,7 +68,7 @@
         </div>
         <div class="row">
           <div class="col-md-6 offset-md-3">
-            <button class="steps__button">Assine nossa newsletter!</button>
+            <g-link to="/inscricao/"><button class="steps__button">Inscrições: 25 de novembro&nbsp;&nbsp;<font-awesome :icon="['fas', 'arrow-right']"/></button></g-link>
           </div>
         </div>
       </section>
