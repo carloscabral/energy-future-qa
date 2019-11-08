@@ -17,7 +17,7 @@
                     <div class="single-post__tag-list">
                         <g-link v-for="tag in $page.post.tags" :to="tag.path" :key="tag.id">{{ tag.id }}</g-link>
                     </div>
-                    <vue-disqus shortname="energy-future" :identifier="$page.post.title"></vue-disqus>
+                    <vue-disqus shortname="energy-future-1" :identifier="$page.post.title"></vue-disqus>
                 </div>              
             </div>
         </article>
