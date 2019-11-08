@@ -3,9 +3,9 @@
 
       <div class="row hero align-items-start title">
         <div class="col-lg-7 col-xl-6">
-          <h1 class="hero__title" data-aos-once="true" data-aos="fade-right" data-aos-duration="500" data-aos-delay="100">Maior chamada de projetos do setor elétrico brasileiro</h1>
-          <p class="hero__text" data-aos-once="true" data-aos="fade-left" data-aos-duration="500" data-aos-delay="100">O Energy Future, hub virtual de inovação do setor elétrico, conecta projetos a grandes concessionárias do país. Procuramos soluções inovadoras que ajudem a melhorar a geração, transmissão e distribuição da energia elétrica no Brasil.</p>
-          <button class="hero__button mt-3" data-aos-once="true" data-aos="fade-right" data-aos-duration="500" data-aos-delay="100">Inscrições: 25 de novembro</button>
+          <h1 class="hero__title">Maior chamada de projetos do setor elétrico brasileiro</h1>
+          <p class="hero__text">O Energy Future, hub virtual de inovação do setor elétrico, conecta projetos a grandes concessionárias do país. Procuramos soluções inovadoras que ajudem a melhorar a geração, transmissão e distribuição da energia elétrica no Brasil.</p>
+          <button class="hero__button mt-3">Inscrições: 25 de novembro</button>
         </div>
         <div class="col-lg-5 col-xl-6">
           <g-image class="hero__image" src="~/assets/images/img-top-lp.png" width="900" />
@@ -26,14 +26,14 @@
 
       <section id="steps">
         <div class="row">
-          <div class="col-md-8 steps title" data-aos-once="true" data-aos="fade-left" data-aos-duration="500" data-aos-delay="75">
+          <div class="col-md-8 steps title">
             <h1 class="steps__title">Conheça as etapas de seleção</h1>
             <p class="steps__text">O funil de seleção do Energy Future foi criado com o objetivo de gerar aos participantes melhorias e aprendizados constantes, assim como filtrar e qualificar os projetos que serão avaliados pelas concessionárias parceiras.</p>
           </div>
         </div>
-        <div class="row steps__line" data-aos-once="true" data-aos="fade-right" data-aos-duration="500" data-aos-delay="75">
+        <div class="row steps__line">
           
-          <div class="steps__new-line" data-aos-once="true" data-aos="scale-down" data-aos-delay="50" data-aos-offset="100" />
+          <div class="steps__new-line" />
 
           <div class="col-lg-6 steps-list odd">
             <h1 class="steps-list__number">01</h1>
@@ -68,7 +68,7 @@
         </div>
         <div class="row">
           <div class="col-md-6 offset-md-3">
-            <button class="steps__button" data-aos-once="true" data-aos="fade-in" data-aos-duration="500" data-aos-delay="75">Assine nossa newsletter!</button>
+            <button class="steps__button">Assine nossa newsletter!</button>
           </div>
         </div>
       </section>
@@ -77,7 +77,7 @@
         <div class="d-none d-sm-block">
           <div class="row align-items-center news__container">
             <div class="col-md-8">
-              <h1 class="news__title" data-aos-once="true" data-aos="fade-left" data-aos-duration="500" data-aos-delay="75">Notícias recentes</h1>
+              <h1 class="news__title">Notícias recentes</h1>
             </div>
             <div class="col-md-4 d-flex mt-2">
               <g-link to="/noticias/">Leia todas&nbsp;&nbsp;<g-image src="~/assets/images/ic-long-arrow.svg" width="20" /></g-link>
@@ -85,15 +85,15 @@
           </div>
           <div class="row">
             <div class="col-md-7">
-              <p class="news__text" data-aos-once="true" data-aos="fade-right" data-aos-duration="500" data-aos-delay="75">Mantenha-se informado sobre o setor elétrico. Acesse nossa página de notícias com curadoria especial do Energy Future e das Concessionárias de energia.</p>
+              <p class="news__text">Mantenha-se informado sobre o setor elétrico. Acesse nossa página de notícias com curadoria especial do Energy Future e das Concessionárias de energia.</p>
             </div>
           </div>
           <div class="news-carousel">
             <div class="news-carousel__image">
-              <g-image :src="myData[activeNewsId].node.featured_image" width="900" fit="cover" data-aos-once="true" data-aos="fade-left" data-aos-duration="500" data-aos-delay="75" />
+              <g-image :src="myData[activeNewsId].node.featured_image" width="900" fit="cover" />
             </div>
             <div class="news-carousel__slide">
-              <div class="news-carousel-box" data-aos-once="true" data-aos="fade-right" data-aos-duration="500" data-aos-delay="75">
+              <div class="news-carousel-box">
                 <small class="news-carousel-box__category">Notícias</small>
                 <h2 class="news-carousel-box__title"><g-link :to="myData[activeNewsId].node.path">{{ myData[activeNewsId].node.title }}</g-link></h2>
                 <small class="news-carousel-box__credits">Por <g-link :to="myData[activeNewsId].node.author.path">{{ myData[activeNewsId].node.author.id }}</g-link> em {{ myData[activeNewsId].node.date }}</small>
@@ -116,7 +116,7 @@
       <section id="faq">
         <div class="row align-items-center faq__container">
           <div class="col-md-8">
-            <h1 class="faq__title" data-aos-once="true" data-aos="fade-left" data-aos-duration="500" data-aos-delay="75">Ainda com dúvidas?</h1>
+            <h1 class="faq__title">Ainda com dúvidas?</h1>
           </div>
           <div class="col-md-4 d-flex mt-2">
             <g-link to="/duvidas/">Acesso o FAQ&nbsp;&nbsp;<g-image src="~/assets/images/ic-long-arrow.svg" width="20" /></g-link>
@@ -124,10 +124,10 @@
         </div>
         <div class="row">
           <div class="col-md-7">
-            <p class="faq__text" data-aos-once="true" data-aos="fade-right" data-aos-duration="500" data-aos-delay="75">Não queremos que você tenha dúvida em como participar do maior evento de Open Innovation do Brasil. Conheça todas as informações que podem te ajudar a inscrever seu projeto.</p>
+            <p class="faq__text">Não queremos que você tenha dúvida em como participar do maior evento de Open Innovation do Brasil. Conheça todas as informações que podem te ajudar a inscrever seu projeto.</p>
           </div>
         </div>
-        <div class="row faq__list" data-aos-once="true" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+        <div class="row faq__list">
           <div class="col-lg-4 col-md-6">
             <g-link to="/duvidas/#faq1">
               <div class="faq__item faq__item--blue">
@@ -179,9 +179,9 @@
       <section id="supporters">
         <div class="row">
           <div class="col supporters title">
-            <h1 class="supporters__title" data-aos-once="true" data-aos="fade-left" data-aos-duration="500" data-aos-delay="75">Nossos Apoiadores</h1>
-            <p class="supporters__text" data-aos-once="true" data-aos="fade-right" data-aos-duration="500" data-aos-delay="75">Temos grandes parceiros. Empresas que são expert em suas áreas de atuação e trazem para o Energy Future todo o seu conhecimento.</p>
-            <div class="supporters__logos" data-aos-once="true" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+            <h1 class="supporters__title">Nossos Apoiadores</h1>
+            <p class="supporters__text" >Temos grandes parceiros. Empresas que são expert em suas áreas de atuação e trazem para o Energy Future todo o seu conhecimento.</p>
+            <div class="supporters__logos">
               <g-image class="supporters__items" src="~/assets/images/img-logo-apoio-cesar.png" width="100" />
               <g-image class="supporters__items" src="~/assets/images/img-logo-apoio-abacomm.svg" width="100" />
             </div>

@@ -261,6 +261,7 @@ ul {
     }
   
     &__credits {
+
       display: flex;
       position: absolute;
       left: 1rem;
@@ -273,11 +274,12 @@ ul {
       
       > * {
         text-transform: uppercase;
-        font-size: .77rem;
+        font-size: .66rem;
         letter-spacing: .7px;    
   
         @media (min-width: 768px) {
-          font-weight: 600;     
+          font-weight: 600;
+          font-size: .77rem;     
         }
       }  
     }

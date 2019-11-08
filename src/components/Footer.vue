@@ -1,7 +1,7 @@
 <template>
     <div>
         <footer v-if="isCustom" class="landing-footer">
-            <div class="row cta" data-aos-once="true" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+            <div class="row cta">
                 <div class="col-md-12" >
                     <div class="cta__item cta__item--blue">
                         <h3>Não perca esta oportunidade!</h3>
@@ -11,7 +11,7 @@
                 </div>
             </div> 
             <div class="row mt-5 align-items-end">
-                <div class="col-xl-3 col-lg-4 col-sm-6" data-aos-once="true" data-aos="fade-up" data-aos-duration="500" data-aos-delay="75">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">Menu</li>
                         <li class="footer-menu__item"><g-link to="/inscricao/">Inscrição</g-link></li>
@@ -20,7 +20,7 @@
                         <li class="footer-menu__item"><g-link to="/duvidas/">Dúvidas</g-link></li>
                     </ul>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6" data-aos-once="true" data-aos="fade-down" data-aos-duration="500" data-aos-delay="75">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">Outros</li>
                         <li class="footer-menu__item" @click="commingSoon"><g-link to="/">Regulamento Aneel</g-link></li>
@@ -29,7 +29,7 @@
                         <li class="footer-menu__item" @click="commingSoon"><g-link to="/">Termos & Condições</g-link></li>
                     </ul>                
                 </div>
-                <div class="col-xl-4 offset-xl-2 col-lg-4 col-md-6" data-aos-once="true" data-aos="fade-left" data-aos-duration="500" data-aos-delay="75">
+                <div class="col-xl-4 offset-xl-2 col-lg-4 col-md-6">
                     <div class="footer-box mx-auto mx-sm-0">
                         <p class="footer-box__title">Energy Future é uma realização:</p>
                         <g-image class="footer-box__logo" src="../assets/images/img-logo-makeab-light.svg" width="230" />
@@ -38,7 +38,7 @@
                 </div>
             </div>
 
-            <div class="row justify-content-between social align-items-end" data-aos-once="true" data-aos="fade-in" data-aos-duration="500" data-aos-delay="75">
+            <div class="row justify-content-between social align-items-end">
                 <div class="col-md-6">
                     <p class="text-center text-sm-left">Siga-nos:</p>
                     <div class="social-list text-center text-sm-left mb-5 mb-md-0">
@@ -58,7 +58,7 @@
                 </div>
             </div>
 
-            <div class="row footer-copyright align-items-end" data-aos-once="true" data-aos="fade-in" data-aos-duration="500" data-aos-delay="75">
+            <div class="row footer-copyright align-items-end">
                 <div class="col-md-4 footer-copyright__logo">
                     <g-image class="d-none d-sm-none d-md-none d-lg-block" src="../assets/images/img-logo-ef-light.svg" />
                     <g-image class="d-none d-sm-none d-md-block d-lg-none" src="../assets/images/img-logo-ef.svg" />
@@ -103,8 +103,8 @@
                 </div> -->
                 <div class="col-12 typeform">
                     <!-- <button>Clique aqui</button> -->
-                    <p class="text-center text-md-left mt-3 mb-2"><a href="https://energyfuture.typeform.com/to/w0QlAs" target="_blank"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba nossa newsletter&nbsp;&nbsp;<font-awesome :icon="['fas', 'arrow-right']"/></a></p>
-                    <!-- <div id="my-embedded-typeform" ref="typeform" style="width: 100%; height: 300px;" /> -->
+                    <!-- <p class="text-center text-md-left mt-3 mb-2"><a href="https://energyfuture.typeform.com/to/w0QlAs" target="_blank"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba nossa newsletter&nbsp;&nbsp;<font-awesome :icon="['fas', 'arrow-right']"/></a></p> -->
+                    <div id="my-embedded-typeform" ref="typeform" style="width: 100%; height: 300px;" />
                 </div>
             </div>
             <!-- <div class="row justify-content-between mt-4">
@@ -147,7 +147,7 @@ export default {
         
         // let el = document.getElementById("my-embedded-typeform")
         let el = this.$refs.typeform
-        console.log(el)
+        // console.log(el)
 
         if (el) {
             window.typeformEmbed.makeWidget(el, "https://energyfuture.typeform.com/to/w0QlAs", {
