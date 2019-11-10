@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 social-newsletter">
-                    <p><g-link to="/inscricao/#sign-in"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba nossa newsletter&nbsp;&nbsp;<font-awesome :icon="['fas', 'arrow-right']"/></g-link></p>
+                    <p @click="openTypeForm"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba nossa newsletter&nbsp;&nbsp;<font-awesome :icon="['fas', 'arrow-right']"/></p>
                 </div>
             </div>
 
@@ -103,8 +103,8 @@
                 </div> -->
                 <div class="col-12 typeform">
                     <!-- <button>Clique aqui</button> -->
-                    <!-- <p class="text-center text-md-left mt-3 mb-2"><a href="https://energyfuture.typeform.com/to/w0QlAs" target="_blank"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba nossa newsletter&nbsp;&nbsp;<font-awesome :icon="['fas', 'arrow-right']"/></a></p> -->
-                    <div id="my-embedded-typeform" ref="typeform" style="width: 100%; height: 300px;" />
+                    <p @click="openTypeForm" class="text-center text-md-left mt-3 mb-2"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba nossa newsletter&nbsp;&nbsp;<font-awesome :icon="['fas', 'arrow-right']"/></p>
+                    <!-- <div id="my-embedded-typeform" ref="typeform" style="width: 100%; height: 300px;" /> -->
                 </div>
             </div>
             <!-- <div class="row justify-content-between mt-4">
@@ -140,24 +140,30 @@ export default {
   methods: {
     commingSoon () {
       alert("Em breve estará disponível!")
+    },
+    openTypeForm () {
+        if (process.isClient) {
+                window.typeformEmbed.makePopup('https://energyfuture.typeform.com/to/w0QlAs', {
+                    hideHeaders: true,
+                    hideFooter: true
+                }).open();            
+        }        
     }
   },
-  mounted (){
-    if (process.isClient) {
-        
-        // let el = document.getElementById("my-embedded-typeform")
-        let el = this.$refs.typeform
-        // console.log(el)
+//   mounted () {
+//     if (process.isClient) {
+    
+//         let el = this.$refs.typeform
 
-        if (el) {
-            window.typeformEmbed.makeWidget(el, "https://energyfuture.typeform.com/to/w0QlAs", {
-                hideFooter: true,
-                hideHeaders: true,
-                opacity: 0
-            });
-        }
-    }
-  }
+//         if (el) {
+//             window.typeformEmbed.makeWidget(el, "https://energyfuture.typeform.com/to/w0QlAs", {
+//                 hideFooter: true,
+//                 hideHeaders: true,
+//                 opacity: 0
+//             });          
+//         }
+//     }
+//   }
 }
 </script>
 
@@ -166,8 +172,10 @@ export default {
 
 
 // TYPEFORM ----
-.typeform {
-
+.typeform * {
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 #my-embedded-typeform {
@@ -538,7 +546,11 @@ export default {
 
         @media (min-width: 768px) {
             margin-left: auto;
-        }        
+        }
+        
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     a {

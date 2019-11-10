@@ -33,7 +33,7 @@
         </div>
         <div class="row steps__line">
           
-          <div class="steps__new-line" />
+          <div id="line-position" class="steps__new-line" :class="{ stretched: hitPosition }" />
 
           <div class="col-lg-6 steps-list odd">
             <h1 class="steps-list__number">01</h1>
@@ -93,22 +93,6 @@
               <g-image :src="getFirstPosts[activeNewsId].node.featured_image" width="900" fit="cover" />
             </div>
             <div class="news-carousel__slide">
-              
-              <!-- <div class="news-carousel-box">
-                <small class="news-carousel-box__category">Notícias</small>
-                <h2 class="news-carousel-box__title"><g-link :to="myData[activeNewsId].node.path">{{ myData[activeNewsId].node.title }}</g-link></h2>
-                <small class="news-carousel-box__credits">Por <g-link :to="myData[activeNewsId].node.author.path">{{ myData[activeNewsId].node.author.id }}</g-link> em {{ myData[activeNewsId].node.date }}</small>
-                <p class="news-carousel-box__excerpt">{{ myData[activeNewsId].node.excerpt }}</p>
-                <div class="news-carousel-box__bottom">
-                  <div class="news-carousel-box__previuos-btn" @click="goPrev"></div>
-                  <div class="news-carousel-box__dots">
-                    <div class="news-carousel-box__dot" :class="{ active: activeNewsId === 0 }"></div>
-                    <div class="news-carousel-box__dot" :class="{ active: activeNewsId === 1 }"></div>
-                    <div class="news-carousel-box__dot" :class="{ active: activeNewsId === 2 }"></div>
-                  </div>
-                  <div class="news-carousel-box__next-btn" @click="goNext"></div>
-                </div>
-              </div> -->
 
               <div class="news-carousel-box">
                 <small class="news-carousel-box__category">Notícias</small>
@@ -239,12 +223,20 @@ export default {
   },
   data: () => ({
     myData: null,
-    activeNewsId: 0
+    activeNewsId: 0,
+    scrollPosition: 0,
+    hitPosition: false
   }),
   created() {
-    //this.myData = this.$static.allPost.edges
-    //this.myData = this.getFirstPosts
+    if (process.isClient) {
+      window.addEventListener('scroll', this.getScrollEvent)
+    }
   },
+  destroyed(){
+    if (process.isClient) {
+      window.removeEventListener('scroll', this.getScrollEvent)
+    }
+  },  
   computed: {
     getFirstPosts() {
       return this.$static.allPost.edges.slice(Math.max(this.$static.allPost.edges.length - 3, 0))
@@ -252,13 +244,24 @@ export default {
     },     
   },  
   methods: {
+    getScrollEvent () {
+      if (process.isClient) {
+        // let pos = this.$refs.linePosition.scrollTop
+        // let pos = document.getElementById('line-position').scrollTop;
+        this.scrollPosition = window.pageYOffset
+        if (this.scrollPosition >= 2000 ) {
+          this.hitPosition = true
+        } else {
+          this.hitPosition = false
+        }
+      }
+    },
     goPrev() {
         (this.activeNewsId <= 0) ? this.activeNewsId = 0 : this.activeNewsId --
     },
     goNext() {
-        // (this.activeNewsId >= this.myData.length - 1) ? this.activeNewsId = this.myData.length -1 : this.activeNewsId ++
         (this.activeNewsId >= this.getFirstPosts.length - 1) ? this.activeNewsId = this.getFirstPosts.length -1 : this.activeNewsId ++
-    }    
+    }
   },
   components: { Map } 
 }
@@ -468,10 +471,14 @@ export default {
       top: 1rem;
       left: 50.45%;
       z-index: -999;
-      transform: translateX(-50%);
       transform-origin: top;
-      transition: all 1s cubic-bezier(0.4, 0.25, 0, 1) !important;
+      transform: translateX(-50%) scaleY(0);
+      transition: all 5s cubic-bezier(0.4, 0.25, 0, 1) !important;
       background: linear-gradient(to bottom, $accent-color-1, $accent-color-2);
+
+      &.stretched {
+        transform: translateX(-50%) scaleY(1);
+      }
      
   }  
 }
