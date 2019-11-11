@@ -5,7 +5,7 @@
         <div class="col-lg-7 col-xl-6">
           <h1 class="hero__title">Maior chamada de projetos do setor elétrico brasileiro</h1>
           <p class="hero__text">O Energy Future, hub virtual de inovação do setor elétrico, conecta projetos a grandes concessionárias do país. Procuramos soluções inovadoras que ajudem a melhorar a geração, transmissão e distribuição da energia elétrica no Brasil.</p>
-          <g-link to="/inscricao/#sign-in"><button class="hero__button mt-3"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba nossa newsletter</button></g-link>
+          <button @click="openTypeForm" class="hero__button mt-3"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba nossa newsletter</button>
         </div>
         <div class="col-lg-5 col-xl-6">
           <g-image class="hero__image" src="~/assets/images/img-top-lp.png" width="900" />
@@ -184,8 +184,8 @@
             <h1 class="supporters__title">Nossos Apoiadores</h1>
             <p class="supporters__text" >Temos grandes parceiros. Empresas que são expert em suas áreas de atuação e trazem para o Energy Future todo o seu conhecimento.</p>
             <div class="supporters__logos">
-              <g-image class="supporters__items" src="~/assets/images/img-logo-apoio-cesar.png" width="100" />
-              <g-image class="supporters__items" src="~/assets/images/img-logo-apoio-abacomm.svg" width="100" />
+              <g-link to="https://www.cesar.org.br/"><g-image class="supporters__items" src="~/assets/images/img-logo-apoio-cesar.png" width="100" /></g-link>
+              <g-link to="https://www.abacomm.com.br"><g-image class="supporters__items" src="~/assets/images/img-logo-apoio-abacomm.svg" width="100" /></g-link>
             </div>
           </div>
         </div>
@@ -246,8 +246,6 @@ export default {
   methods: {
     getScrollEvent () {
       if (process.isClient) {
-        // let pos = this.$refs.linePosition.scrollTop
-        // let pos = document.getElementById('line-position').scrollTop;
         this.scrollPosition = window.pageYOffset
         if (this.scrollPosition >= 2000 ) {
           this.hitPosition = true
@@ -256,6 +254,14 @@ export default {
         }
       }
     },
+    openTypeForm () {
+        if (process.isClient) {
+                window.typeformEmbed.makePopup('https://energyfuture.typeform.com/to/w0QlAs', {
+                    hideHeaders: true,
+                    hideFooter: true
+                }).open();            
+        }        
+    },    
     goPrev() {
         (this.activeNewsId <= 0) ? this.activeNewsId = 0 : this.activeNewsId --
     },
@@ -439,6 +445,7 @@ export default {
 
 .steps__line {
   margin-top: 3rem;
+
   @media(min-width: 992px) {
     margin-top: 5rem;
   }
@@ -454,17 +461,26 @@ export default {
   //     top: 1rem;
   //     left: 50.45%;
   //     z-index: -999;
-  //     transform: translateX(-50%);
-  //     //background: linear-gradient(to bottom, $accent-color-1, $accent-color-2);
-  //     background: linear-gradient(to bottom, $accent-color-1, $accent-color-2, $secondary-color);
-  //     animation: hue 3s linear 1s infinite;
+  //     transition: all 5s ease-out !important;
+  //     transform-origin: top;
+  //     transform: translateX(-50%) scaleY(0);
+  //     background: linear-gradient(to bottom, $accent-color-1, $accent-color-2);
+  //     //animation: hue 3s linear 1s infinite;
   //   }
+
+  //   &.stretched {
+  //     &::after {
+  //       transform: translateX(-50%) scaleY(1);
+  //     }
+  //   }    
   // }
 }
 
 .steps__new-line {
 
   @media(min-width: 992px) {
+    &::after {
+      content: "";
       position: absolute;
       height: 106%;
       width: 4px;
@@ -475,10 +491,13 @@ export default {
       transform: translateX(-50%) scaleY(0);
       transition: all 5s cubic-bezier(0.4, 0.25, 0, 1) !important;
       background: linear-gradient(to bottom, $accent-color-1, $accent-color-2);
+    }
 
-      &.stretched {
+    &.stretched {
+      &::after {
         transform: translateX(-50%) scaleY(1);
       }
+    }
      
   }  
 }
