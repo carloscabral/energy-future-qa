@@ -184,8 +184,9 @@
             <h1 class="supporters__title">Nossos Apoiadores</h1>
             <p class="supporters__text" >Temos grandes parceiros. Empresas que são expert em suas áreas de atuação e trazem para o Energy Future todo o seu conhecimento.</p>
             <div class="supporters__logos">
+              <g-link to="https://www.abacomm.com.br"><g-image class="supporters__items" src="~/assets/images/img-logo-apoio-abacomm.svg" width="100" /></g-link>              
               <g-link to="https://www.cesar.org.br/"><g-image class="supporters__items" src="~/assets/images/img-logo-apoio-cesar.png" width="100" /></g-link>
-              <g-link to="https://www.abacomm.com.br"><g-image class="supporters__items" src="~/assets/images/img-logo-apoio-abacomm.svg" width="100" /></g-link>
+              <g-link to="http://www.centralcomm.net.br/"><g-image class="supporters__items" src="~/assets/images/img-logo-apoio-centralcomm.svg" width="100" /></g-link>
             </div>
           </div>
         </div>
@@ -372,14 +373,18 @@ export default {
 
 .supporters {
   
-  margin: 3rem 0 10rem 0;
+  margin: 3rem 0 8rem;
   
   &__logos {
-    margin-top: 3rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     flex-wrap: wrap;
+
+    a {
+      display: block;
+      margin: 3rem .5rem;
+    }
   }
 
   &__items {
