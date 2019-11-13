@@ -187,6 +187,7 @@
               <g-link to="https://www.abacomm.com.br"><g-image class="supporters__items" src="~/assets/images/img-logo-apoio-abacomm.svg" width="100" /></g-link>              
               <g-link to="https://www.cesar.org.br/"><g-image class="supporters__items" src="~/assets/images/img-logo-apoio-cesar.png" width="100" /></g-link>
               <g-link to="http://www.centralcomm.net.br/"><g-image class="supporters__items" src="~/assets/images/img-logo-apoio-centralcomm.svg" width="100" /></g-link>
+              <g-link to="https://www.linkedin.com/company/open-innovation-br/"><g-image class="supporters__items" src="~/assets/images/img-logo-apoio-oib.svg" width="100" /></g-link>
             </div>
           </div>
         </div>
@@ -420,7 +421,7 @@ export default {
   }
 
   &__button {
-    @include colored-button($accent-color-1);
+    @include colored-button($accent-color-2);
     margin: 4.5rem auto 1.5rem auto;
     text-align: center;
     width: 100%;
