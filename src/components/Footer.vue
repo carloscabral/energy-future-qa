@@ -32,7 +32,8 @@
                 <div class="col-xl-4 offset-xl-2 col-lg-4 col-md-6">
                     <div class="footer-box mx-auto mx-sm-0">
                         <p class="footer-box__title">Energy Future é uma realização:</p>
-                        <g-image class="footer-box__logo" src="../assets/images/img-logo-makeab-light.svg" width="230" />
+                        <g-image class="footer-box__logo" src="../assets/images/img-logo-makeab-light.svg" width="200" />
+                        <g-image class="footer-box__logo" src="../assets/images/img-logo-pdaneel-light.svg" width="55" />
                         <p class="footer-box__contact">Entre em contato:<span>contato@makeab.com</span></p>
                     </div>
                 </div>
@@ -465,7 +466,7 @@ export default {
 
 .footer-copyright {
 
-    height: 9rem;
+    height: 7.5rem;
     padding-bottom: 2rem;
 
     &__logo {
@@ -608,11 +609,11 @@ export default {
     }
 
     &__logo {
-
+        margin: .5rem .5rem 1rem 0;
     }
 
     &__contact {
-        margin: 3rem 0 0;
+        margin: 1.5rem 0 0;
 
         * {
             display: block;

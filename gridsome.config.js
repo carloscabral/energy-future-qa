@@ -20,12 +20,20 @@ module.exports = {
   },
 
   plugins: [
+    // {
+    //   use: '@gridsome/plugin-google-analytics',
+    //   options: {
+    //     id: 'UA-150844840-1'
+    //   }
+    // },
     {
-      use: '@gridsome/plugin-google-analytics',
+      use: 'gridsome-plugin-gtm',
       options: {
-        id: 'UA-150844840-1'
+        id: 'GTM-5G6WRHR',
+        enabled: true,
+        debug: true
       }
-    },
+    },    
     {
       use: '@gridsome/source-filesystem',
       options: {
