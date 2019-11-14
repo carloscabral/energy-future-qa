@@ -66,6 +66,24 @@ export default {
     background-repeat: no-repeat;
     background-position: bottom;
   }
+
+  @media(min-width: 1440px) {
+    transform: translateY(6rem);
+  } 
+  
+  @media(min-width: 1700px) {
+    transform: translateY(10rem);
+  } 
+  
+  @media(min-width: 1800px) {
+    transform: translateY(15rem);
+  } 
+  @media(min-width: 1921px) {
+    height: 80rem;
+    background-image: none;
+    clip-path: polygon(0 46%, 100% 0, 100% 100%, 0% 100%);
+    background: linear-gradient(180deg, rgba(0,113,206,1) 20%, rgba(119,61,189,1) 75%);
+  }     
 }
 
 .middle-svg-1 {
@@ -100,19 +118,18 @@ export default {
     opacity: .9;
     z-index: -999;   
   }
+
+  @media(min-width: 1500px) {
+   transform: translateY(6rem);
+  }
+
+  @media(min-width: 2050px) {
+   display: none;
+  }  
+
 }
 
 .hero-svg {
-
-
-  // position: absolute;
-  // bottom: 0;
-  // left: 0;
-  // width: 100%;
-  // height: 50rem;
-  // clip-path: polygon(0 46%, 100% 0, 100% 100%, 0% 100%);
-  // background-color: #F2F5FA;
-  // z-index: -999;
 
   position: absolute;
   top: 0;

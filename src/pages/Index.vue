@@ -692,11 +692,15 @@ export default {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 115vw;
+    width: 120vw;
     height: 10rem;
     background-color: rgba($light-grey, .23);
     z-index: -9000;
-    transform: translate(-15%);
+    transform: translateX(-20%);
+
+    @media(min-width: 2100px) {
+      display: none;
+    }
   }
 
   &__image {
