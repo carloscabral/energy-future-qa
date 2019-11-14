@@ -103,19 +103,35 @@ export default {
 }
 
 .hero-svg {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 330%;
-  height: 100%;
-  background: url("../assets/images/img-hero-bg.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
-  z-index: -999; 
 
-  @media(min-width: 480px) {
+
+  // position: absolute;
+  // bottom: 0;
+  // left: 0;
+  // width: 100%;
+  // height: 50rem;
+  // clip-path: polygon(0 46%, 100% 0, 100% 100%, 0% 100%);
+  // background-color: #F2F5FA;
+  // z-index: -999;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65rem;
+  clip-path: polygon(0 0, 100% 0, 100% 74%, 0 59%);
+  background: linear-gradient(180deg, rgba(0,113,206,1) 20%, rgba(119,61,189,1) 75%); 
+  z-index: -999;
+  
+
+  @media(min-width: 576px) {
     width: 240%;
+    height: 100%;
+    background-color: transparent;
+    background: url("../assets/images/img-hero-bg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;    
   }
 
   @media(min-width: 768px) {
@@ -128,6 +144,34 @@ export default {
 
   @media(min-width: 1200px) {
     width: 100%;
+  }
+  
+  @media(min-width: 1600px) {
+    transform: translateY(-3rem);
+  } 
+  
+  @media(min-width: 1700px) {
+    transform: translateY(-5rem);
+  }  
+  
+  @media(min-width: 1800px) {
+    transform: translateY(-9rem);
+  } 
+  
+  @media(min-width: 1900px) {
+    transform: translateY(-12.5rem);
+  }   
+
+  @media(min-width: 1921px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85rem;
+    background-image: none;
+    clip-path: polygon(0 0, 100% 0, 100% 74%, 0 59%);
+    background: linear-gradient(180deg, rgba(0,113,206,1) 20%, rgba(119,61,189,1) 75%);
+    //z-index: -999;
   }
 
 }

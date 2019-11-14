@@ -415,8 +415,11 @@ export default {
         margin-top: 15rem;
     }
     @media(min-width: 1400px) {
-        margin-top: 20rem;
-    }            
+        margin-top: 23rem;
+    }
+    @media(min-width: 1921px) {
+        margin-top: 15rem;
+    }
 }
 
 .dealership-map {

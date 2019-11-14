@@ -33,7 +33,6 @@
                     <div class="footer-box mx-auto mx-sm-0">
                         <p class="footer-box__title">Energy Future é uma realização:</p>
                         <g-image class="footer-box__logo" src="../assets/images/img-logo-makeab-light.svg" width="200" />
-                        <g-image class="footer-box__logo" src="../assets/images/img-logo-pdaneel-light.svg" width="55" />
                         <p class="footer-box__contact">Entre em contato:<span>contato@makeab.com</span></p>
                     </div>
                 </div>
@@ -59,14 +58,17 @@
                 </div>
             </div>
 
-            <div class="row footer-copyright align-items-end">
-                <div class="col-md-4 footer-copyright__logo">
-                    <g-image class="d-none d-sm-none d-md-none d-lg-block" src="../assets/images/img-logo-ef-light.svg" />
-                    <g-image class="d-none d-sm-none d-md-block d-lg-none" src="../assets/images/img-logo-ef.svg" />
+            <div class="row footer-copyright align-items-lg-end align-items-md-center">
+                <div class="col-md-5 footer-copyright__logo d-md-flex align-items-md-end">
+                    <g-image class="d-none d-md-none d-lg-flex mr-lg-4" src="../assets/images/img-logo-ef-light.svg" width="220" />
+                    <g-image class="d-none d-md-flex d-lg-none mr-md-4" src="../assets/images/img-logo-ef.svg" width="170" />
+
+                    <g-image class="d-none d-md-none d-lg-flex" src="../assets/images/img-logo-pdaneel-light.svg" width="65" />
+                    <g-image class="d-none d-md-flex d-lg-none" src="../assets/images/img-logo-pdaneel.svg" width="50" />
                 </div>
-                <small class="col-md-8 footer-copyright__text">
+                <small class="col-md-7 footer-copyright__text">
                     Rua São José, 40 - 4º andar, Centro - Rio de Janeiro, RJ.<br>
-                    <span class="d-none d-sm-block">Para assessoria de imprensa: imprensa@energyfuture.com.br<br></span>
+                    <span>Para assessoria de imprensa: imprensa@energyfuture.com.br<br></span>
                     © Copyright 2019. Energy Future. Todos os direitos reservados.<br>
                 </small>
             </div>
@@ -466,20 +468,45 @@ export default {
 
 .footer-copyright {
 
-    height: 7.5rem;
-    padding-bottom: 2rem;
+    min-height: 7.5rem;
+    padding-bottom: 1rem;
+
+    @media(min-width: 768px) {
+        padding-bottom: 1rem;    
+    }
+
+    @media(min-width: 992px) {
+        padding-bottom: 1.5rem;    
+    }
 
     &__logo {
+        
+        transform-origin: left;
+        transform: translateY(-15%) scale(.7);
+        margin: 1.5rem 0;
+        @media(min-width: 768px) {
+            margin: 0;
+            transform: translateY(-15%) scale(1);
+        }
+        //display: flex;
+        //align-items: center;
 
-        transform: translateY(-15%);
+        // img {
+        //     margin-right: 1.5rem;
+        // }
+        &--1 {
+            margin-right: 1rem;
+        }
     }
 
     &__text, &__text * {
 
+        display: block;
         text-align: center;
-        font-size: .77rem;
+        //font-size: .77rem;
         line-height: 1.7;
         color: $text-color;
+        font-size: .66rem;
 
         @media(min-width: 576px) {
             margin-bottom: 0;
@@ -492,6 +519,7 @@ export default {
 
         @media(min-width: 992px) {
             font-weight: 300;
+            font-size: .77rem;
         }
     }
 }
