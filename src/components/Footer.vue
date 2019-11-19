@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 social-newsletter">
-                    <p @click="openTypeForm"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba nossa newsletter&nbsp;&nbsp;<font-awesome :icon="['fas', 'arrow-right']"/></p>
+                    <p @click="openTypeForm" class="newsletter-click"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba nossa newsletter&nbsp;&nbsp;<font-awesome :icon="['fas', 'arrow-right']"/></p>
                 </div>
             </div>
 
@@ -106,7 +106,7 @@
                 </div> -->
                 <div class="col-12 typeform">
                     <!-- <button>Clique aqui</button> -->
-                    <p @click="openTypeForm" class="text-center text-md-left mt-3 mb-2"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba nossa newsletter&nbsp;&nbsp;<font-awesome :icon="['fas', 'arrow-right']"/></p>
+                    <p @click="openTypeForm" class="newsletter-click text-center text-md-left mt-3 mb-2"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba nossa newsletter&nbsp;&nbsp;<font-awesome :icon="['fas', 'arrow-right']"/></p>
                     <!-- <div id="my-embedded-typeform" ref="typeform" style="width: 100%; height: 300px;" /> -->
                 </div>
             </div>

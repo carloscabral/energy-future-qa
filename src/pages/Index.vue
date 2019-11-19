@@ -5,7 +5,7 @@
         <div class="col-lg-7 col-xl-6">
           <h1 class="hero__title">Maior chamada de projetos do setor elétrico brasileiro</h1>
           <p class="hero__text">O Energy Future, hub virtual de inovação do setor elétrico, conecta projetos a grandes concessionárias do país. Procuramos soluções inovadoras que ajudem a melhorar a geração, transmissão e distribuição da energia elétrica no Brasil.</p>
-          <button @click="openTypeForm" class="hero__button mt-3"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba nossa newsletter</button>
+          <button @click="openTypeForm" class="newsletter-click hero__button mt-3"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba nossa newsletter</button>
         </div>
         <div class="col-lg-5 col-xl-6">
           <g-image class="hero__image" src="~/assets/images/img-top-lp.png" width="900" />
