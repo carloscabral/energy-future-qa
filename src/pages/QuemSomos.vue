@@ -29,7 +29,13 @@ Queremos promover a cultura da inovação e estimular o empreendedorismo brasile
 import SocialShare from '~/components/SocialShare.vue'
 export default {
   metaInfo: {
-    title: 'Quem Somos'
+    title: 'Quem Somos',
+    meta: [
+      { charset: 'utf-8' },
+      { name: "author", content: "Carlos Gomes Cabral" },
+      { name: "description", content: "O Energy Future é o hub virtual de inovação do setor de energia elétrica. Conectamos soluções inovadoras a oportunidades!" },
+      { name: "keywords", content: "Startups, Inovação, Setor elétrico, Concessionárias de energia" },
+    ]    
   },
   components: { SocialShare }
 }

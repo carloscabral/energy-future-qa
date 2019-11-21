@@ -111,7 +111,13 @@ import SocialShare from '~/components/SocialShare.vue'
 
 export default {
   metaInfo: {
-    title: 'Notícias'
+    title: 'Notícias',
+    meta: [
+      { charset: 'utf-8' },
+      { name: "author", content: "Carlos Gomes Cabral" },
+      { name: "description", content: "Saiba tudo sobre o panorama da inovação elétrica no Brasil através de notícias e comunicados do setor." },
+      { name: "keywords", content: "Startups, Inovação, Setor elétrico, Concessionárias de energia" },
+    ]    
   },
   computed: {
     getLastPost() {

@@ -27,7 +27,13 @@ import SocialShare from '~/components/SocialShare.vue'
 
 export default {
   metaInfo: {
-    title: 'Dúvidas'
+    title: 'Dúvidas',
+    meta: [
+      { charset: 'utf-8' },
+      { name: "author", content: "Carlos Gomes Cabral" },
+      { name: "description", content: "Dúvidas sobre como participar do maior evento de Open Innovation do Brasil? Conheça todas as informações para inscrever seu projeto." },
+      { name: "keywords", content: "Startups, Inovação, Setor elétrico, Concessionárias de energia" },
+    ]     
   },
   components: {
     Collapse, SocialShare

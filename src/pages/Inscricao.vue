@@ -33,7 +33,7 @@
           <div class="col-lg-6">
             <h4 class="option__label">Clique aqui para acessar o regulamento do Aneel:</h4>
             <div class="options-section__btn-container">
-                <button class="options-section__button two" @click="commingSoon">Regulamento Aneel</button>
+                <g-link to="../assets/images/Manual-PDANEEL.pdf" target="_blank"><button class="options-section__button two">Regulamento Aneel</button></g-link>
                 <font-awesome class="options-section__icon" :icon="['fas', 'arrow-right']"/>
             </div>  
           </div>

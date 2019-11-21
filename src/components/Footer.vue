@@ -23,7 +23,7 @@
                 <div class="col-xl-3 col-lg-4 col-sm-6">
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">Outros</li>
-                        <li class="footer-menu__item" @click="commingSoon"><g-link to="/">Regulamento Aneel</g-link></li>
+                        <li class="footer-menu__item"><g-link to="../assets/images/Manual-PDANEEL.pdf" target="_blank">Regulamento Aneel</g-link></li>
                         <li class="footer-menu__item" @click="commingSoon"><g-link to="/">Critérios de Seleção</g-link></li>                    
                         <li class="footer-menu__item" @click="commingSoon"><g-link to="/">Política de Privacidade</g-link></li>
                         <li class="footer-menu__item" @click="commingSoon"><g-link to="/">Termos & Condições</g-link></li>

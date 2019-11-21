@@ -53,7 +53,7 @@
           <div class="col-lg-6 steps-list even space-up">
             <h1 class="steps-list__number">04</h1>
             <h2 class="steps-list__title">Triagem Qualitativa</h2>
-            <p class="steps-list__text">Está de acordo com as regras do Manual da ANEEL? O crivo e conformidade com o manual da agência é fundamental para que você avance. Nessa fase, critérios como inovação, originalidade, sustentabilidade e escala no mercado também serão considerados.</p>
+            <p class="steps-list__text">Seu projeto está alinhado com os regulamentos? A conformidade com o regulamento do Energy Future é fundamental para que você avance. Além disso, ter em vista as regras do Manual da Aneel contribui na avaliação. Nessa fase, critérios como inovação, originalidade, sustentabilidade e escala no mercado também serão considerados.</p>
           </div>
           <div class="col-lg-6 steps-list odd">
             <h1 class="steps-list__number">05</h1>
@@ -180,14 +180,25 @@
 
       <section id="supporters">
         <div class="row">
-          <div class="col supporters main-title">
+          <!-- <div class="col-md-6 offset-md-3 supporters main-title"> -->
+          <div class="col-md-12 supporters main-title">
             <h1 class="supporters__title">Nossos Apoiadores</h1>
             <p class="supporters__text" >Temos grandes parceiros. Empresas que são expert em suas áreas de atuação e trazem para o Energy Future todo o seu conhecimento.</p>
-            <div class="supporters__logos">
-              <g-link to="https://www.abacomm.com.br"><g-image class="supporters__items" src="~/assets/images/img-logo-apoio-abacomm.svg" width="100" /></g-link>              
-              <g-link to="https://www.cesar.org.br/"><g-image class="supporters__items" src="~/assets/images/img-logo-apoio-cesar.png" width="100" /></g-link>
-              <g-link to="http://www.centralcomm.net.br/"><g-image class="supporters__items" src="~/assets/images/img-logo-apoio-centralcomm.svg" width="100" /></g-link>
-              <g-link to="https://www.linkedin.com/company/open-innovation-br/"><g-image class="supporters__items" src="~/assets/images/img-logo-apoio-oib.svg" width="100" /></g-link>
+            <div class="row">
+              <div class="col-md-6">
+                <h3 class="supporters__subtitle">Apoio</h3>
+                <div class="supporters__logos">
+                  <g-link to="https://www.cesar.org.br/"><g-image class="supporters__items" src="~/assets/images/img-logo-apoio-cesar.png" width="100" /></g-link>
+                  <g-link to="https://www.linkedin.com/company/open-innovation-br/"><g-image class="supporters__items" src="~/assets/images/img-logo-apoio-oib.svg" width="100" /></g-link>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h3 class="supporters__subtitle">Apoiadores Estratégicos</h3>
+                <div class="supporters__logos">
+                  <g-link to="https://www.abacomm.com.br"><g-image class="supporters__items" src="~/assets/images/img-logo-apoio-abacomm.svg" width="100" /></g-link>
+                  <g-link to="http://www.centralcomm.net.br/"><g-image class="supporters__items" src="~/assets/images/img-logo-apoio-centralcomm.svg" width="100" /></g-link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -221,7 +232,13 @@ import Map from '~/components/Map.vue'
 
 export default {
   metaInfo: {
-    title: 'Energy Future'
+    title: 'Energy Future',
+    meta: [
+      { charset: 'utf-8' },
+      { name: "author", content: "Carlos Gomes Cabral" },
+      { name: "description", content: "Hub virtual de inovação que conecta projetos a grandes concessionárias do país. Buscamos soluções que ajudem a melhorar o cenário da energia elétrica no Brasil." },
+      { name: "keywords", content: "Startups, Inovação, Setor elétrico, Concessionárias de energia" },
+    ]    
   },
   data: () => ({
     myData: null,
@@ -373,18 +390,31 @@ export default {
 }
 
 .supporters {
+
+  margin-top: 3rem;
+  margin-bottom: 8rem;
   
-  margin: 3rem 0 8rem;
-  
+  &__subtitle {
+    margin-top: 1.5rem;
+    @media (min-width: 576px) {
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      margin-top: 4.5rem;
+    }    
+    color: $secondary-color;
+    font-size: .88rem;
+  }
+
   &__logos {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
     flex-wrap: wrap;
 
     a {
       display: block;
-      margin: 3rem .5rem;
+      margin: 1.5rem .5rem 3rem;
     }
   }
 
@@ -393,17 +423,17 @@ export default {
     flex-shrink: 1;
   }
 
-  * {
+  &__title {
+    @extend .rules__title;
+  }
+
+  &__text {
       @media (min-width: 576px) {
         max-width: 35rem;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-      }
-  }
-
-  &__title {
-    @extend .rules__title;
+      }    
   }
 }
 
@@ -506,12 +536,6 @@ export default {
     }
      
   }  
-}
-
-@keyframes hue {
-  to {
-    filter: hue-rotate(1turn);
-  }
 }
 
 .odd {
