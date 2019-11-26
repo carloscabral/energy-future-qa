@@ -236,6 +236,7 @@ ul {
       width: 100%;
       height: 20rem;    
       object-fit: cover;
+      object-position: left;
 
       @media(min-width: 576px) {
         height: 24rem;
@@ -325,6 +326,7 @@ ul {
     &__image {
       width: 100%;
       object-fit: cover;
+      object-position: left;
       height: 7.32rem;
       display: block;
       transition: all .2s ease;
@@ -384,3 +386,58 @@ ul {
       @extend .related-news__date;
     }
   }
+
+
+
+  .post-search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    border-radius: .22rem;
+    margin-bottom: 3rem;
+    border: 2px solid rgba($light-grey, .54);
+    overflow: hidden;
+    height: 3rem;
+    transition: all .2s ease;
+
+    &:hover, &:active {
+        border: 2px solid $accent-color-1;
+    }
+
+    input {
+        width: 100%;
+        padding: 0 .5rem;
+        outline: 0;
+        border-style: none;
+    }
+
+    ::placeholder {
+        color: darken($light-grey, 5%);
+    }
+    
+    .icon {
+        width: 1.5rem;
+        height: 100% !important;
+        height: inherit;
+        display: block;
+        border-style: none;
+        outline: 0;
+        margin-left: 1rem;
+
+        svg {
+            display: block;
+            margin-top: .85rem;
+            font-size: 1rem;
+            color: $light-grey;
+        }
+    }
+}
+
+.empty {
+    svg {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        color: $light-grey;
+    }
+}

@@ -259,7 +259,6 @@ export default {
   computed: {
     getFirstPosts() {
       return this.$static.allPost.edges.slice(Math.max(this.$static.allPost.edges.length - 3, 0))
-      console.log(this.getFirstPosts)
     },     
   },  
   methods: {

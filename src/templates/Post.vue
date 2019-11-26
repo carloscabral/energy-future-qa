@@ -55,9 +55,6 @@ query($path: String!){
 import SocialShare from '~/components/SocialShare.vue'
 
 export default {
-//   metaInfo: {
-//     title: 'Quem Somos'
-//   },
   components: { SocialShare }
 }
 </script>
@@ -67,6 +64,10 @@ export default {
 <style lang="scss">
 
 .single-post {
+
+    strong {
+        color: $accent-color-2;
+    }
 
     p {
         hyphens: auto;

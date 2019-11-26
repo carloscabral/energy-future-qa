@@ -61,14 +61,15 @@
             <div class="row footer-copyright align-items-lg-end align-items-md-center">
                 <div class="col-md-5 footer-copyright__logo d-md-flex align-items-md-end">
                     <g-image class="d-none d-md-none d-lg-flex mr-lg-4" src="../assets/images/img-logo-ef-light.svg" width="220" />
-                    <g-image class="d-none d-md-flex d-lg-none mr-md-4" src="../assets/images/img-logo-ef.svg" width="170" />
+                    <g-image class="d-none d-md-flex d-lg-none mr-md-4" src="../assets/images/img-logo-ef.svg" width="120" />
 
-                    <g-image class="d-none d-md-none d-lg-flex" src="../assets/images/img-logo-pdaneel-light.svg" width="65" />
-                    <g-image class="d-none d-md-flex d-lg-none" src="../assets/images/img-logo-pdaneel.svg" width="50" />
+                    <g-image class="d-none d-md-none d-lg-flex" src="../assets/images/img-logo-pdaneel-light.svg" width="150" />
+                    <g-image class="d-none d-md-flex d-lg-none" src="../assets/images/img-logo-pdaneel.svg" width="100" />
                 </div>
                 <small class="col-md-7 footer-copyright__text">
-                    Rua São José, 40 - 4º andar, Centro - Rio de Janeiro, RJ.<br>
-                    <span>Para assessoria de imprensa: imprensa@energyfuture.com.br<br></span>
+                    <!-- Rua São José, 40 - 4º andar, Centro - Rio de Janeiro, RJ.<br>
+                    <span>Para assessoria de imprensa: imprensa@energyfuture.com.br<br></span> -->
+                    <span>contato@energyfuture.com.br | imprensa@energyfuture.com.br</span>
                     © Copyright 2019. Energy Future. Todos os direitos reservados.<br>
                 </small>
             </div>
@@ -127,8 +128,10 @@
                 </div>
             </div> -->
             <div class="footer-contact">
-                <div class="footer-contact__address"><small>Rua São José, 40 - 4º andar<br>Centro - Rio de Janeiro, RJ.</small></div>
-                <div class="footer-contact__email"><small>contato@energyfuture.com.br<br>imprensa@energyfuture.com.br</small></div>
+                <!-- <div class="footer-contact__address"><small>Rua São José, 40 - 4º andar<br>Centro - Rio de Janeiro, RJ.</small></div> -->
+                <div class="footer-contact__address"><small>contato@energyfuture.com.br</small></div>
+                <!-- <div class="footer-contact__email"><small>contato@energyfuture.com.br<br>imprensa@energyfuture.com.br</small></div> -->
+                <div class="footer-contact__email"><small>imprensa@energyfuture.com.br</small></div>
                 <a href="http://makeab.com/" target="_blank" alt="Site MakeAB"><g-image class="footer-contact__image" src="~/assets/images/img-logo-makeab.svg" width="150" alt="Logo MakeAB" /></a>
             </div>              
         </footer>
@@ -176,6 +179,7 @@ export default {
 
 // TYPEFORM ----
 .typeform * {
+    display: inline-block;
     &:hover {
         cursor: pointer;
     }
@@ -335,7 +339,7 @@ export default {
 
 .footer-contact {
 
-    margin-top: 3rem;
+    margin-top: 4.5rem;
     text-align: center;
 
     @media(min-width: 768px) {
@@ -412,7 +416,7 @@ export default {
     &__item {
 
         margin: 1.5rem 0;
-        width: 95%;
+        width: 100%;
         padding: 3rem;
         text-align: center;
         background-color: #fff;
