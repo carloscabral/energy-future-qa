@@ -6,11 +6,11 @@
                     <div class="cta__item cta__item--blue">
                         <h3>Não perca esta oportunidade!</h3>
                         <p>Seu projeto pode ser selecionado para ajudar a melhorar o fornecimento de energia de <strong>milhões</strong> de brasileiros.</p>
-                        <g-link to="/inscricao/"><button>Inscrições: 25 de novembro</button></g-link>
+                        <g-link to="/inscricao/"><button>Inscreva seu projeto</button></g-link>
                     </div>
                 </div>
             </div> 
-            <div class="row mt-5 align-items-end">
+            <div class="row align-items-start" style="margin-top: 4.5rem;">
                 <div class="col-xl-3 col-lg-4 col-sm-6">
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">Menu</li>
@@ -24,9 +24,10 @@
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">Outros</li>
                         <li class="footer-menu__item"><g-link to="../assets/images/Manual-PDANEEL.pdf" target="_blank">Regulamento Aneel</g-link></li>
-                        <li class="footer-menu__item" @click="commingSoon"><g-link to="/">Critérios de Seleção</g-link></li>                    
+                        <li class="footer-menu__item"><g-link to="../assets/images/Regulamento-Energy-Future-Oficial.pdf" target="_blank">Regulamento Energy Future</g-link></li>
+                        <!-- <li class="footer-menu__item" @click="commingSoon"><g-link to="/">Critérios de Seleção</g-link></li>                    
                         <li class="footer-menu__item" @click="commingSoon"><g-link to="/">Política de Privacidade</g-link></li>
-                        <li class="footer-menu__item" @click="commingSoon"><g-link to="/">Termos & Condições</g-link></li>
+                        <li class="footer-menu__item" @click="commingSoon"><g-link to="/">Termos & Condições</g-link></li> -->
                     </ul>                
                 </div>
                 <div class="col-xl-4 offset-xl-2 col-lg-4 col-md-6">

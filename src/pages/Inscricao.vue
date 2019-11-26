@@ -20,41 +20,41 @@
 
       <section id="subscription-cards">
           <div class="row">
-              <div class="col-xl-4 col-lg-6 col-md-6 mt-5">
+              <div class="col-xl-3 col-lg-6 col-md-6 mt-5 px-xl-2">
                   <div class="card card--1">
                       <h3 class="card__number">01.</h3>
                       <h4 class="card__title">Leia todos os regulamentos</h4>
                       <p class="card__divider card__divider--1"></p>
                       <p class="card__text">Para garantir a inscrição correta do seu projeto, leia com atenção o Regulamento do Energy Future e o Regulamento da Aneel, que orienta a formulação de projetos de P&D. Os conteúdos estão disponíveis abaixo.</p>
-                      <g-link to="../assets/images/Regulamento-Energy-Future-Oficial.pdf" target="_blank" class="card__link card__link--1"><font-awesome :icon="['fas', 'arrow-right']"/>&nbsp;&nbsp;Regulamento Energy Future</g-link>
-                      <g-link to="../assets/images/Manual-PDANEEL.pdf" target="_blank" class="card__link card__link--1"><font-awesome :icon="['fas', 'arrow-right']"/>&nbsp;&nbsp;Regulamento Aneel</g-link>
+                      <g-link to="../assets/images/Regulamento-Energy-Future-Oficial.pdf" target="_blank" class="card__link card__link--1"><font-awesome :icon="['fas', 'arrow-right']"/>Regulamento Energy Future</g-link>
+                      <g-link to="../assets/images/Manual-PDANEEL.pdf" target="_blank" class="card__link card__link--1"><font-awesome :icon="['fas', 'arrow-right']"/>Regulamento Aneel</g-link>
                   </div>
               </div>
-              <div class="col-xl-4 col-lg-6 col-md-6 mt-5">
+              <div class="col-xl-3 col-lg-6 col-md-6 mt-5 px-xl-2">
                 <div class="card card--2">
                     <h3 class="card__number">02.</h3>
                     <h4 class="card__title">Preencha o seu cadastro</h4>
                     <p class="card__divider card__divider--2"></p>
                     <p class="card__text">É necessário que você realize seu cadastro no nosso site. Após o envio das suas informações, você receberá por e-mail o link de acesso para o formulário de inscrição.</p>
-                    <g-link to="https://energyfuture.typeform.com/to/QvbsS6" target="_blank" class="card__link card__link--2"><font-awesome :icon="['fas', 'arrow-right']"/>&nbsp;&nbsp;Faça seu cadastro</g-link>
+                    <g-link to="https://energyfuture.typeform.com/to/QvbsS6" target="_blank" class="card__link card__link--2"><font-awesome :icon="['fas', 'arrow-right']"/>Faça seu cadastro</g-link>
                 </div>
               </div>
-              <div class="col-xl-4 col-lg-6 col-md-6 mt-5">
+              <div class="col-xl-3 col-lg-6 col-md-6 mt-5 px-xl-2">
                 <div class="card card--3">
                     <h3 class="card__number">03.</h3>
-                    <h4 class="card__title">Preencha o relatório de detalhamento</h4>
+                    <h4 class="card__title">Preencha o relatório de apresentação</h4>
                     <p class="card__divider card__divider--3"></p>
                     <p class="card__text">Ao preencher o formulário de inscrição, na mesma plataforma, você deve fazer o envio do “relatório de detalhamento” do seu projeto.  É muito importante para validar a sua participação, que você o preencha e faça o upload do arquivo no formulário.</p>
-                    <g-link to="/" class="card__link card__link--3"><font-awesome :icon="['fas', 'arrow-right']"/>&nbsp;&nbsp;Relatório de detalhamento</g-link>
+                    <g-link to="../assets/images/Relatorio-de-Detalhamento.pptx" class="card__link card__link--3"><font-awesome :icon="['fas', 'arrow-right']"/>Relatório de detalhamento</g-link>
                 </div>           
               </div>
-              <div class="col-xl-4 col-lg-6 col-md-6 mt-5">
+              <div class="col-xl-3 col-lg-6 col-md-6 mt-5 px-xl-2">
                 <div class="card card--4">
                     <h3 class="card__number">04.</h3>
                     <h4 class="card__title">Faça a sua inscrição</h4>
                     <p class="card__divider card__divider--4"></p>
-                    <p class="card__text">A inscrição do projeto no Energy Future é gratuita e somente poderá ser feita por meio do link de acesso que você receberá por e-mail, após o seu cadastro no nosso site.</p>
-                    <g-link to="/" class="card__link card__link--4"><font-awesome :icon="['fas', 'arrow-right']"/>&nbsp;&nbsp;Inscrições abertas de 25 de novembro de 2019 até 31 de janeiro de 2020.</g-link>
+                    <p class="card__text">A inscrição do projeto no Energy Future é gratuita e somente poderá ser feita por meio do link de acesso que você receberá por e-mail, após o seu cadastro no nosso site. Para validar sua inscrição, preencha todos os campos do formulário e faça o upload do Relatório de Apresentação.</p>
+                    <g-link to="https://energyfuture.typeform.com/to/QvbsS6" target="_blank" class="card__link card__link--4"><font-awesome :icon="['fas', 'arrow-right']"/>Inscrições abertas de 25 de novembro de 2019 até 31 de janeiro de 2020.</g-link>
                 </div>
               </div>
           </div>
@@ -63,7 +63,7 @@
       <div class="colored-divider"></div>
 
       <section id="categories">
-            <h3 class="mb-3">Categorias chamada do energy future:</h3>
+            <h3 class="mb-3">Categorias da Chamada Energy Future:</h3>
             <p>Entender as atuais necessidades do setor de energia elétrica é o primeiro passo na proposta de um projeto de caráter inovador. Por isso, o Energy Future estabeleceu as principais categorias, diretrizes, para orientar os novos negócios.</p>
 
             <div v-for="(item, index) in items" :key="index">
@@ -153,6 +153,9 @@ export default {
     @media(min-width: 768px) {
         height: 26.7rem;
     }
+    @media(min-width: 1200px) {
+        height: 30rem;
+    }    
 
     &:hover {
         box-shadow: 0 3rem 5rem -1rem rgba($primary-color, .16);
@@ -225,11 +228,25 @@ export default {
     &__link {
         display: block;
         font-size: .88rem;
+        @media(min-width: 1200px) {
+            font-size: .77rem;
+        }
         font-weight: 500;
         margin-bottom: 1.5rem;
         color: rgba($primary-color, .87);
 
+        svg {
+            margin-right: 1rem;
+            @media(min-width: 1200px) {
+                //margin-right: .5rem;
+                display: none;
+            }
+        }
+
         &--1 {
+            @media(min-width: 1200px) {
+                color: $accent-color-2;
+            }
             svg {
                 color: $accent-color-2;
             }
@@ -238,6 +255,9 @@ export default {
             }
         }
         &--2 {
+            @media(min-width: 1200px) {
+                color: $accent-color-1;
+            }            
             svg {
                 color: $accent-color-1;
             }            
@@ -246,6 +266,9 @@ export default {
             }
         }
         &--3 {
+            @media(min-width: 1200px) {
+                color: $accent-color-3;
+            }            
             svg {
                 color: $accent-color-3;
             }            
@@ -254,6 +277,9 @@ export default {
             }
         }
         &--4 {
+            @media(min-width: 1200px) {
+                color: $secondary-color;
+            }            
             svg {
                 color: $secondary-color;
             }            

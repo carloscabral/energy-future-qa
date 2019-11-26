@@ -5,7 +5,7 @@
         <div class="col-lg-7 col-xl-6">
           <h1 class="hero__title">Maior chamada de projetos do setor elétrico brasileiro</h1>
           <p class="hero__text">O Energy Future, hub virtual de inovação do setor elétrico, conecta projetos a grandes concessionárias do país. Procuramos soluções inovadoras que ajudem a melhorar a geração, transmissão e distribuição da energia elétrica no Brasil.</p>
-          <button @click="openTypeForm" class="newsletter-click hero__button mt-3"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba nossa newsletter</button>
+          <g-link to="/inscricao"><button class="newsletter-click hero__button mt-3"><font-awesome :icon="['fas', 'arrow-right']"/>&nbsp;&nbsp;&nbsp;Inscreva seu projeto</button></g-link>
         </div>
         <div class="col-lg-5 col-xl-6">
           <g-image class="hero__image" src="~/assets/images/img-top-lp.png" width="900" />
@@ -13,16 +13,6 @@
       </div>
 
       <Map />
-
-      <!-- <section id="rules">
-        <div class="rules">
-          <h1 class="rules__title">Regulamentos</h1>
-          <div class="rules__buttons">
-            <button class="rules__button"><span class="d-none d-sm-none d-lg-inline">Conheça o </span>regulamento aneel</button>
-            <button class="rules__button"><span class="d-none d-sm-none d-lg-inline">Veja nosso </span>regulamento jurídico</button>
-          </div>
-        </div>
-      </section> -->
 
       <section id="steps">
         <div class="row">
@@ -53,7 +43,7 @@
           <div class="col-lg-6 steps-list even space-up">
             <h1 class="steps-list__number">04</h1>
             <h2 class="steps-list__title">Triagem Qualitativa</h2>
-            <p class="steps-list__text">Seu projeto está alinhado com os regulamentos? A conformidade com o regulamento do Energy Future é fundamental para que você avance. Além disso, ter em vista as regras do Manual da Aneel contribui na avaliação. Nessa fase, critérios como inovação, originalidade, sustentabilidade e escala no mercado também serão considerados.</p>
+            <p class="steps-list__text">Seu projeto está alinhado com os regulamentos? A conformidade com o regulamento do Energy Future é para que você avance. Além disso, ter em vista as regras do Manual da Aneel contribui na avaliação. Nessa fase, critérios como inovação, originalidade, sustentabilidade e escala no mercado também serão considerados.</p>
           </div>
           <div class="col-lg-6 steps-list odd">
             <h1 class="steps-list__number">05</h1>
@@ -68,7 +58,7 @@
         </div>
         <div class="row">
           <div class="col-md-6 offset-md-3">
-            <g-link to="/inscricao/"><button class="steps__button">Inscrições: 25 de novembro&nbsp;&nbsp;<font-awesome :icon="['fas', 'arrow-right']"/></button></g-link>
+            <g-link to="/inscricao/"><button class="steps__button">Inscreva seu projeto&nbsp;&nbsp;<font-awesome :icon="['fas', 'arrow-right']"/></button></g-link>
           </div>
         </div>
       </section>

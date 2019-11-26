@@ -4,34 +4,34 @@
             <div class="col-lg-6 dealership-map">
                 <ul class="dealership-map__companies">
                     <li class="dealership-map__list">
-                        <g-link to="/author/AES" class="dealership-map__link" @mouseover="activeLogo = 'aes'" @mouseleave="activeLogo = ''">
+                        <a href="/author/AES Tietê" class="dealership-map__link" @mouseover="activeLogo = 'aes'" @mouseleave="activeLogo = ''">
                             <g-image src="../assets/images/img-logo-aes.svg" width="250" alt="Logo AES" />
-                        </g-link>
+                        </a>
                     </li>
                     <li class="dealership-map__list">
-                        <g-link to="/author/Energisa" class="dealership-map__link" @mouseover="activeLogo = 'energisa'" @mouseleave="activeLogo = ''">
+                        <a href="/author/Energisa" class="dealership-map__link" @mouseover="activeLogo = 'energisa'" @mouseleave="activeLogo = ''">
                             <g-image src="../assets/images/img-logo-energisa.svg" width="250" alt="Logo Energisa" />
-                        </g-link>
+                        </a>
                     </li>
                     <li class="dealership-map__list">
-                        <g-link to="/author/Equatorial" class="dealership-map__link" @mouseover="activeLogo = 'equatorial'" @mouseleave="activeLogo = ''">
+                        <a href="/author/Equatorial" class="dealership-map__link" @mouseover="activeLogo = 'equatorial'" @mouseleave="activeLogo = ''">
                             <g-image src="../assets/images/img-logo-equatorial.png" width="250" alt="Logo Equatorial" />
-                        </g-link>
+                        </a>
                     </li>
                     <li class="dealership-map__list">
-                        <g-link to="/author/Enel" class="dealership-map__link" @mouseover="activeLogo = 'enel'" @mouseleave="activeLogo = ''">
+                        <a href="/author/Enel" class="dealership-map__link" @mouseover="activeLogo = 'enel'" @mouseleave="activeLogo = ''">
                             <g-image src="../assets/images/img-logo-enel.svg" width="250" alt="Logo Enel" />
-                        </g-link>
+                        </a>
                     </li>
                     <li class="dealership-map__list">
-                        <g-link to="/author/Light" class="dealership-map__link" @mouseover="activeLogo = 'light'" @mouseleave="activeLogo = ''">
+                        <a href="/author/Light" class="dealership-map__link" @mouseover="activeLogo = 'light'" @mouseleave="activeLogo = ''">
                             <g-image src="../assets/images/img-logo-light.svg" width="250" alt="Logo Light" />
-                        </g-link>
+                        </a>
                     </li>              
                     <li class="dealership-map__list">
-                        <g-link to="/author/Santo Antonio" class="dealership-map__link" @mouseover="activeLogo = 'antonio'" @mouseleave="activeLogo = ''">
+                        <a href="/author/Santo Antônio" class="dealership-map__link" @mouseover="activeLogo = 'antonio'" @mouseleave="activeLogo = ''">
                             <g-image src="../assets/images/img-logo-antonio.svg" width="250" alt="Logo Santo Antonio" />
-                        </g-link>
+                        </a>
                     </li>                                                                      
                 </ul>
 
@@ -398,10 +398,6 @@ export default {
 
 <style lang="scss">
 
-#dealership {
-  //margin-top: 6rem;
-}
-
 .dealership-container {
     margin-top: 3rem;
 
@@ -493,10 +489,6 @@ export default {
           top: -2.7rem;
           left: 0;
       }
-  }
-
-  &__text {
-
   }
 }
 
