@@ -1,0 +1,37 @@
+---
+title: "O DNA Enel: Empresa investe em inovação e sustentabilidade na produção de energia para novos tempos."
+excerpt: "Maior empresa privada do setor elétrico Brasileiro, ENEL foca na inovação para promover o desenvolvimento sustentável da empresa, tendo em vista os desafios globais."
+date: 2019-11-24
+tags: ['enel', 'inovação']
+author: Enel
+isHighlight: false
+featured_image: "./images/img-materia07.png"
+---
+
+Com atuação em toda cadeia energética, Enel é a maior empresa privada do setor elétrico nacional e protagonista no desenvolvimento de fontes renováveis no Brasil. Fundada em 1962, a empresa investe em tecnologia para encarar os desafios dos novos tempos.
+
+Da introdução do primeiro medidor inteligente ao papel de líder global na produção de energia renovável, a empresa tem inovação e sustentabilidade como pilares de atuação. Em 2015, a revista americana Fortune, listou a Enel na quinta posição da lista de 50 empresas capazes de mudar o mundo pelo importante papel da companhia na luta contra as mudanças climáticas e impacto social.
+
+Tendo em vista o crescimento da demanda por energia, a empresa foca na produção de energia verde. Atualmente, é líder na geração de energia solar no país em capacidade instalada e portfólio de projetos, operando a maior planta solar do Brasil no Estado do Piauí. Também está como um dos maiores players eólicos do mercado brasileiro.
+
+Alinhada à abordagem de estratégia Open Power, “abertura” na livre tradução, a Enel quer promover o acesso da energia a mais pessoas e às novas tecnologias. Por isso, o grupo coloca sustentabilidade ambiental, social e econômica no centro de sua cultura corporativa.
+
+“Estamos totalmente comprometidos com fontes de energia renovável, tais como usinas hídricas, eólicas, solares, geotérmicas, de biomassa e cogeração. Junto a nossos parceiros, estamos desenvolvendo novas tecnologias ambientalmente amigáveis”, afirma a empresa em suas páginas institucionais. A Enel trabalha atualmente em colaboração com o Pacto Global das Nações Unidas, Clinton Global Initiatives entre outros projetos.
+
+Na visão da empresa, a sustentabilidade é um objetivo a ser alcançado por meio de processos de inovação, sendo a recíproca também verdadeira. “Não há como uma empresa ser sustentável sem inovar continuamente, ao mesmo passo que defendemos que a inovação tenha sempre a sustentabilidade como foco”, declara Anel.
+
+Dessa forma, a empresa esperar garantir seu desenvolvimento associado ao desenvolvimento das comunidades onde opera, seguindo o modelo de criação de valor compartilhado dentro e fora da empresa.
+
+## Como a empresa global atua no Brasil
+
+No país, a empresa atua nas áreas de geração, distribuição, transmissão e comercialização, além de soluções em energia. Por meio de quatro distribuidoras, nos estados do Rio de Janeiro, Ceará, Goiás e São Paulo, leva energia para aproximadamente 17 milhões de clientes.
+
+As atividades de geração convencional, distribuição, transmissão, comercialização e soluções de energia estão sob o controle da holding Enel Brasil, sociedade anônima de capital fechado. No mercado de geração de energia renovável, atua por meio da subsidiária Enel Green Power Brasil (EGPB).
+
+> "Por meio de quatro distribuidoras, nos estados do Rio de Janeiro, Ceará, Goiás e São Paulo, leva energia para aproximadamente 17 milhões de clientes."
+
+Em geração, além da operação da maior planta solar do Brasil, Nova Olinda, no Estado do Piauí, e importante ator na produção de energia eólica, a empresa também atua em Pequenas Centrais Hidrelétricas (PCH’s) em diversos estados, uma usina hidrelétrica em Goiás e uma usina termoelétrica de ciclo combinado (gás e vapor) no Ceará.
+
+No mercado de comercialização, compra e vende energia convencional e incentivada no Mercado Livre em diferentes estados. Já em transmissão, mantém uma companhia responsável por converter e transmitir energia do Brasil para a Argentina, e vice-versa, sendo ativo estratégico para a integração energética do MERCOSUL.
+
+A Enel também tem importante papel como empresa integradora de soluções inteligentes. Tem promovido a integração dos clientes residenciais e empresariais às novas tecnologias, que estão transformando o setor elétrico tradicional na geração distribuída, automação, armazenamento de energia e mobilidade elétrica, entre outras soluções inovadoras.

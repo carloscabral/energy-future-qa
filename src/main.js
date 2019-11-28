@@ -4,7 +4,7 @@ import VueDisqus from 'vue-disqus'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
 import { faInstagram, faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faArrowRight, faChevronUp, faClock, faInfoCircle, faCheck, faEnvelope, faSearch, faSadTear } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faChevronUp, faClock, faInfoCircle, faCheck, faEnvelope, faSearch, faSadTear, faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 
 config.autoAddCss = false;
@@ -19,7 +19,8 @@ library.add(
   faInfoCircle, 
   faCheck,
   faSearch,
-  faSadTear, 
+  faSadTear,
+  faCaretDown, 
   faEnvelope)
 // --- FontAwesome SVG ---
 

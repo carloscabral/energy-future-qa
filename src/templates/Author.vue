@@ -8,7 +8,7 @@
             <g-image v-if="$page.author.title === 'Equatorial'" src="@/assets/images/img-logo-equatorial.png" width="150" />
             <g-image v-if="$page.author.title === 'Santo Antônio'" src="@/assets/images/img-logo-antonio.svg" width="150" />
             <g-image v-if="$page.author.title === 'AES Tietê'" src="@/assets/images/img-logo-aes.svg" width="150" />
-            <h3>Notícias</h3>
+            <h3>Conteúdo exclusivo</h3>
         </div>
 
         <section id="search-post">

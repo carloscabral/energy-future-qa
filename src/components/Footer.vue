@@ -79,16 +79,26 @@
 
         <footer v-else class="footer">
             <div class="row justify-content-between align-items-center">
-            <div class="col-md-9">
-                <nav class="footer-nav">
-                <g-link class="footer-nav__link" to="/inscricao/">Inscrição</g-link>
-                <g-link class="footer-nav__link" to="/quem-somos/">Quem&nbsp;Somos</g-link>
-                <g-link class="footer-nav__link" to="/noticias/">Notícias</g-link>
-                <g-link class="footer-nav__link" to="/duvidas/">Dúvidas</g-link>
+            <div class="col-lg-9">
+                <nav role="navigation" class="footer-nav">
+                    <li class="footer-nav__item"><g-link class="footer-nav__anchor" to="/inscricao/">Inscrição</g-link></li>
+                    <li class="footer-nav__item"><g-link class="footer-nav__anchor" to="/quem-somos/">Quem Somos</g-link></li>
+                    <li class="footer-nav__item"><g-link class="footer-nav__anchor" to="/noticias/">Notícias</g-link></li>
+                    <li class="footer-nav__item d-none d-md-inline-block">Concessionárias&nbsp;&nbsp;<font-awesome :icon="['fas', 'caret-down']"/>
+                        <ul style="margin-top: -10px">
+                            <li><g-link to="/author/AES Tietê/">AES Tietê</g-link></li>
+                            <li><g-link to="/author/Energisa/">Energisa</g-link></li>
+                            <li><g-link to="/author/Enel/">Enel</g-link></li>
+                            <li><g-link to="/author/Equatorial/">Equatorial</g-link></li>
+                            <li><g-link to="/author/Light/">Light</g-link></li>
+                            <li><g-link to="/author/Santo Antônio/">Santo Antônio</g-link></li>              
+                        </ul>
+                    </li>
+                    <li class="footer-nav__item"><g-link class="footer-nav__anchor" to="/duvidas/">Dúvidas</g-link></li>   
                 </nav>                  
             </div>
-            <div class="col-md-3 mt-3 mt-md-0">
-                <div class="footer-social d-flex justify-content-md-end">
+            <div class="col-lg-3 mt-3 mt-lg-0">
+                <div class="footer-social">
                     <a href="https://www.instagram.com/energyfuturebr/" class="footer-social__link" target="_blank" alt="Instagram">
                         <font-awesome :icon="['fab', 'instagram']"/>
                     </a>                    
@@ -102,32 +112,11 @@
             </div>
 
             </div>
-            <div class="row mt-4 align-items-center" id="sign-in">
-                <!-- <div class="col-md-8">
-                    <h4>Inscreva-se e faça parte dessa linda comunidade de gente bonita, formosa e empreeendedora! Esperamos você por aqui. Beijooooooo!</h4>
-                </div> -->
-                <div class="col-12 typeform">
-                    <!-- <button>Clique aqui</button> -->
-                    <p @click="openTypeForm" class="newsletter-click text-center text-md-left mt-3 mb-2"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba nossa newsletter&nbsp;&nbsp;<font-awesome :icon="['fas', 'arrow-right']"/></p>
-                    <!-- <div id="my-embedded-typeform" ref="typeform" style="width: 100%; height: 300px;" /> -->
+            <div class="row align-items-center">
+                <div class="col-12 typeform text-center text-md-left">
+                    <p @click="openTypeForm" class="newsletter-click"><font-awesome :icon="['fas', 'envelope']"/>&nbsp;&nbsp;&nbsp;Receba nossa newsletter&nbsp;&nbsp;<font-awesome :icon="['fas', 'arrow-right']"/></p>
                 </div>
             </div>
-            <!-- <div class="row justify-content-between mt-4">
-                <div class="col-xl-6 col-lg-8 mt-3">
-                    <div class="footer-newsletter">
-                        <label class="footer-newsletter__label" for="newsletter">Receba nossa newsletter:</label>
-                        <div class="footer-newsletter__input-container">
-                            <input class="d-flex justify-content-md-end" type="email" placeholder="Seu e-mail" id="newsletter" name="newsletter">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-4 mt-3 center">
-                    <div class="footer-subscribe">
-                        <label class="footer-subscribe__label d-md-block d-lg-none d-xl-block">Aproveite a oportunidade:</label>
-                        <g-link to="/inscricao/" style="width: 100%;"><button class="footer-subscribe__button">Inscreva seu projeto!</button></g-link>
-                    </div>
-                </div>
-            </div> -->
             <div class="footer-contact">
                 <!-- <div class="footer-contact__address"><small>Rua São José, 40 - 4º andar<br>Centro - Rio de Janeiro, RJ.</small></div> -->
                 <div class="footer-contact__address"><small>contato@energyfuture.com.br</small></div>
@@ -156,33 +145,24 @@ export default {
                 }).open();            
         }        
     }
-  },
-//   mounted () {
-//     if (process.isClient) {
-    
-//         let el = this.$refs.typeform
-
-//         if (el) {
-//             window.typeformEmbed.makeWidget(el, "https://energyfuture.typeform.com/to/w0QlAs", {
-//                 hideFooter: true,
-//                 hideHeaders: true,
-//                 opacity: 0
-//             });          
-//         }
-//     }
-//   }
+  }
 }
 </script>
 
 
 <style lang="scss">
 
-
+.sign-in {
+    margin-bottom: 1.5rem;
+}
 // TYPEFORM ----
-.typeform * {
-    display: inline-block;
-    &:hover {
-        cursor: pointer;
+.typeform {
+    margin: 6rem 0 1.5rem;
+    * {
+        display: inline-block;
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
@@ -199,17 +179,20 @@ export default {
 
     @media (max-width: 575px) {
         
-        //text-align: center;
+        text-align: center;
         display: block;
         margin: 1rem 0 -1rem 0;
 
-        &__link {
+        &__item, a {
             display: block;
+        }
+        
+        a {
             text-align: center;
             font-size: 1rem;
             margin: 0;
-            padding-bottom: 2rem;
-        }        
+            padding-bottom: 2rem;            
+        }
     }      
 
     @media (max-width: 767px) {
@@ -235,12 +218,15 @@ export default {
 }
 
 .footer-social {
+
+    display: flex;
+    justify-content: flex-end;
     
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
         justify-content: center;
         margin-top: 1rem;
-    }   
-
+    }  
+    
     &__link {
         font-size: 1.5rem;
         transform: scale(.85);
@@ -340,7 +326,7 @@ export default {
 
 .footer-contact {
 
-    margin-top: 4.5rem;
+    margin-top: 3.5rem;
     text-align: center;
 
     @media(min-width: 768px) {

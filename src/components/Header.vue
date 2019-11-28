@@ -6,12 +6,42 @@
 
         <div v-if="!darkMode" class="line-break"></div>
         
-        <nav class="desktop-navigation__nav" :class="{ 'dark-mode' : darkMode }">
-            <g-link class="desktop-navigation__nav__link" to="/inscricao/">Inscrição</g-link>
-            <g-link class="desktop-navigation__nav__link" to="/quem-somos/">Quem Somos</g-link>
-            <g-link class="desktop-navigation__nav__link" to="/noticias/">Notícias</g-link>
-            <g-link class="desktop-navigation__nav__link" to="/duvidas/">Dúvidas</g-link>
-        </nav>
+        <!-- <nav class="desktop-navigation__nav" :class="{ 'dark-mode' : darkMode }">
+            <li class="desktop-navigation__nav__link"><g-link class="desktop-navigation__nav__anchor" to="/inscricao/">Inscrição</g-link></li>
+            <li class="desktop-navigation__nav__link"><g-link class="desktop-navigation__nav__anchor" to="/quem-somos/">Quem Somos</g-link></li>
+            <li class="desktop-navigation__nav__link">Concessionárias&nbsp;&nbsp;
+              <ul class="desktop-navigation__dropdown">
+                <li><g-link class="desktop-navigation__dropdown-anchor" to="/quem-somos/">AES Tietê</g-link></li>
+                <li><g-link class="desktop-navigation__dropdown-anchor" to="/quem-somos/">Energisa</g-link></li>
+                <li><g-link class="desktop-navigation__dropdown-anchor" to="/quem-somos/">Enel</g-link></li>
+                <li><g-link class="desktop-navigation__dropdown-anchor" to="/quem-somos/">Equatorial</g-link></li>
+                <li><g-link class="desktop-navigation__dropdown-anchor" to="/quem-somos/">Light</g-link></li>
+                <li><g-link class="desktop-navigation__dropdown-anchor" to="/quem-somos/">Santo Antônio</g-link></li>
+              </ul>
+            </li>            
+            <li class="desktop-navigation__nav__link"><g-link class="desktop-navigation__nav__anchor" to="/noticias/">Notícias</g-link></li>
+            <li class="desktop-navigation__nav__link"><g-link class="desktop-navigation__nav__anchor" to="/duvidas/">Dúvidas</g-link></li>
+        </nav> -->
+
+
+        <nav role="navigation" :class="{ 'dark-mode' : darkMode }">
+          <ul class="desktop-navigation__nav">
+            <li class="desktop-navigation__nav__item"><g-link class="desktop-navigation__nav__anchor" to="/inscricao/">Inscrição</g-link></li>
+            <li class="desktop-navigation__nav__item"><g-link class="desktop-navigation__nav__anchor" to="/quem-somos/">Quem Somos</g-link></li>
+            <li class="desktop-navigation__nav__item"><g-link class="desktop-navigation__nav__anchor" to="/noticias/">Notícias</g-link></li>
+            <li class="desktop-navigation__nav__item">Concessionárias&nbsp;&nbsp;<font-awesome :icon="['fas', 'caret-down']"/>
+              <ul>
+                <li><g-link to="/author/AES Tietê/">AES Tietê</g-link></li>
+                <li><g-link to="/author/Energisa/">Energisa</g-link></li>
+                <li><g-link to="/author/Enel/">Enel</g-link></li>
+                <li><g-link to="/author/Equatorial/">Equatorial</g-link></li>
+                <li><g-link to="/author/Light/">Light</g-link></li>
+                <li><g-link to="/author/Santo Antônio/">Santo Antônio</g-link></li>              
+              </ul>
+            </li>
+            <li class="desktop-navigation__nav__item"><g-link class="desktop-navigation__nav__anchor" to="/duvidas/">Dúvidas</g-link></li>
+          </ul>
+        </nav>   
 
         <div class="mobile-navigation">
             <input type="checkbox" class="mobile-navigation__checkbox" id="navi-toggle">
@@ -195,37 +225,192 @@ export default {
   }
 }
 
-// Desktop version
+
+//Desktop version
 .desktop-navigation__nav {
   display: none;
   @media (min-width: 992px) {
-    display: flex;
+    display: block;
   }
 }
 
 .desktop-navigation__nav,
 .footer-nav {
-  &__link {
-    margin-right: 1.75rem;
-    color: #a7b2c0;
-    text-transform: uppercase;
-    font-size: 0.77rem;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: 0.75px;
+  list-style-type: none;
+  margin-bottom: 0 !important;
+  @media(min-width: 768px) {
+    height: 1.15rem;
+  }
 
-    &:hover,
-    &.active--exact {
-      color: $primary-color;
+  &__item:not(:last-child) {
+    @media (min-width: 576px) {
+      margin-right: 1.55rem;
     }
   }
-  &__link:last-child {
-    margin-right: 0;
+
+  &__item, &__anchor {
+    display: inline-block;
+    position: relative;
+    color: #a7b2c0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .77rem;
+    line-height: 1;
+    letter-spacing: 0.75px;
+    padding-bottom: 1rem;
+    
+    ul {
+      display: none;
+    }
+    
+    &:hover,
+    &.active--exact {
+      cursor: pointer;
+      color: $primary-color;
+    }       
+    // initial li:hover
+    &:hover {
+      //background-color: lightgrey;
+      
+      // secondary ul visibility change
+      ul {
+        display: block;
+        padding-left: 0;
+        border-radius: .11rem;
+        width: 10rem;
+        left: 0;
+        background-color: #fff;
+        
+        position: absolute;
+        z-index: 2000;
+        transform: translateY(1rem);
+        box-shadow: 0 3rem 5rem -1.5rem rgba($primary-color, .2);
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: -.3rem;
+          right: .5rem;
+          width: .77rem;
+          height: .77rem;
+          background-color: #fff;
+          transform: rotate(45deg);
+        }
+        
+        // secondary li
+        li {
+          display: block;
+          //font-size: .77rem;
+          padding: .5rem .88rem;
+          text-align: right;
+          color: $primary-color;
+          position: relative;
+
+          a {
+            display: block;
+            font-size: .77rem;            
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 1.5rem;
+            width: 90%;
+            height: 1px;
+            background-color: rgba($light-grey, .2);
+          }
+          
+          &:hover a {
+            //background-color: rgba($primary-color, .05);
+            color: $accent-color-1;
+            transform: translateX(-3px);
+          }
+        }
+
+        li:first-child {
+          margin-top: .5rem;
+        }
+        li:last-child {
+          margin-bottom: .5rem;
+        }        
+      }
+    }     
   }
 }
 
+
+// .desktop-navigation__nav,
+// .footer-nav {
+  
+//   list-style: none;
+
+//   &__link {
+//     margin-right: 1.55rem;
+//     color: #a7b2c0;
+//     text-transform: uppercase;
+//     font-weight: 700;
+//     line-height: 1;
+//     letter-spacing: 0.75px;
+
+//     ul li {
+//       display: none;
+//       position: relative;
+//     }
+
+//     &:hover,
+//     &.active--exact {
+//       cursor: pointer;
+//       color: $primary-color;
+//     }    
+
+//     &:hover {
+//       ul {
+//         display: block;
+//         margin-top: 15px;
+        
+//         width: 12.5rem;
+//         right: 10.55rem;
+//         //margin-top: 2rem;
+//         padding-top: -3.5rem;
+        
+//         position: absolute;
+        
+//         // secondary li
+//         li {
+//           display: block;
+//           background-color: darken(#fff, 7%);
+//           span {
+//             float: right;
+//             color: #fff;
+//             background-color: $blue;
+//             padding: 2px 5px;
+//             text-align: center;
+//             font-size: .8rem;
+//             border-radius: 3px;
+//           }
+          
+//           &:hover {
+//             background-color: darken(#fff, 10%);
+//             span {
+//               background-color: darken($blue, 5%);
+//             }
+//           }
+//         }
+//       }      
+//     }    
+//   }
+//   &__link:last-child {
+//     margin-right: 0;
+//   }
+//   &__link, &__anchor {
+//     font-size: 0.77rem;
+//     line-height: 1;
+//   }
+// }
+
 .dark-mode {
-  a {
+  .desktop-navigation__nav__item, .desktop-navigation__nav__anchor  {
     color: #fff;
   }
 }

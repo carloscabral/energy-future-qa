@@ -185,7 +185,7 @@
               <div class="col-md-6">
                 <h3 class="supporters__subtitle">Apoiadores Estratégicos</h3>
                 <div class="supporters__logos">
-                  <g-link to="https://www.abacomm.com.br"><g-image class="supporters__items" src="~/assets/images/img-logo-apoio-abacomm.svg" width="100" /></g-link>
+                  <g-link to="https://bit.ly/abacomm"><g-image class="supporters__items" src="~/assets/images/img-logo-apoio-abacomm.svg" width="100" /></g-link>
                   <g-link to="http://www.centralcomm.net.br/"><g-image class="supporters__items" src="~/assets/images/img-logo-apoio-centralcomm.svg" width="100" /></g-link>
                 </div>
               </div>
