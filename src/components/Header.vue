@@ -316,7 +316,7 @@ export default {
             position: absolute;
             bottom: 0;
             left: 1.5rem;
-            width: 90%;
+            width: 78%;
             height: 1px;
             background-color: rgba($light-grey, .2);
           }

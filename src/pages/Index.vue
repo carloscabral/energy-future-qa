@@ -67,7 +67,7 @@
         <div class="d-none d-sm-block">
           <div class="row align-items-center news__container">
             <div class="col-md-8">
-              <h1 class="news__title">Notícias recentes</h1>
+              <h1 class="news__title">Notícias em Destaque</h1>
             </div>
             <div class="col-md-4 d-flex mt-2">
               <g-link to="/noticias/">Leia todas&nbsp;&nbsp;<g-image src="~/assets/images/ic-long-arrow.svg" width="20" /></g-link>

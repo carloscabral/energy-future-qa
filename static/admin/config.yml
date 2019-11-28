@@ -9,6 +9,8 @@ publish_mode: editorial_workflow
 media_folder: "static/uploads" # Media files will be stored in the repo under images/uploads
 public_folder: "uploads" # The src attribute for uploaded media will begin with /images/uploads
 
+logo_url: https://energy-future-qa.netlify.com/assets/img/img-logo-ef.48baba85.svg
+
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
@@ -19,8 +21,8 @@ collections:
       - {label: "Título", name: "title", widget: "string"}
       - {label: "Subtítulo", name: "excerpt", widget: "string"}
       - {label: "Data da publicação", name: "date", widget: "datetime"}
-      - {label: "Imagem de Destaque", name: "featured_image", widget: "image"}
-      - {label: "É Destaque?", name: "isHighlight", widget: "boolean", default: false}
-      - {label: "Tags", name: "tags", widget: "list", allow_add: true, default: ["empreendedorismo", "fontes renováveis", "investimentos", "inovação", "setor elétrico", "startup", "tecnologias"]}
-      - {label: "Concessionária", name: "author", widget: "select", options: ["Energy Future", "AES Tietê", "Energisa", "Enel", "Equatorial", "Light", "Santo Antônio"]}
+      - {label: "Imagem de Destaque", name: "featured_image", widget: "image", hint: "Imagem que fica em destaque na parte superior do post"}
+      - {label: "É Destaque?", name: "isHighlight", widget: "boolean", default: false, hint: "Quando ativado, permite que o post apareça na seção de 'Notícias em Destaque' da Landing Page"}
+      - {label: "Tags", name: "tags", widget: "list", allow_add: true, default: ["empreendedorismo", "fontes renováveis", "investimentos", "inovação", "setor elétrico", "startup", "tecnologias"], hint: "As tags ajudam à identificar o tipo do conteúdo. Separe-as com vírgula e utilize apenas aquelas que tiverem relação com o assunto publicado"}
+      - {label: "Autor", name: "author", widget: "select", options: ["Energy Future", "AES Tietê", "Energisa", "Enel", "Equatorial", "Light", "Santo Antônio"]}
       - {label: "Corpo da mensagem", name: "body", widget: "markdown"}
