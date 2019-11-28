@@ -21,5 +21,6 @@ collections:
       - {label: "Data da publicação", name: "date", widget: "datetime"}
       - {label: "Imagem de Destaque", name: "featured_image", widget: "image"}
       - {label: "É Destaque?", name: "isHighlight", widget: "boolean", default: false}
-      - {label: "Tags", name: "tags", widget: "list", allow_add: true}
+      - {label: "Tags", name: "tags", widget: "list", allow_add: true, default: ["empreendedorismo", "fontes renováveis", "investimentos", "inovação", "setor elétrico", "startup", "tecnologias"]}
+      - {label: "Concessionária", name: "author", widget: "select", options: ["Energy Future", "AES Tietê", "Energisa", "Enel", "Equatorial", "Light", "Santo Antônio"]}
       - {label: "Corpo da mensagem", name: "body", widget: "markdown"}
