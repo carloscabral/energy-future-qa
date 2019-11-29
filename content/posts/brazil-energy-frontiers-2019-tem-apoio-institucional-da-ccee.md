@@ -10,8 +10,6 @@ tags:
   - empreendedorismo
   - fontes renováveis
   - investimentos
-  - shampoo
-  - condicionador
 author: Energisa
 ---
 Estão abertas as inscrições para o evento Brazil Energy Frontiers 2019, conferência que nesta edição tem como tema “O Setor Elétrico e as Novas Fronteiras Globais”, e abordará as transformações do setor elétrico nos próximos anos. O encontro é realizado pelo Instituto Acende Brasil e conta ainda com o apoio institucional da Câmara de Comercialização de Energia Elétrica – CCEE e será realizado no hotel Blue Tree Premium Morumbi, em São Paulo, no dia 23 de outubro.
